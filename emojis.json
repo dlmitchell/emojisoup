@@ -1,0 +1,8365 @@
+[
+  {
+    "name": "smile",
+    "tags": [
+      "smile",
+      "face",
+      "happy",
+      "joy",
+      "funny",
+      "haha"
+    ],
+    "unicode": "😄"
+  },
+  {
+    "name": "grinning",
+    "tags": [
+      "grinning",
+      "face",
+      "smile",
+      "happy",
+      "joy"
+    ],
+    "unicode": "😀"
+  },
+  {
+    "name": "smiley",
+    "tags": [
+      "smiley",
+      "face",
+      "happy",
+      "joy",
+      "haha"
+    ],
+    "unicode": "😃"
+  },
+  {
+    "name": "blush",
+    "tags": [
+      "blush",
+      "face",
+      "smile",
+      "happy",
+      "flushed",
+      "crush",
+      "embarrassed"
+    ],
+    "unicode": "😊"
+  },
+  {
+    "name": "relaxed",
+    "tags": [
+      "relaxed",
+      "face",
+      "blush",
+      "massage",
+      "happiness"
+    ],
+    "unicode": "☺"
+  },
+  {
+    "name": "wink",
+    "tags": [
+      "wink",
+      "face",
+      "happy"
+    ],
+    "unicode": "😉"
+  },
+  {
+    "name": "heart_eyes",
+    "tags": [
+      "heart_eyes",
+      "face",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "😍"
+  },
+  {
+    "name": "kissing_heart",
+    "tags": [
+      "kissing_heart",
+      "face",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "😘"
+  },
+  {
+    "name": "kissing_closed_eyes",
+    "tags": [
+      "kissing_closed_eyes",
+      "face",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "😚"
+  },
+  {
+    "name": "kissing",
+    "tags": [
+      "kissing",
+      "love",
+      "like",
+      "face",
+      "3",
+      "valentines"
+    ],
+    "unicode": "😗"
+  },
+  {
+    "name": "kissing_smiling_eyes",
+    "tags": [
+      "kissing_smiling_eyes",
+      "face",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "😙"
+  },
+  {
+    "name": "stuck_out_tongue_winking_eye",
+    "tags": [
+      "stuck_out_tongue_winking_eye",
+      "face",
+      "prank",
+      "childish"
+    ],
+    "unicode": "😜"
+  },
+  {
+    "name": "stuck_out_tongue_closed_eyes",
+    "tags": [
+      "stuck_out_tongue_closed_eyes",
+      "face",
+      "prank"
+    ],
+    "unicode": "😝"
+  },
+  {
+    "name": "stuck_out_tongue",
+    "tags": [
+      "stuck_out_tongue",
+      "face",
+      "prank",
+      "childish"
+    ],
+    "unicode": "😛"
+  },
+  {
+    "name": "flushed",
+    "tags": [
+      "flushed",
+      "face",
+      "blush",
+      "shy",
+      "flattered"
+    ],
+    "unicode": "😳"
+  },
+  {
+    "name": "grin",
+    "tags": [
+      "grin",
+      "face",
+      "happy",
+      "smile",
+      "joy"
+    ],
+    "unicode": "😁"
+  },
+  {
+    "name": "pensive",
+    "tags": [
+      "pensive",
+      "face",
+      "sad"
+    ],
+    "unicode": "😔"
+  },
+  {
+    "name": "relieved",
+    "tags": [
+      "relieved",
+      "face",
+      "relaxed",
+      "phew",
+      "massage",
+      "happiness"
+    ],
+    "unicode": "😥"
+  },
+  {
+    "name": "unamused",
+    "tags": [
+      "unamused",
+      "indifference",
+      "face",
+      "bored",
+      "straight face"
+    ],
+    "unicode": "😒"
+  },
+  {
+    "name": "disappointed",
+    "tags": [
+      "disappointed",
+      "face",
+      "sad",
+      "upset"
+    ],
+    "unicode": "😞"
+  },
+  {
+    "name": "persevere",
+    "tags": [
+      "persevere",
+      "face",
+      "sick",
+      "no",
+      "upset"
+    ],
+    "unicode": "😣"
+  },
+  {
+    "name": "cry",
+    "tags": [
+      "cry",
+      "face",
+      "tears",
+      "sad",
+      "face"
+    ],
+    "unicode": "😢"
+  },
+  {
+    "name": "joy",
+    "tags": [
+      "joy",
+      "face",
+      "cry",
+      "tears",
+      "weep",
+      "happy",
+      "haha"
+    ],
+    "unicode": "😂"
+  },
+  {
+    "name": "sob",
+    "tags": [
+      "sob",
+      "face",
+      "cry",
+      "tears",
+      "sad",
+      "upset"
+    ],
+    "unicode": "😭"
+  },
+  {
+    "name": "sleepy",
+    "tags": [
+      "sleepy",
+      "face",
+      "tired",
+      "rest"
+    ],
+    "unicode": "😪"
+  },
+  {
+    "name": "disappointed_relieved",
+    "tags": [
+      "disappointed_relieved",
+      "face",
+      "phew",
+      "sweat",
+      "nervous"
+    ]
+  },
+  {
+    "name": "cold_sweat",
+    "tags": [
+      "cold_sweat",
+      "face",
+      "nervous"
+    ],
+    "unicode": "😰"
+  },
+  {
+    "name": "sweat_smile",
+    "tags": [
+      "sweat_smile",
+      "face",
+      "hot",
+      "happy"
+    ],
+    "unicode": "😅"
+  },
+  {
+    "name": "sweat",
+    "tags": [
+      "sweat",
+      "face",
+      "hot"
+    ],
+    "unicode": "😓"
+  },
+  {
+    "name": "weary",
+    "tags": [
+      "weary",
+      "face",
+      "tired",
+      "sleepy",
+      "sad"
+    ],
+    "unicode": "😩"
+  },
+  {
+    "name": "tired_face",
+    "tags": [
+      "tired_face",
+      "face",
+      "sick",
+      "whine",
+      "upset"
+    ],
+    "unicode": "😫"
+  },
+  {
+    "name": "fearful",
+    "tags": [
+      "fearful",
+      "face",
+      "scared",
+      "terrified",
+      "nervous",
+      "oops"
+    ],
+    "unicode": "😨"
+  },
+  {
+    "name": "scream",
+    "tags": [
+      "scream",
+      "face",
+      "munch"
+    ],
+    "unicode": "😱"
+  },
+  {
+    "name": "angry",
+    "tags": [
+      "angry",
+      "mad",
+      "face",
+      "annoyed"
+    ],
+    "unicode": "😠"
+  },
+  {
+    "name": "triumph",
+    "tags": [
+      "triumph",
+      "face",
+      "gas",
+      "phew"
+    ],
+    "unicode": "😤"
+  },
+  {
+    "name": "confounded",
+    "tags": [
+      "confounded",
+      "face",
+      "confused",
+      "sick",
+      "unwell"
+    ],
+    "unicode": "😖"
+  },
+  {
+    "name": "satisfied",
+    "tags": [
+      "satisfied",
+      "haha",
+      "happy",
+      "face",
+      "joy",
+      "glad"
+    ],
+    "unicode": "😌"
+  },
+  {
+    "name": "yum",
+    "tags": [
+      "yum",
+      "happy",
+      "joy",
+      "tongue",
+      "smile",
+      "face"
+    ],
+    "unicode": "😋"
+  },
+  {
+    "name": "mask",
+    "tags": [
+      "mask",
+      "face",
+      "sick",
+      "ill"
+    ],
+    "unicode": "😷"
+  },
+  {
+    "name": "sunglasses",
+    "tags": [
+      "sunglasses",
+      "face",
+      "cool"
+    ],
+    "unicode": "😎"
+  },
+  {
+    "name": "sleeping",
+    "tags": [
+      "sleeping",
+      "face",
+      "tired",
+      "sleepy"
+    ],
+    "unicode": "😴"
+  },
+  {
+    "name": "dizzy_face",
+    "tags": [
+      "dizzy_face",
+      "face",
+      "spent",
+      "unconscious",
+      "xox"
+    ],
+    "unicode": "😵"
+  },
+  {
+    "name": "astonished",
+    "tags": [
+      "astonished",
+      "face",
+      "xox"
+    ],
+    "unicode": "😲"
+  },
+  {
+    "name": "worried",
+    "tags": [
+      "worried",
+      "face",
+      "concern",
+      "nervous"
+    ],
+    "unicode": "😟"
+  },
+  {
+    "name": "frowning",
+    "tags": [
+      "frowning",
+      "face",
+      "aw"
+    ],
+    "unicode": "😦"
+  },
+  {
+    "name": "anguished",
+    "tags": [
+      "anguished",
+      "face",
+      "stunned",
+      "nervous"
+    ],
+    "unicode": "😧"
+  },
+  {
+    "name": "smiling_imp",
+    "tags": [
+      "smiling_imp",
+      "devil",
+      "horns"
+    ],
+    "unicode": "😈"
+  },
+  {
+    "name": "imp",
+    "tags": [
+      "imp",
+      "devil",
+      "evil",
+      "angry",
+      "horns"
+    ],
+    "unicode": "👿"
+  },
+  {
+    "name": "open_mouth",
+    "tags": [
+      "open_mouth",
+      "face",
+      "surprise",
+      "impressed",
+      "wow"
+    ],
+    "unicode": "😮"
+  },
+  {
+    "name": "grimacing",
+    "tags": [
+      "grimacing",
+      "face",
+      "grimace",
+      "teeth"
+    ],
+    "unicode": "😬"
+  },
+  {
+    "name": "neutral_face",
+    "tags": [
+      "neutral_face",
+      "face",
+      "indifference"
+    ],
+    "unicode": "😐"
+  },
+  {
+    "name": "hushed",
+    "tags": [
+      "hushed",
+      "face",
+      "woo"
+    ],
+    "unicode": "😯"
+  },
+  {
+    "name": "no_mouth",
+    "tags": [
+      "no_mouth",
+      "face",
+      "hellokitty"
+    ],
+    "unicode": "😶"
+  },
+  {
+    "name": "innocent",
+    "tags": [
+      "innocent",
+      "face",
+      "angel",
+      "heaven",
+      "halo"
+    ],
+    "unicode": "😇"
+  },
+  {
+    "name": "smirk",
+    "tags": [
+      "smirk",
+      "smile",
+      "mean",
+      "prank"
+    ],
+    "unicode": "😏"
+  },
+  {
+    "name": "expressionless",
+    "tags": [
+      "expressionless",
+      "face",
+      "indifferent"
+    ],
+    "unicode": "😑"
+  },
+  {
+    "name": "man_with_gua_pi_mao",
+    "tags": [
+      "man_with_gua_pi_mao",
+      "male",
+      "boy"
+    ],
+    "unicode": "👲"
+  },
+  {
+    "name": "man_with_turban",
+    "tags": [
+      "man_with_turban",
+      "male"
+    ],
+    "unicode": "👳"
+  },
+  {
+    "name": "cop",
+    "tags": [
+      "cop",
+      "man",
+      "police",
+      "law",
+      "enforcement",
+      "arrest"
+    ],
+    "unicode": "👮"
+  },
+  {
+    "name": "construction_worker",
+    "tags": [
+      "construction_worker",
+      "man",
+      "male",
+      "human",
+      "wip"
+    ],
+    "unicode": "👷"
+  },
+  {
+    "name": "guardsman",
+    "tags": [
+      "guardsman",
+      "uk",
+      "gb",
+      "british",
+      "man",
+      "male"
+    ],
+    "unicode": "💂"
+  },
+  {
+    "name": "baby",
+    "tags": [
+      "baby",
+      "child",
+      "boy"
+    ],
+    "unicode": "👶"
+  },
+  {
+    "name": "boy",
+    "tags": [
+      "boy",
+      "man",
+      "male",
+      "guy"
+    ],
+    "unicode": "👦"
+  },
+  {
+    "name": "girl",
+    "tags": [
+      "girl",
+      "female",
+      "woman"
+    ],
+    "unicode": "👧"
+  },
+  {
+    "name": "man",
+    "tags": [
+      "man",
+      "mustashe",
+      "father",
+      "dad",
+      "guy",
+      "classy"
+    ],
+    "unicode": "👨"
+  },
+  {
+    "name": "woman",
+    "tags": [
+      "woman",
+      "female",
+      "girls"
+    ],
+    "unicode": "👩"
+  },
+  {
+    "name": "older_man",
+    "tags": [
+      "older_man",
+      "human",
+      "male",
+      "men"
+    ],
+    "unicode": "👴"
+  },
+  {
+    "name": "older_woman",
+    "tags": [
+      "older_woman",
+      "female",
+      "women",
+      "girl"
+    ],
+    "unicode": "👵"
+  },
+  {
+    "name": "person_with_blond_hair",
+    "tags": [
+      "person_with_blond_hair",
+      "man",
+      "male"
+    ],
+    "unicode": "👱"
+  },
+  {
+    "name": "angel",
+    "tags": [
+      "angel",
+      "heaven",
+      "wings",
+      "halo"
+    ],
+    "unicode": "👼"
+  },
+  {
+    "name": "princess",
+    "tags": [
+      "princess",
+      "girl",
+      "woman",
+      "female",
+      "blond",
+      "crown"
+    ],
+    "unicode": "👸"
+  },
+  {
+    "name": "smile_cat",
+    "tags": [
+      "smile_cat",
+      "animal",
+      "cats"
+    ],
+    "unicode": "😸"
+  },
+  {
+    "name": "heart_eyes_cat",
+    "tags": [
+      "heart_eyes_cat",
+      "animal",
+      "love",
+      "like",
+      "affection",
+      "cats",
+      "valentines"
+    ],
+    "unicode": "😻"
+  },
+  {
+    "name": "kissing_cat",
+    "tags": [
+      "kissing_cat",
+      "animal",
+      "cats"
+    ],
+    "unicode": "😽"
+  },
+  {
+    "name": "smirk_cat",
+    "tags": [
+      "smirk_cat",
+      "animal",
+      "cats"
+    ],
+    "unicode": "😼"
+  },
+  {
+    "name": "scream_cat",
+    "tags": [
+      "scream_cat",
+      "animal",
+      "cats",
+      "munch"
+    ],
+    "unicode": "🙀"
+  },
+  {
+    "name": "crying_cat_face",
+    "tags": [
+      "crying_cat_face",
+      "animal",
+      "tears",
+      "weep",
+      "sad",
+      "cats"
+    ],
+    "unicode": "😿"
+  },
+  {
+    "name": "joy_cat",
+    "tags": [
+      "joy_cat",
+      "animal",
+      "cats",
+      "haha",
+      "happy",
+      "tears"
+    ],
+    "unicode": "😹"
+  },
+  {
+    "name": "pouting_cat",
+    "tags": [
+      "pouting_cat",
+      "animal",
+      "cats"
+    ],
+    "unicode": "😾"
+  },
+  {
+    "name": "smiley_cat",
+    "tags": [
+      "smiley_cat",
+      "animal",
+      "cats",
+      "happy"
+    ],
+    "unicode": "😺"
+  },
+  {
+    "name": "japanese_goblin",
+    "tags": [
+      "japanese_goblin",
+      "red"
+    ],
+    "unicode": "👺"
+  },
+  {
+    "name": "see_no_evil",
+    "tags": [
+      "see_no_evil",
+      "monkey",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🙈"
+  },
+  {
+    "name": "hear_no_evil",
+    "tags": [
+      "hear_no_evil",
+      "animal",
+      "monkey"
+    ],
+    "unicode": "🙉"
+  },
+  {
+    "name": "speak_no_evil",
+    "tags": [
+      "speak_no_evil",
+      "monkey",
+      "animal"
+    ],
+    "unicode": "🙊"
+  },
+  {
+    "name": "skull",
+    "tags": [
+      "skull",
+      "dead",
+      "skeleton"
+    ],
+    "unicode": "💀"
+  },
+  {
+    "name": "alien",
+    "tags": [
+      "alien",
+      "UFO",
+      "paul"
+    ],
+    "unicode": "👽"
+  },
+  {
+    "name": "hankey",
+    "tags": [
+      "hankey",
+      "poop",
+      "shit",
+      "shitface"
+    ]
+  },
+  {
+    "name": "poop",
+    "tags": [
+      "poop",
+      "poop",
+      "shit",
+      "shitface"
+    ],
+    "unicode": "💩"
+  },
+  {
+    "name": "shit",
+    "tags": [
+      "shit",
+      "poop",
+      "face"
+    ]
+  },
+  {
+    "name": "fire",
+    "tags": [
+      "fire",
+      "hot",
+      "cook"
+    ],
+    "unicode": "🔥"
+  },
+  {
+    "name": "sparkles",
+    "tags": [
+      "sparkles",
+      "stars",
+      "shine",
+      "shiny",
+      "cool"
+    ],
+    "unicode": "✨"
+  },
+  {
+    "name": "star2",
+    "tags": [
+      "star2",
+      "night"
+    ],
+    "unicode": "🌟"
+  },
+  {
+    "name": "dizzy",
+    "tags": [
+      "dizzy",
+      "star",
+      "sparkle",
+      "shoot"
+    ],
+    "unicode": "💫"
+  },
+  {
+    "name": "boom",
+    "tags": [
+      "boom",
+      "bomb"
+    ],
+    "unicode": "💥"
+  },
+  {
+    "name": "collision",
+    "tags": [
+      "collision",
+      "boom",
+      "bomb",
+      "blown"
+    ]
+  },
+  {
+    "name": "anger",
+    "tags": [
+      "anger",
+      "angry",
+      "mad"
+    ],
+    "unicode": "💢"
+  },
+  {
+    "name": "sweat_drops",
+    "tags": [
+      "sweat_drops",
+      "water"
+    ],
+    "unicode": "💦"
+  },
+  {
+    "name": "droplet",
+    "tags": [
+      "droplet",
+      "water",
+      "drip",
+      "faucet"
+    ],
+    "unicode": "💧"
+  },
+  {
+    "name": "zzz",
+    "tags": [
+      "zzz",
+      "sleepy",
+      "tired"
+    ],
+    "unicode": "💤"
+  },
+  {
+    "name": "ear",
+    "tags": [
+      "ear",
+      "face",
+      "hear",
+      "sound",
+      "listen"
+    ],
+    "unicode": "👂"
+  },
+  {
+    "name": "eyes",
+    "tags": [
+      "eyes",
+      "look",
+      "watch",
+      "stalk",
+      "peek"
+    ],
+    "unicode": "👀"
+  },
+  {
+    "name": "nose",
+    "tags": [
+      "nose",
+      "smell",
+      "sniff"
+    ],
+    "unicode": "👃"
+  },
+  {
+    "name": "tongue",
+    "tags": [
+      "tongue"
+    ],
+    "unicode": "👅"
+  },
+  {
+    "name": "lips",
+    "tags": [
+      "lips",
+      "mouth"
+    ],
+    "unicode": "👄"
+  },
+  {
+    "name": "+1",
+    "tags": [
+      "+1",
+      "thumb",
+      "thumbs",
+      "thumbsup"
+    ]
+  },
+  {
+    "name": "thumbsup",
+    "tags": [
+      "thumbsup",
+      "cool",
+      "hand",
+      "yes"
+    ],
+    "unicode": "👍"
+  },
+  {
+    "name": "-1",
+    "tags": [
+      "-1",
+      "thumb",
+      "thumbs",
+      "thumbsdown"
+    ]
+  },
+  {
+    "name": "thumbsdown",
+    "tags": [
+      "thumbsdown",
+      "hand",
+      "no"
+    ],
+    "unicode": "👎"
+  },
+  {
+    "name": "ok_hand",
+    "tags": [
+      "ok_hand",
+      "fingers",
+      "limbs",
+      "perfect"
+    ],
+    "unicode": "👌"
+  },
+  {
+    "name": "punch",
+    "tags": [
+      "punch",
+      "hand",
+      "fist"
+    ],
+    "unicode": "👊"
+  },
+  {
+    "name": "facepunch",
+    "tags": [
+      "facepunch",
+      "angry",
+      "violence",
+      "fist",
+      "hit",
+      "attack"
+    ]
+  },
+  {
+    "name": "fist",
+    "tags": [
+      "fist",
+      "fingers",
+      "hand"
+    ],
+    "unicode": "✊"
+  },
+  {
+    "name": "v",
+    "tags": [
+      "v",
+      "fingers",
+      "ohyeah",
+      "hand",
+      "peace",
+      "victory"
+    ],
+    "unicode": "✌"
+  },
+  {
+    "name": "wave",
+    "tags": [
+      "wave",
+      "hands",
+      "gesture",
+      "goodbye",
+      "solong",
+      "farewell"
+    ],
+    "unicode": "👋"
+  },
+  {
+    "name": "hand",
+    "tags": [
+      "hand",
+      "fingers",
+      "stop",
+      "highfive"
+    ],
+    "unicode": "✋"
+  },
+  {
+    "name": "open_hands",
+    "tags": [
+      "open_hands",
+      "fingers",
+      "butterfly"
+    ],
+    "unicode": "👐"
+  },
+  {
+    "name": "point_up",
+    "tags": [
+      "point_up",
+      "hand",
+      "fingers",
+      "direction"
+    ],
+    "unicode": "☝"
+  },
+  {
+    "name": "point_down",
+    "tags": [
+      "point_down",
+      "fingers",
+      "hand",
+      "direction"
+    ],
+    "unicode": "👇"
+  },
+  {
+    "name": "point_right",
+    "tags": [
+      "point_right",
+      "fingers",
+      "hand",
+      "direction"
+    ],
+    "unicode": "👉"
+  },
+  {
+    "name": "point_left",
+    "tags": [
+      "point_left",
+      "direction",
+      "fingers",
+      "hand"
+    ],
+    "unicode": "👈"
+  },
+  {
+    "name": "raised_hands",
+    "tags": [
+      "raised_hands",
+      "gesture",
+      "hooray"
+    ],
+    "unicode": "🙌"
+  },
+  {
+    "name": "pray",
+    "tags": [
+      "pray",
+      "please",
+      "hope",
+      "wish",
+      "namaste",
+      "highfive"
+    ],
+    "unicode": "🙏"
+  },
+  {
+    "name": "point_up_2",
+    "tags": [
+      "point_up_2",
+      "fingers",
+      "hand",
+      "direction"
+    ],
+    "unicode": "👆"
+  },
+  {
+    "name": "clap",
+    "tags": [
+      "clap",
+      "hands",
+      "praise",
+      "applause"
+    ],
+    "unicode": "👏"
+  },
+  {
+    "name": "muscle",
+    "tags": [
+      "muscle",
+      "arm",
+      "flex",
+      "hand"
+    ],
+    "unicode": "💪"
+  },
+  {
+    "name": "walking",
+    "tags": [
+      "walking",
+      "man",
+      "human"
+    ],
+    "unicode": "🚶"
+  },
+  {
+    "name": "runner",
+    "tags": [
+      "runner",
+      "man",
+      "walking",
+      "exercise"
+    ],
+    "unicode": "🏃"
+  },
+  {
+    "name": "running",
+    "tags": [
+      "running",
+      "man",
+      "walking",
+      "exercise",
+      "fun"
+    ]
+  },
+  {
+    "name": "dancer",
+    "tags": [
+      "dancer",
+      "female",
+      "girl",
+      "woman",
+      "fun"
+    ],
+    "unicode": "💃"
+  },
+  {
+    "name": "couple",
+    "tags": [
+      "couple",
+      "people",
+      "human",
+      "love",
+      "date",
+      "dating",
+      "like",
+      "affection",
+      "valentines",
+      "marriage"
+    ],
+    "unicode": "👫"
+  },
+  {
+    "name": "family",
+    "tags": [
+      "family",
+      "home",
+      "parents",
+      "child",
+      "mom",
+      "dad",
+      "father",
+      "mother"
+    ],
+    "unicode": "👪"
+  },
+  {
+    "name": "two_men_holding_hands",
+    "tags": [
+      "two_men_holding_hands",
+      "couple",
+      "love",
+      "like",
+      "bromance",
+      "friends"
+    ],
+    "unicode": "👬"
+  },
+  {
+    "name": "two_women_holding_hands",
+    "tags": [
+      "two_women_holding_hands",
+      "friends",
+      "couple",
+      "love",
+      "like",
+      "female"
+    ],
+    "unicode": "👭"
+  },
+  {
+    "name": "couplekiss",
+    "tags": [
+      "couplekiss",
+      "valentines",
+      "love",
+      "like",
+      "dating",
+      "marriage"
+    ],
+    "unicode": "💏"
+  },
+  {
+    "name": "couple_with_heart",
+    "tags": [
+      "couple_with_heart",
+      "love",
+      "like",
+      "affection",
+      "human",
+      "dating",
+      "valentines",
+      "marriage"
+    ],
+    "unicode": "💑"
+  },
+  {
+    "name": "dancers",
+    "tags": [
+      "dancers",
+      "female",
+      "bunny",
+      "women",
+      "girls"
+    ],
+    "unicode": "👯"
+  },
+  {
+    "name": "ok_woman",
+    "tags": [
+      "ok_woman",
+      "women",
+      "girl",
+      "female",
+      "pink",
+      "human"
+    ],
+    "unicode": "🙆"
+  },
+  {
+    "name": "no_good",
+    "tags": [
+      "no_good",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "🙅"
+  },
+  {
+    "name": "information_desk_person",
+    "tags": [
+      "information_desk_person",
+      "female",
+      "girl",
+      "woman",
+      "human"
+    ],
+    "unicode": "💁"
+  },
+  {
+    "name": "raised_hand",
+    "tags": [
+      "raised_hand",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "🙋"
+  },
+  {
+    "name": "massage",
+    "tags": [
+      "massage",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "💆"
+  },
+  {
+    "name": "haircut",
+    "tags": [
+      "haircut",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "💇"
+  },
+  {
+    "name": "nail_care",
+    "tags": [
+      "nail_care",
+      "beauty",
+      "manicure"
+    ],
+    "unicode": "💅"
+  },
+  {
+    "name": "bride_with_veil",
+    "tags": [
+      "bride_with_veil",
+      "couple",
+      "marriage",
+      "wedding"
+    ],
+    "unicode": "👰"
+  },
+  {
+    "name": "person_with_pouting_face",
+    "tags": [
+      "person_with_pouting_face",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "🙎"
+  },
+  {
+    "name": "person_frowning",
+    "tags": [
+      "person_frowning",
+      "female",
+      "girl",
+      "woman"
+    ],
+    "unicode": "🙍"
+  },
+  {
+    "name": "bow",
+    "tags": [
+      "bow",
+      "man",
+      "male",
+      "boy"
+    ],
+    "unicode": "🙇"
+  },
+  {
+    "name": "tophat",
+    "tags": [
+      "tophat",
+      "magic",
+      "gentleman",
+      "classy"
+    ],
+    "unicode": "🎩"
+  },
+  {
+    "name": "crown",
+    "tags": [
+      "crown",
+      "king",
+      "kod"
+    ],
+    "unicode": "👑"
+  },
+  {
+    "name": "womans_hat",
+    "tags": [
+      "womans_hat",
+      "fashion",
+      "accessories",
+      "female"
+    ],
+    "unicode": "👒"
+  },
+  {
+    "name": "athletic_shoe",
+    "tags": [
+      "athletic_shoe",
+      "shoes",
+      "sports"
+    ]
+  },
+  {
+    "name": "shoe",
+    "tags": [
+      "shoe",
+      "accessories",
+      "fashion"
+    ]
+  },
+  {
+    "name": "mans_shoe",
+    "tags": [
+      "mans_shoe",
+      "fashion",
+      "male"
+    ],
+    "unicode": "👞"
+  },
+  {
+    "name": "sandal",
+    "tags": [
+      "sandal",
+      "shoes",
+      "fashion"
+    ],
+    "unicode": "👡"
+  },
+  {
+    "name": "high_heel",
+    "tags": [
+      "high_heel",
+      "fashion",
+      "shoes",
+      "female"
+    ],
+    "unicode": "👠"
+  },
+  {
+    "name": "boot",
+    "tags": [
+      "boot",
+      "shoes",
+      "fashion"
+    ],
+    "unicode": "👢"
+  },
+  {
+    "name": "tshirt",
+    "tags": [
+      "tshirt",
+      "cloth",
+      "fashion"
+    ]
+  },
+  {
+    "name": "shirt",
+    "tags": [
+      "shirt",
+      "fashion",
+      "cloth"
+    ],
+    "unicode": "👕"
+  },
+  {
+    "name": "necktie",
+    "tags": [
+      "necktie",
+      "shirt",
+      "suitup",
+      "formal",
+      "fashion",
+      "cloth"
+    ],
+    "unicode": "👔"
+  },
+  {
+    "name": "womans_clothes",
+    "tags": [
+      "womans_clothes",
+      "fashion"
+    ],
+    "unicode": "👚"
+  },
+  {
+    "name": "dress",
+    "tags": [
+      "dress",
+      "clothes",
+      "fashion"
+    ],
+    "unicode": "👗"
+  },
+  {
+    "name": "running_shirt_with_sash",
+    "tags": [
+      "running_shirt_with_sash",
+      "play"
+    ],
+    "unicode": "🎽"
+  },
+  {
+    "name": "jeans",
+    "tags": [
+      "jeans",
+      "fashion",
+      "shopping"
+    ],
+    "unicode": "👖"
+  },
+  {
+    "name": "kimono",
+    "tags": [
+      "kimono",
+      "dress",
+      "fashion",
+      "women",
+      "female",
+      "japanese"
+    ],
+    "unicode": "👘"
+  },
+  {
+    "name": "bikini",
+    "tags": [
+      "bikini",
+      "swimming",
+      "female",
+      "woman",
+      "girl",
+      "fashion",
+      "beach"
+    ],
+    "unicode": "👙"
+  },
+  {
+    "name": "briefcase",
+    "tags": [
+      "briefcase",
+      "business",
+      "documents",
+      "work"
+    ],
+    "unicode": "💼"
+  },
+  {
+    "name": "handbag",
+    "tags": [
+      "handbag",
+      "fashion",
+      "bag",
+      "accessory",
+      "accessories"
+    ],
+    "unicode": "👜"
+  },
+  {
+    "name": "pouch",
+    "tags": [
+      "pouch",
+      "bag",
+      "accessories"
+    ],
+    "unicode": "👝"
+  },
+  {
+    "name": "purse",
+    "tags": [
+      "purse",
+      "fashion",
+      "accessories",
+      "money"
+    ],
+    "unicode": "👛"
+  },
+  {
+    "name": "eyeglasses",
+    "tags": [
+      "eyeglasses",
+      "fashion",
+      "accessories"
+    ],
+    "unicode": "👓"
+  },
+  {
+    "name": "ribbon",
+    "tags": [
+      "ribbon",
+      "decoration",
+      "pink",
+      "girl",
+      "bowtie"
+    ],
+    "unicode": "🎀"
+  },
+  {
+    "name": "closed_umbrella",
+    "tags": [
+      "closed_umbrella",
+      "weather",
+      "rain"
+    ],
+    "unicode": "🌂"
+  },
+  {
+    "name": "lipstick",
+    "tags": [
+      "lipstick",
+      "female",
+      "girl",
+      "fashion"
+    ],
+    "unicode": "💄"
+  },
+  {
+    "name": "yellow_heart",
+    "tags": [
+      "yellow_heart",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💛"
+  },
+  {
+    "name": "blue_heart",
+    "tags": [
+      "blue_heart",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💙"
+  },
+  {
+    "name": "purple_heart",
+    "tags": [
+      "purple_heart",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💜"
+  },
+  {
+    "name": "green_heart",
+    "tags": [
+      "green_heart",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💚"
+  },
+  {
+    "name": "heart",
+    "tags": [
+      "heart",
+      "love",
+      "like",
+      "valentines"
+    ],
+    "unicode": "❤"
+  },
+  {
+    "name": "broken_heart",
+    "tags": [
+      "broken_heart",
+      "sad",
+      "sorry"
+    ],
+    "unicode": "💔"
+  },
+  {
+    "name": "heartpulse",
+    "tags": [
+      "heartpulse",
+      "like",
+      "love",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💗"
+  },
+  {
+    "name": "heartbeat",
+    "tags": [
+      "heartbeat",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💓"
+  },
+  {
+    "name": "two_hearts",
+    "tags": [
+      "two_hearts",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💕"
+  },
+  {
+    "name": "sparkling_heart",
+    "tags": [
+      "sparkling_heart",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💖"
+  },
+  {
+    "name": "revolving_hearts",
+    "tags": [
+      "revolving_hearts",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💞"
+  },
+  {
+    "name": "cupid",
+    "tags": [
+      "cupid",
+      "love",
+      "like",
+      "heart",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💘"
+  },
+  {
+    "name": "love_letter",
+    "tags": [
+      "love_letter",
+      "email",
+      "like",
+      "affection",
+      "envelope",
+      "valentines"
+    ],
+    "unicode": "💌"
+  },
+  {
+    "name": "kiss",
+    "tags": [
+      "kiss",
+      "face",
+      "lips",
+      "love",
+      "like",
+      "affection",
+      "valentines"
+    ],
+    "unicode": "💋"
+  },
+  {
+    "name": "ring",
+    "tags": [
+      "ring",
+      "wedding",
+      "propose",
+      "marriage",
+      "valentines"
+    ],
+    "unicode": "💍"
+  },
+  {
+    "name": "gem",
+    "tags": [
+      "gem",
+      "blue",
+      "ruby"
+    ],
+    "unicode": "💎"
+  },
+  {
+    "name": "bust_in_silhouette",
+    "tags": [
+      "bust_in_silhouette",
+      "man",
+      "user",
+      "person",
+      "human"
+    ],
+    "unicode": "👤"
+  },
+  {
+    "name": "busts_in_silhouette",
+    "tags": [
+      "busts_in_silhouette",
+      "man",
+      "user",
+      "person",
+      "human",
+      "group",
+      "team"
+    ],
+    "unicode": "👥"
+  },
+  {
+    "name": "speech_balloon",
+    "tags": [
+      "speech_balloon",
+      "bubble",
+      "words"
+    ],
+    "unicode": "💬"
+  },
+  {
+    "name": "footprints",
+    "tags": [
+      "footprints",
+      "feet"
+    ]
+  },
+  {
+    "name": "thought_balloon",
+    "tags": [
+      "thought_balloon",
+      "bubble",
+      "cloud",
+      "speech"
+    ],
+    "unicode": "💭"
+  },
+  {
+    "name": "dog",
+    "tags": [
+      "dog",
+      "animal",
+      "friend",
+      "nature",
+      "woof"
+    ],
+    "unicode": "🐶"
+  },
+  {
+    "name": "wolf",
+    "tags": [
+      "wolf",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐺"
+  },
+  {
+    "name": "cat",
+    "tags": [
+      "cat",
+      "animal",
+      "meow"
+    ],
+    "unicode": "🐱"
+  },
+  {
+    "name": "mouse",
+    "tags": [
+      "mouse",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐭"
+  },
+  {
+    "name": "hamster",
+    "tags": [
+      "hamster",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐹"
+  },
+  {
+    "name": "rabbit",
+    "tags": [
+      "rabbit",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐰"
+  },
+  {
+    "name": "frog",
+    "tags": [
+      "frog",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐸"
+  },
+  {
+    "name": "tiger",
+    "tags": [
+      "tiger",
+      "animal"
+    ],
+    "unicode": "🐯"
+  },
+  {
+    "name": "koala",
+    "tags": [
+      "koala",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐨"
+  },
+  {
+    "name": "bear",
+    "tags": [
+      "bear",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐻"
+  },
+  {
+    "name": "pig",
+    "tags": [
+      "pig",
+      "animal",
+      "oink"
+    ],
+    "unicode": "🐷"
+  },
+  {
+    "name": "pig_nose",
+    "tags": [
+      "pig_nose",
+      "animal",
+      "oink"
+    ],
+    "unicode": "🐽"
+  },
+  {
+    "name": "cow",
+    "tags": [
+      "cow",
+      "beef",
+      "ox",
+      "animal"
+    ],
+    "unicode": "🐮"
+  },
+  {
+    "name": "boar",
+    "tags": [
+      "boar",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐗"
+  },
+  {
+    "name": "monkey",
+    "tags": [
+      "monkey",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐒"
+  },
+  {
+    "name": "monkey_face",
+    "tags": [
+      "monkey_face",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐵"
+  },
+  {
+    "name": "horse",
+    "tags": [
+      "horse",
+      "animal"
+    ],
+    "unicode": "🐴"
+  },
+  {
+    "name": "sheep",
+    "tags": [
+      "sheep",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐑"
+  },
+  {
+    "name": "elephant",
+    "tags": [
+      "elephant",
+      "animal",
+      "nature",
+      "nose",
+      "thailand"
+    ],
+    "unicode": "🐘"
+  },
+  {
+    "name": "panda_face",
+    "tags": [
+      "panda_face",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐼"
+  },
+  {
+    "name": "penguin",
+    "tags": [
+      "penguin",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐧"
+  },
+  {
+    "name": "bird",
+    "tags": [
+      "bird",
+      "animal",
+      "nature",
+      "fly",
+      "tweet"
+    ],
+    "unicode": "🐦"
+  },
+  {
+    "name": "baby_chick",
+    "tags": [
+      "baby_chick",
+      "animal",
+      "chicken"
+    ],
+    "unicode": "🐤"
+  },
+  {
+    "name": "hatched_chick",
+    "tags": [
+      "hatched_chick",
+      "chicken",
+      "baby"
+    ],
+    "unicode": "🐥"
+  },
+  {
+    "name": "hatching_chick",
+    "tags": [
+      "hatching_chick",
+      "chicken",
+      "egg",
+      "born"
+    ],
+    "unicode": "🐣"
+  },
+  {
+    "name": "chicken",
+    "tags": [
+      "chicken",
+      "animal",
+      "cluck"
+    ],
+    "unicode": "🐔"
+  },
+  {
+    "name": "snake",
+    "tags": [
+      "snake",
+      "animal",
+      "evil"
+    ],
+    "unicode": "🐍"
+  },
+  {
+    "name": "turtle",
+    "tags": [
+      "turtle",
+      "animal",
+      "slow"
+    ],
+    "unicode": "🐢"
+  },
+  {
+    "name": "bug",
+    "tags": [
+      "bug",
+      "insect",
+      "nature"
+    ],
+    "unicode": "🐛"
+  },
+  {
+    "name": "honeybee",
+    "tags": [
+      "honeybee",
+      "animal",
+      "insect"
+    ],
+    "unicode": "🐝"
+  },
+  {
+    "name": "bee",
+    "tags": [
+      "bee",
+      "animal",
+      "insect"
+    ]
+  },
+  {
+    "name": "ant",
+    "tags": [
+      "ant",
+      "animal",
+      "insect"
+    ],
+    "unicode": "🐜"
+  },
+  {
+    "name": "beetle",
+    "tags": [
+      "beetle",
+      "insect",
+      "nature"
+    ],
+    "unicode": "🐞"
+  },
+  {
+    "name": "snail",
+    "tags": [
+      "snail",
+      "slow",
+      "animal",
+      "shell"
+    ],
+    "unicode": "🐌"
+  },
+  {
+    "name": "octopus",
+    "tags": [
+      "octopus",
+      "animal",
+      "creature",
+      "ocean",
+      "sea"
+    ],
+    "unicode": "🐙"
+  },
+  {
+    "name": "shell",
+    "tags": [
+      "shell",
+      "nature",
+      "sea",
+      "beach"
+    ],
+    "unicode": "🐚"
+  },
+  {
+    "name": "tropical_fish",
+    "tags": [
+      "tropical_fish",
+      "animal",
+      "swim"
+    ],
+    "unicode": "🐠"
+  },
+  {
+    "name": "fish",
+    "tags": [
+      "fish",
+      "animal",
+      "food",
+      "nature"
+    ],
+    "unicode": "🐟"
+  },
+  {
+    "name": "dolphin",
+    "tags": [
+      "dolphin",
+      "animal",
+      "nature",
+      "fish"
+    ],
+    "unicode": "🐬"
+  },
+  {
+    "name": "whale",
+    "tags": [
+      "whale",
+      "animal",
+      "nature",
+      "sea"
+    ],
+    "unicode": "🐳"
+  },
+  {
+    "name": "whale2",
+    "tags": [
+      "whale2",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐋"
+  },
+  {
+    "name": "cow2",
+    "tags": [
+      "cow2",
+      "beef",
+      "ox",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐄"
+  },
+  {
+    "name": "ram",
+    "tags": [
+      "ram",
+      "animal",
+      "sheep",
+      "nature"
+    ],
+    "unicode": "🐏"
+  },
+  {
+    "name": "rat",
+    "tags": [
+      "rat",
+      "animal",
+      "mouse"
+    ],
+    "unicode": "🐀"
+  },
+  {
+    "name": "water_buffalo",
+    "tags": [
+      "water_buffalo",
+      "animal",
+      "nature",
+      "ox",
+      "cow"
+    ],
+    "unicode": "🐃"
+  },
+  {
+    "name": "tiger2",
+    "tags": [
+      "tiger2",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐅"
+  },
+  {
+    "name": "rabbit2",
+    "tags": [
+      "rabbit2",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐇"
+  },
+  {
+    "name": "dragon",
+    "tags": [
+      "dragon",
+      "animal",
+      "myth",
+      "nature",
+      "chinese",
+      "green"
+    ],
+    "unicode": "🐉"
+  },
+  {
+    "name": "racehorse",
+    "tags": [
+      "racehorse",
+      "animal",
+      "gamble"
+    ],
+    "unicode": "🐎"
+  },
+  {
+    "name": "goat",
+    "tags": [
+      "goat",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐐"
+  },
+  {
+    "name": "rooster",
+    "tags": [
+      "rooster",
+      "animal",
+      "nature",
+      "chicken"
+    ],
+    "unicode": "🐓"
+  },
+  {
+    "name": "dog2",
+    "tags": [
+      "dog2",
+      "animal",
+      "nature",
+      "friend",
+      "doge"
+    ],
+    "unicode": "🐕"
+  },
+  {
+    "name": "pig2",
+    "tags": [
+      "pig2",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐖"
+  },
+  {
+    "name": "mouse2",
+    "tags": [
+      "mouse2",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐁"
+  },
+  {
+    "name": "ox",
+    "tags": [
+      "ox",
+      "animal",
+      "cow",
+      "beef"
+    ],
+    "unicode": "🐂"
+  },
+  {
+    "name": "dragon_face",
+    "tags": [
+      "dragon_face",
+      "animal",
+      "myth",
+      "nature",
+      "chinese",
+      "green"
+    ],
+    "unicode": "🐲"
+  },
+  {
+    "name": "blowfish",
+    "tags": [
+      "blowfish",
+      "nature",
+      "food",
+      "sea",
+      "ocean"
+    ],
+    "unicode": "🐡"
+  },
+  {
+    "name": "crocodile",
+    "tags": [
+      "crocodile",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐊"
+  },
+  {
+    "name": "camel",
+    "tags": [
+      "camel",
+      "animal",
+      "nature",
+      "hot"
+    ],
+    "unicode": "🐫"
+  },
+  {
+    "name": "dromedary_camel",
+    "tags": [
+      "dromedary_camel",
+      "animal",
+      "hot",
+      "desert"
+    ],
+    "unicode": "🐪"
+  },
+  {
+    "name": "leopard",
+    "tags": [
+      "leopard",
+      "animal",
+      "nature"
+    ],
+    "unicode": "🐆"
+  },
+  {
+    "name": "cat2",
+    "tags": [
+      "cat2",
+      "animal",
+      "meow"
+    ],
+    "unicode": "🐈"
+  },
+  {
+    "name": "poodle",
+    "tags": [
+      "poodle",
+      "dog",
+      "animal",
+      "101",
+      "nature"
+    ],
+    "unicode": "🐩"
+  },
+  {
+    "name": "paw_prints",
+    "tags": [
+      "paw_prints",
+      "animal"
+    ],
+    "unicode": "🐾"
+  },
+  {
+    "name": "bouquet",
+    "tags": [
+      "bouquet",
+      "flowers",
+      "nature"
+    ],
+    "unicode": "💐"
+  },
+  {
+    "name": "cherry_blossom",
+    "tags": [
+      "cherry_blossom",
+      "flower",
+      "nature",
+      "plant"
+    ],
+    "unicode": "🌸"
+  },
+  {
+    "name": "tulip",
+    "tags": [
+      "tulip",
+      "flowers",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🌷"
+  },
+  {
+    "name": "four_leaf_clover",
+    "tags": [
+      "four_leaf_clover",
+      "vegetable",
+      "plant",
+      "nature",
+      "lucky"
+    ],
+    "unicode": "🍀"
+  },
+  {
+    "name": "rose",
+    "tags": [
+      "rose",
+      "flowers",
+      "valentines",
+      "love"
+    ],
+    "unicode": "🌹"
+  },
+  {
+    "name": "sunflower",
+    "tags": [
+      "sunflower",
+      "nature",
+      "plant"
+    ],
+    "unicode": "🌻"
+  },
+  {
+    "name": "hibiscus",
+    "tags": [
+      "hibiscus",
+      "plant",
+      "vegetable",
+      "flowers"
+    ],
+    "unicode": "🌺"
+  },
+  {
+    "name": "maple_leaf",
+    "tags": [
+      "maple_leaf",
+      "nature",
+      "plant",
+      "vegetable"
+    ],
+    "unicode": "🍁"
+  },
+  {
+    "name": "leaves",
+    "tags": [
+      "leaves",
+      "nature",
+      "plant",
+      "tree",
+      "vegetable",
+      "grass",
+      "lawn"
+    ],
+    "unicode": "🍃"
+  },
+  {
+    "name": "fallen_leaf",
+    "tags": [
+      "fallen_leaf",
+      "nature",
+      "plant",
+      "vegetable",
+      "leaves"
+    ],
+    "unicode": "🍂"
+  },
+  {
+    "name": "herb",
+    "tags": [
+      "herb",
+      "vegetable",
+      "plant",
+      "medicine",
+      "weed",
+      "grass",
+      "lawn"
+    ],
+    "unicode": "🌿"
+  },
+  {
+    "name": "ear_of_rice",
+    "tags": [
+      "ear_of_rice",
+      "nature",
+      "plant"
+    ],
+    "unicode": "🌾"
+  },
+  {
+    "name": "mushroom",
+    "tags": [
+      "mushroom",
+      "plant",
+      "vegetable"
+    ],
+    "unicode": "🍄"
+  },
+  {
+    "name": "cactus",
+    "tags": [
+      "cactus",
+      "vegetable",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🌵"
+  },
+  {
+    "name": "palm_tree",
+    "tags": [
+      "palm_tree",
+      "plant",
+      "vegetable",
+      "nature"
+    ],
+    "unicode": "🌴"
+  },
+  {
+    "name": "evergreen_tree",
+    "tags": [
+      "evergreen_tree",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🌲"
+  },
+  {
+    "name": "deciduous_tree",
+    "tags": [
+      "deciduous_tree",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🌳"
+  },
+  {
+    "name": "chestnut",
+    "tags": [
+      "chestnut",
+      "food",
+      "squirrel"
+    ],
+    "unicode": "🌰"
+  },
+  {
+    "name": "seedling",
+    "tags": [
+      "seedling",
+      "plant",
+      "nature",
+      "grass",
+      "lawn"
+    ],
+    "unicode": "🌱"
+  },
+  {
+    "name": "blossom",
+    "tags": [
+      "blossom",
+      "nature",
+      "flowers",
+      "yellow"
+    ],
+    "unicode": "🌼"
+  },
+  {
+    "name": "globe_with_meridians",
+    "tags": [
+      "globe_with_meridians",
+      "earth",
+      "international",
+      "world"
+    ],
+    "unicode": "🌐"
+  },
+  {
+    "name": "sun_with_face",
+    "tags": [
+      "sun_with_face",
+      "morning"
+    ],
+    "unicode": "🌞"
+  },
+  {
+    "name": "full_moon_with_face",
+    "tags": [
+      "full_moon_with_face",
+      "night"
+    ],
+    "unicode": "🌝"
+  },
+  {
+    "name": "new_moon_with_face",
+    "tags": [
+      "new_moon_with_face",
+      "nature"
+    ],
+    "unicode": "🌚"
+  },
+  {
+    "name": "new_moon",
+    "tags": [
+      "new_moon",
+      "nature"
+    ],
+    "unicode": "🌑"
+  },
+  {
+    "name": "waxing_crescent_moon",
+    "tags": [
+      "waxing_crescent_moon",
+      "nature"
+    ],
+    "unicode": "🌒"
+  },
+  {
+    "name": "first_quarter_moon",
+    "tags": [
+      "first_quarter_moon",
+      "nature"
+    ],
+    "unicode": "🌓"
+  },
+  {
+    "name": "moon",
+    "tags": [
+      "moon",
+      "nature",
+      "night",
+      "sky"
+    ],
+    "unicode": "🌙"
+  },
+  {
+    "name": "full_moon",
+    "tags": [
+      "full_moon",
+      "nature"
+    ],
+    "unicode": "🌕"
+  },
+  {
+    "name": "waning_gibbous_moon",
+    "tags": [
+      "waning_gibbous_moon",
+      "nature"
+    ],
+    "unicode": "🌖"
+  },
+  {
+    "name": "last_quarter_moon",
+    "tags": [
+      "last_quarter_moon"
+    ],
+    "unicode": "🌗"
+  },
+  {
+    "name": "waning_crescent_moon",
+    "tags": [
+      "waning_crescent_moon",
+      "nature"
+    ],
+    "unicode": "🌘"
+  },
+  {
+    "name": "last_quarter_moon_with_face",
+    "tags": [
+      "last_quarter_moon_with_face"
+    ],
+    "unicode": "🌜"
+  },
+  {
+    "name": "first_quarter_moon_with_face",
+    "tags": [
+      "first_quarter_moon_with_face"
+    ],
+    "unicode": "🌛"
+  },
+  {
+    "name": "crescent_moon",
+    "tags": [
+      "crescent_moon",
+      "night"
+    ]
+  },
+  {
+    "name": "earth_africa",
+    "tags": [
+      "earth_africa",
+      "globe",
+      "world",
+      "international"
+    ],
+    "unicode": "🌍"
+  },
+  {
+    "name": "earth_americas",
+    "tags": [
+      "earth_americas",
+      "globe",
+      "world",
+      "USA",
+      "international"
+    ],
+    "unicode": "🌎"
+  },
+  {
+    "name": "earth_asia",
+    "tags": [
+      "earth_asia",
+      "globe",
+      "world",
+      "east",
+      "international"
+    ],
+    "unicode": "🌏"
+  },
+  {
+    "name": "volcano",
+    "tags": [
+      "volcano",
+      "photo"
+    ],
+    "unicode": "🌋"
+  },
+  {
+    "name": "milky_way",
+    "tags": [
+      "milky_way",
+      "photo"
+    ],
+    "unicode": "🌌"
+  },
+  {
+    "name": "stars",
+    "tags": [
+      "stars",
+      "night",
+      "photo"
+    ],
+    "unicode": "🌃"
+  },
+  {
+    "name": "star",
+    "tags": [
+      "star",
+      "night"
+    ],
+    "unicode": "⭐"
+  },
+  {
+    "name": "sunny",
+    "tags": [
+      "sunny",
+      "weather",
+      "brightness"
+    ],
+    "unicode": "☀"
+  },
+  {
+    "name": "partly_sunny",
+    "tags": [
+      "partly_sunny",
+      "weather",
+      "nature",
+      "cloud",
+      "morning"
+    ],
+    "unicode": "⛅"
+  },
+  {
+    "name": "cloud",
+    "tags": [
+      "cloud",
+      "weather",
+      "sky"
+    ],
+    "unicode": "☁"
+  },
+  {
+    "name": "zap",
+    "tags": [
+      "zap",
+      "thunder",
+      "weather",
+      "lightning bolt"
+    ],
+    "unicode": "⚡"
+  },
+  {
+    "name": "umbrella",
+    "tags": [
+      "umbrella",
+      "rain",
+      "weather"
+    ],
+    "unicode": "☔"
+  },
+  {
+    "name": "snowflake",
+    "tags": [
+      "snowflake",
+      "winter",
+      "season",
+      "cold",
+      "weather",
+      "christmas",
+      "xmas"
+    ],
+    "unicode": "❄"
+  },
+  {
+    "name": "snowman",
+    "tags": [
+      "snowman",
+      "winter",
+      "season",
+      "cold",
+      "weather",
+      "christmas",
+      "xmas"
+    ],
+    "unicode": "⛄"
+  },
+  {
+    "name": "cyclone",
+    "tags": [
+      "cyclone",
+      "swirl"
+    ],
+    "unicode": "🌀"
+  },
+  {
+    "name": "foggy",
+    "tags": [
+      "foggy",
+      "photo"
+    ],
+    "unicode": "🌁"
+  },
+  {
+    "name": "rainbow",
+    "tags": [
+      "rainbow",
+      "nature",
+      "happy",
+      "unicorn",
+      "photo",
+      "sky"
+    ],
+    "unicode": "🌈"
+  },
+  {
+    "name": "ocean",
+    "tags": [
+      "ocean",
+      "sea",
+      "water",
+      "wave"
+    ],
+    "unicode": "🌊"
+  },
+  {
+    "name": "100",
+    "tags": [
+      "100",
+      "score",
+      "perfect",
+      "numbers"
+    ],
+    "unicode": "💯"
+  },
+  {
+    "name": "1234",
+    "tags": [
+      "1234",
+      "numbers",
+      "blue-square"
+    ],
+    "unicode": "🔢"
+  },
+  {
+    "name": "8ball",
+    "tags": [
+      "8ball",
+      "pool"
+    ],
+    "unicode": "🎱"
+  },
+  {
+    "name": "a",
+    "tags": [
+      "a",
+      "red-square",
+      "alphabet",
+      "letter"
+    ],
+    "unicode": "🅰"
+  },
+  {
+    "name": "ab",
+    "tags": [
+      "ab",
+      "red-square",
+      "alphabet"
+    ],
+    "unicode": "🆎"
+  },
+  {
+    "name": "abc",
+    "tags": [
+      "abc",
+      "blue-square",
+      "alphabet"
+    ],
+    "unicode": "🔤"
+  },
+  {
+    "name": "abcd",
+    "tags": [
+      "abcd",
+      "blue-square",
+      "alphabet"
+    ],
+    "unicode": "🔡"
+  },
+  {
+    "name": "accept",
+    "tags": [
+      "accept",
+      "ok",
+      "good",
+      "chinese",
+      "kanji",
+      "agree",
+      "yes"
+    ],
+    "unicode": "🉑"
+  },
+  {
+    "name": "aerial_tramway",
+    "tags": [
+      "aerial_tramway",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚡"
+  },
+  {
+    "name": "airplane",
+    "tags": [
+      "airplane",
+      "vehicle",
+      "transportation",
+      "flight"
+    ],
+    "unicode": "✈"
+  },
+  {
+    "name": "alarm_clock",
+    "tags": [
+      "alarm_clock",
+      "time",
+      "wake"
+    ],
+    "unicode": "⏰"
+  },
+  {
+    "name": "ambulance",
+    "tags": [
+      "ambulance",
+      "health",
+      "911"
+    ],
+    "unicode": "🚑"
+  },
+  {
+    "name": "anchor",
+    "tags": [
+      "anchor",
+      "ship",
+      "ferry"
+    ],
+    "unicode": "⚓"
+  },
+  {
+    "name": "clock7",
+    "tags": [
+      "clock7",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕖"
+  },
+  {
+    "name": "clock730",
+    "tags": [
+      "clock730",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕢"
+  },
+  {
+    "name": "clock8",
+    "tags": [
+      "clock8",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕗"
+  },
+  {
+    "name": "clock830",
+    "tags": [
+      "clock830",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕣"
+  },
+  {
+    "name": "clock9",
+    "tags": [
+      "clock9",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕘"
+  },
+  {
+    "name": "clock930",
+    "tags": [
+      "clock930",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕤"
+  },
+  {
+    "name": "closed_book",
+    "tags": [
+      "closed_book",
+      "read",
+      "library",
+      "knowledge"
+    ],
+    "unicode": "📕"
+  },
+  {
+    "name": "closed_lock_with_key",
+    "tags": [
+      "closed_lock_with_key",
+      "security",
+      "privacy"
+    ],
+    "unicode": "🔐"
+  },
+  {
+    "name": "clubs",
+    "tags": [
+      "clubs",
+      "poker",
+      "cards"
+    ],
+    "unicode": "♣"
+  },
+  {
+    "name": "cn",
+    "tags": [
+      "cn",
+      "china",
+      "chinese",
+      "prc"
+    ],
+    "unicode": "🇨🇳"
+  },
+  {
+    "name": "cocktail",
+    "tags": [
+      "cocktail",
+      "drink",
+      "drunk",
+      "alcohol",
+      "beverage"
+    ],
+    "unicode": "🍸"
+  },
+  {
+    "name": "coffee",
+    "tags": [
+      "coffee",
+      "drink",
+      "beverage",
+      "cafe",
+      "espresso"
+    ],
+    "unicode": "☕"
+  },
+  {
+    "name": "computer",
+    "tags": [
+      "computer",
+      "tech",
+      "laptop"
+    ],
+    "unicode": "💻"
+  },
+  {
+    "name": "confetti_ball",
+    "tags": [
+      "confetti_ball",
+      "festival",
+      "party"
+    ],
+    "unicode": "🎊"
+  },
+  {
+    "name": "confused",
+    "tags": [
+      "confused",
+      "indifference"
+    ],
+    "unicode": "😕"
+  },
+  {
+    "name": "hash",
+    "tags": [
+      "hash",
+      "symbol"
+    ],
+    "unicode": "#️⃣"
+  },
+  {
+    "name": "headphones",
+    "tags": [
+      "headphones",
+      "music",
+      "score",
+      "gadgets"
+    ],
+    "unicode": "🎧"
+  },
+  {
+    "name": "heart_decoration",
+    "tags": [
+      "heart_decoration",
+      "purple-square",
+      "love",
+      "like"
+    ],
+    "unicode": "💟"
+  },
+  {
+    "name": "hearts",
+    "tags": [
+      "hearts",
+      "poker",
+      "cards"
+    ],
+    "unicode": "♥"
+  },
+  {
+    "name": "heavy_check_mark",
+    "tags": [
+      "heavy_check_mark",
+      "ok",
+      "nike"
+    ],
+    "unicode": "✔"
+  },
+  {
+    "name": "heavy_division_sign",
+    "tags": [
+      "heavy_division_sign",
+      "divide",
+      "math",
+      "calculation"
+    ],
+    "unicode": "➗"
+  },
+  {
+    "name": "heavy_dollar_sign",
+    "tags": [
+      "heavy_dollar_sign",
+      "money"
+    ],
+    "unicode": "💲"
+  },
+  {
+    "name": "heavy_exclamation_mark",
+    "tags": [
+      "heavy_exclamation_mark",
+      "surprise"
+    ]
+  },
+  {
+    "name": "heavy_minus_sign",
+    "tags": [
+      "heavy_minus_sign",
+      "math",
+      "calculation"
+    ],
+    "unicode": "➖"
+  },
+  {
+    "name": "heavy_multiplication_x",
+    "tags": [
+      "heavy_multiplication_x",
+      "math",
+      "calculation"
+    ],
+    "unicode": "✖"
+  },
+  {
+    "name": "notes",
+    "tags": [
+      "notes",
+      "music",
+      "score"
+    ],
+    "unicode": "🎶"
+  },
+  {
+    "name": "nut_and_bolt",
+    "tags": [
+      "nut_and_bolt",
+      "handy",
+      "tools"
+    ],
+    "unicode": "🔩"
+  },
+  {
+    "name": "o",
+    "tags": [
+      "o",
+      "circle",
+      "round"
+    ],
+    "unicode": "⭕"
+  },
+  {
+    "name": "o2",
+    "tags": [
+      "o2",
+      "alphabet",
+      "red-square",
+      "letter"
+    ],
+    "unicode": "🅾"
+  },
+  {
+    "name": "octocat",
+    "tags": [
+      "octocat",
+      "animal",
+      "octopus",
+      "cat",
+      "github",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "oden",
+    "tags": [
+      "oden",
+      "food",
+      "japanese"
+    ],
+    "unicode": "🍢"
+  },
+  {
+    "name": "office",
+    "tags": [
+      "office",
+      "building",
+      "bureau",
+      "work"
+    ],
+    "unicode": "🏢"
+  },
+  {
+    "name": "ok",
+    "tags": [
+      "ok",
+      "good",
+      "agree",
+      "yes",
+      "blue-square"
+    ],
+    "unicode": "🆗"
+  },
+  {
+    "name": "on",
+    "tags": [
+      "on",
+      "arrow",
+      "words"
+    ],
+    "unicode": "🔛"
+  },
+  {
+    "name": "oncoming_automobile",
+    "tags": [
+      "oncoming_automobile",
+      "car",
+      "vehicle",
+      "transportation"
+    ],
+    "unicode": "🚘"
+  },
+  {
+    "name": "oncoming_bus",
+    "tags": [
+      "oncoming_bus",
+      "vehicle",
+      "transportation"
+    ],
+    "unicode": "🚍"
+  },
+  {
+    "name": "oncoming_police_car",
+    "tags": [
+      "oncoming_police_car",
+      "vehicle",
+      "law",
+      "enforcement"
+    ],
+    "unicode": "🚔"
+  },
+  {
+    "name": "oncoming_taxi",
+    "tags": [
+      "oncoming_taxi",
+      "vehicle",
+      "cars",
+      "uber"
+    ],
+    "unicode": "🚖"
+  },
+  {
+    "name": "one",
+    "tags": [
+      "one",
+      "blue-square",
+      "numbers",
+      "1"
+    ],
+    "unicode": "1️⃣"
+  },
+  {
+    "name": "smoking",
+    "tags": [
+      "smoking",
+      "kills",
+      "tobacco",
+      "cigarette"
+    ],
+    "unicode": "🚬"
+  },
+  {
+    "name": "snowboarder",
+    "tags": [
+      "snowboarder",
+      "sports"
+    ],
+    "unicode": "🏂"
+  },
+  {
+    "name": "soccer",
+    "tags": [
+      "soccer",
+      "sports",
+      "balls"
+    ],
+    "unicode": "⚽"
+  },
+  {
+    "name": "soon",
+    "tags": [
+      "soon",
+      "arrow",
+      "words"
+    ],
+    "unicode": "🔜"
+  },
+  {
+    "name": "sos",
+    "tags": [
+      "sos",
+      "help",
+      "red-square",
+      "words",
+      "emergency"
+    ],
+    "unicode": "🆘"
+  },
+  {
+    "name": "sound",
+    "tags": [
+      "sound",
+      "volume",
+      "speaker"
+    ],
+    "unicode": "🔉"
+  },
+  {
+    "name": "space_invader",
+    "tags": [
+      "space_invader",
+      "game"
+    ],
+    "unicode": "👾"
+  },
+  {
+    "name": "spades",
+    "tags": [
+      "spades",
+      "poker",
+      "cards"
+    ],
+    "unicode": "♠"
+  },
+  {
+    "name": "spaghetti",
+    "tags": [
+      "spaghetti",
+      "food",
+      "italian",
+      "noodle"
+    ],
+    "unicode": "🍝"
+  },
+  {
+    "name": "sparkle",
+    "tags": [
+      "sparkle",
+      "stars",
+      "green-square"
+    ]
+  },
+  {
+    "name": "sparkler",
+    "tags": [
+      "sparkler",
+      "stars",
+      "night",
+      "shine"
+    ],
+    "unicode": "🎇"
+  },
+  {
+    "name": "congratulations",
+    "tags": [
+      "congratulations",
+      "chinese",
+      "kanji",
+      "japanese"
+    ],
+    "unicode": "㊗"
+  },
+  {
+    "name": "heavy_plus_sign",
+    "tags": [
+      "heavy_plus_sign",
+      "math",
+      "calculation"
+    ],
+    "unicode": "➕"
+  },
+  {
+    "name": "open_book",
+    "tags": [
+      "open_book",
+      "read",
+      "library",
+      "knowledge"
+    ]
+  },
+  {
+    "name": "apple",
+    "tags": [
+      "apple",
+      "fruit",
+      "mac"
+    ],
+    "unicode": "🍎"
+  },
+  {
+    "name": "construction",
+    "tags": [
+      "construction",
+      "wip"
+    ],
+    "unicode": "🚧"
+  },
+  {
+    "name": "helicopter",
+    "tags": [
+      "helicopter",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚁"
+  },
+  {
+    "name": "open_file_folder",
+    "tags": [
+      "open_file_folder",
+      "documents"
+    ],
+    "unicode": "📂"
+  },
+  {
+    "name": "speaker",
+    "tags": [
+      "speaker",
+      "volume",
+      "sound"
+    ],
+    "unicode": "🔊"
+  },
+  {
+    "name": "aquarius",
+    "tags": [
+      "aquarius",
+      "sign",
+      "purple-square",
+      "zodiac"
+    ],
+    "unicode": "♒"
+  },
+  {
+    "name": "aries",
+    "tags": [
+      "aries",
+      "sign",
+      "purple-square",
+      "zodiac"
+    ],
+    "unicode": "♈"
+  },
+  {
+    "name": "convenience_store",
+    "tags": [
+      "convenience_store",
+      "building"
+    ],
+    "unicode": "🏪"
+  },
+  {
+    "name": "speedboat",
+    "tags": [
+      "speedboat",
+      "ship",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚤"
+  },
+  {
+    "name": "arrow_backward",
+    "tags": [
+      "arrow_backward",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "◀"
+  },
+  {
+    "name": "cookie",
+    "tags": [
+      "cookie",
+      "food",
+      "snack",
+      "oreo",
+      "chocolate"
+    ],
+    "unicode": "🍪"
+  },
+  {
+    "name": "high_brightness",
+    "tags": [
+      "high_brightness",
+      "sun",
+      "light"
+    ],
+    "unicode": "🔆"
+  },
+  {
+    "name": "ophiuchus",
+    "tags": [
+      "ophiuchus",
+      "sign",
+      "purple-square"
+    ],
+    "unicode": "⛎"
+  },
+  {
+    "name": "squirrel",
+    "tags": [
+      "squirrel",
+      "animal",
+      "sherlock",
+      "inspector",
+      "dectective"
+    ]
+  },
+  {
+    "name": "arrow_double_down",
+    "tags": [
+      "arrow_double_down",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "⏬"
+  },
+  {
+    "name": "cool",
+    "tags": [
+      "cool",
+      "words",
+      "blue-square"
+    ],
+    "unicode": "🆒"
+  },
+  {
+    "name": "orange_book",
+    "tags": [
+      "orange_book",
+      "read",
+      "library",
+      "knowledge"
+    ],
+    "unicode": "📙"
+  },
+  {
+    "name": "arrow_double_up",
+    "tags": [
+      "arrow_double_up",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "⏫"
+  },
+  {
+    "name": "hocho",
+    "tags": [
+      "hocho",
+      "knife",
+      "cut"
+    ],
+    "unicode": "🔪"
+  },
+  {
+    "name": "outbox_tray",
+    "tags": [
+      "outbox_tray",
+      "inbox",
+      "email"
+    ],
+    "unicode": "📤"
+  },
+  {
+    "name": "arrow_down",
+    "tags": [
+      "arrow_down",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "⬇"
+  },
+  {
+    "name": "copyright",
+    "tags": [
+      "copyright",
+      "ip",
+      "license"
+    ],
+    "unicode": "©"
+  },
+  {
+    "name": "honey_pot",
+    "tags": [
+      "honey_pot",
+      "bees"
+    ],
+    "unicode": "🍯"
+  },
+  {
+    "name": "arrow_down_small",
+    "tags": [
+      "arrow_down_small",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "🔽"
+  },
+  {
+    "name": "corn",
+    "tags": [
+      "corn",
+      "food",
+      "vegetable",
+      "plant"
+    ],
+    "unicode": "🌽"
+  },
+  {
+    "name": "package",
+    "tags": [
+      "package",
+      "mail",
+      "gift"
+    ]
+  },
+  {
+    "name": "station",
+    "tags": [
+      "station",
+      "transportation",
+      "vehicle",
+      "public"
+    ],
+    "unicode": "🚉"
+  },
+  {
+    "name": "arrow_forward",
+    "tags": [
+      "arrow_forward",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "▶"
+  },
+  {
+    "name": "page_facing_up",
+    "tags": [
+      "page_facing_up",
+      "documents"
+    ],
+    "unicode": "📄"
+  },
+  {
+    "name": "statue_of_liberty",
+    "tags": [
+      "statue_of_liberty",
+      "american",
+      "newyork"
+    ],
+    "unicode": "🗽"
+  },
+  {
+    "name": "arrow_heading_down",
+    "tags": [
+      "arrow_heading_down",
+      "blue-square",
+      "arrow"
+    ],
+    "unicode": "⤵"
+  },
+  {
+    "name": "page_with_curl",
+    "tags": [
+      "page_with_curl",
+      "documents"
+    ],
+    "unicode": "📃"
+  },
+  {
+    "name": "steam_locomotive",
+    "tags": [
+      "steam_locomotive",
+      "transportation",
+      "vehicle",
+      "train"
+    ],
+    "unicode": "🚂"
+  },
+  {
+    "name": "arrow_heading_up",
+    "tags": [
+      "arrow_heading_up",
+      "blue-square",
+      "arrow"
+    ],
+    "unicode": "⤴"
+  },
+  {
+    "name": "hospital",
+    "tags": [
+      "hospital",
+      "building",
+      "health",
+      "surgery",
+      "doctor"
+    ],
+    "unicode": "🏥"
+  },
+  {
+    "name": "pager",
+    "tags": [
+      "pager",
+      "bbcall",
+      "oldschool"
+    ],
+    "unicode": "📟"
+  },
+  {
+    "name": "stew",
+    "tags": [
+      "stew",
+      "food"
+    ],
+    "unicode": "🍲"
+  },
+  {
+    "name": "arrow_left",
+    "tags": [
+      "arrow_left",
+      "blue-square",
+      "arrow"
+    ],
+    "unicode": "⬅"
+  },
+  {
+    "name": "hotel",
+    "tags": [
+      "hotel",
+      "building",
+      "whotel",
+      "accomodation",
+      "checkin"
+    ],
+    "unicode": "🏨"
+  },
+  {
+    "name": "straight_ruler",
+    "tags": [
+      "straight_ruler",
+      "stationery"
+    ],
+    "unicode": "📏"
+  },
+  {
+    "name": "arrow_lower_left",
+    "tags": [
+      "arrow_lower_left",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "↙"
+  },
+  {
+    "name": "hotsprings",
+    "tags": [
+      "hotsprings",
+      "bath"
+    ],
+    "unicode": "♨"
+  },
+  {
+    "name": "strawberry",
+    "tags": [
+      "strawberry",
+      "fruit",
+      "food",
+      "nature"
+    ],
+    "unicode": "🍓"
+  },
+  {
+    "name": "arrow_lower_right",
+    "tags": [
+      "arrow_lower_right",
+      "arrow",
+      "blue-square"
+    ],
+    "unicode": "↘"
+  },
+  {
+    "name": "credit_card",
+    "tags": [
+      "credit_card",
+      "money",
+      "pay",
+      "dollar",
+      "bill"
+    ],
+    "unicode": "💳"
+  },
+  {
+    "name": "hourglass",
+    "tags": [
+      "hourglass",
+      "time",
+      "clock",
+      "oldschool"
+    ],
+    "unicode": "⌛"
+  },
+  {
+    "name": "paperclip",
+    "tags": [
+      "paperclip",
+      "documents",
+      "stationery"
+    ],
+    "unicode": "📎"
+  },
+  {
+    "name": "arrow_right",
+    "tags": [
+      "arrow_right",
+      "blue-square"
+    ],
+    "unicode": "➡"
+  },
+  {
+    "name": "hourglass_flowing_sand",
+    "tags": [
+      "hourglass_flowing_sand",
+      "oldschool",
+      "time",
+      "countdown"
+    ],
+    "unicode": "⏳"
+  },
+  {
+    "name": "parking",
+    "tags": [
+      "parking",
+      "cars",
+      "blue-square",
+      "alphabet",
+      "letter"
+    ],
+    "unicode": "🅿"
+  },
+  {
+    "name": "arrow_right_hook",
+    "tags": [
+      "arrow_right_hook",
+      "blue-square"
+    ],
+    "unicode": "↪"
+  },
+  {
+    "name": "house",
+    "tags": [
+      "house",
+      "building",
+      "home"
+    ],
+    "unicode": "🏠"
+  },
+  {
+    "name": "part_alternation_mark",
+    "tags": [
+      "part_alternation_mark",
+      "graph"
+    ],
+    "unicode": "〽"
+  },
+  {
+    "name": "arrow_up",
+    "tags": [
+      "arrow_up",
+      "blue-square"
+    ],
+    "unicode": "⬆"
+  },
+  {
+    "name": "crossed_flags",
+    "tags": [
+      "crossed_flags",
+      "japan"
+    ],
+    "unicode": "🎌"
+  },
+  {
+    "name": "house_with_garden",
+    "tags": [
+      "house_with_garden",
+      "home",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🏡"
+  },
+  {
+    "name": "arrow_up_down",
+    "tags": [
+      "arrow_up_down",
+      "blue-square"
+    ],
+    "unicode": "↕"
+  },
+  {
+    "name": "hurtrealbad",
+    "tags": [
+      "hurtrealbad",
+      "mad"
+    ]
+  },
+  {
+    "name": "passport_control",
+    "tags": [
+      "passport_control",
+      "custom",
+      "blue-square"
+    ],
+    "unicode": "🛂"
+  },
+  {
+    "name": "arrow_up_small",
+    "tags": [
+      "arrow_up_small",
+      "blue-square"
+    ],
+    "unicode": "🔼"
+  },
+  {
+    "name": "arrow_upper_left",
+    "tags": [
+      "arrow_upper_left",
+      "blue-square"
+    ],
+    "unicode": "↖"
+  },
+  {
+    "name": "ice_cream",
+    "tags": [
+      "ice_cream",
+      "food",
+      "hot",
+      "desert"
+    ],
+    "unicode": "🍨"
+  },
+  {
+    "name": "peach",
+    "tags": [
+      "peach",
+      "fruit",
+      "nature",
+      "food"
+    ],
+    "unicode": "🍑"
+  },
+  {
+    "name": "arrow_upper_right",
+    "tags": [
+      "arrow_upper_right",
+      "blue-square"
+    ],
+    "unicode": "↗"
+  },
+  {
+    "name": "crystal_ball",
+    "tags": [
+      "crystal_ball",
+      "disco",
+      "party"
+    ],
+    "unicode": "🔮"
+  },
+  {
+    "name": "icecream",
+    "tags": [
+      "icecream",
+      "food",
+      "hot",
+      "desert"
+    ],
+    "unicode": "🍦"
+  },
+  {
+    "name": "pear",
+    "tags": [
+      "pear",
+      "fruit",
+      "nature"
+    ],
+    "unicode": "🍐"
+  },
+  {
+    "name": "sunrise",
+    "tags": [
+      "sunrise",
+      "morning",
+      "view",
+      "vacation",
+      "photo"
+    ],
+    "unicode": "🌅"
+  },
+  {
+    "name": "arrows_clockwise",
+    "tags": [
+      "arrows_clockwise",
+      "sync"
+    ],
+    "unicode": "🔃"
+  },
+  {
+    "name": "id",
+    "tags": [
+      "id",
+      "purple-square",
+      "words"
+    ],
+    "unicode": "🆔"
+  },
+  {
+    "name": "pencil",
+    "tags": [
+      "pencil",
+      "station",
+      "documents",
+      "paper",
+      "write"
+    ]
+  },
+  {
+    "name": "sunrise_over_mountains",
+    "tags": [
+      "sunrise_over_mountains",
+      "view",
+      "vacation",
+      "photo"
+    ],
+    "unicode": "🌄"
+  },
+  {
+    "name": "arrows_counterclockwise",
+    "tags": [
+      "arrows_counterclockwise",
+      "blue-square",
+      "sync"
+    ],
+    "unicode": "🔄"
+  },
+  {
+    "name": "curly_loop",
+    "tags": [
+      "curly_loop",
+      "scribble"
+    ],
+    "unicode": "➰"
+  },
+  {
+    "name": "ideograph_advantage",
+    "tags": [
+      "ideograph_advantage",
+      "chinese",
+      "kanji",
+      "obtain",
+      "get"
+    ],
+    "unicode": "🉐"
+  },
+  {
+    "name": "pencil2",
+    "tags": [
+      "pencil2",
+      "stationery",
+      "write",
+      "paper"
+    ],
+    "unicode": "✏"
+  },
+  {
+    "name": "surfer",
+    "tags": [
+      "surfer",
+      "sports",
+      "ocean",
+      "sea"
+    ],
+    "unicode": "🏄"
+  },
+  {
+    "name": "art",
+    "tags": [
+      "art",
+      "design",
+      "paint",
+      "draw"
+    ],
+    "unicode": "🎨"
+  },
+  {
+    "name": "currency_exchange",
+    "tags": [
+      "currency_exchange",
+      "money",
+      "dollar"
+    ],
+    "unicode": "💱"
+  },
+  {
+    "name": "sushi",
+    "tags": [
+      "sushi",
+      "food",
+      "japanese"
+    ],
+    "unicode": "🍣"
+  },
+  {
+    "name": "articulated_lorry",
+    "tags": [
+      "articulated_lorry",
+      "vehicle",
+      "cars",
+      "transportation"
+    ],
+    "unicode": "🚛"
+  },
+  {
+    "name": "curry",
+    "tags": [
+      "curry",
+      "food"
+    ],
+    "unicode": "🍛"
+  },
+  {
+    "name": "inbox_tray",
+    "tags": [
+      "inbox_tray",
+      "email"
+    ],
+    "unicode": "📥"
+  },
+  {
+    "name": "suspect",
+    "tags": [
+      "suspect",
+      "mad",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "custard",
+    "tags": [
+      "custard",
+      "desert",
+      "food"
+    ],
+    "unicode": "🍮"
+  },
+  {
+    "name": "incoming_envelope",
+    "tags": [
+      "incoming_envelope",
+      "email",
+      "inbox"
+    ],
+    "unicode": "📨"
+  },
+  {
+    "name": "performing_arts",
+    "tags": [
+      "performing_arts",
+      "acting",
+      "theater",
+      "drama"
+    ],
+    "unicode": "🎭"
+  },
+  {
+    "name": "suspension_railway",
+    "tags": [
+      "suspension_railway",
+      "vehicle",
+      "transportation"
+    ],
+    "unicode": "🚟"
+  },
+  {
+    "name": "customs",
+    "tags": [
+      "customs",
+      "passport",
+      "border"
+    ],
+    "unicode": "🛃"
+  },
+  {
+    "name": "atm",
+    "tags": [
+      "atm",
+      "money",
+      "cash",
+      "blue-square"
+    ],
+    "unicode": "🏧"
+  },
+  {
+    "name": "information_source",
+    "tags": [
+      "information_source",
+      "blue-square",
+      "alphabet",
+      "letter"
+    ],
+    "unicode": "ℹ️"
+  },
+  {
+    "name": "b",
+    "tags": [
+      "b",
+      "red-square",
+      "alphabet",
+      "letter"
+    ],
+    "unicode": "🅱"
+  },
+  {
+    "name": "interrobang",
+    "tags": [
+      "interrobang",
+      "wat",
+      "punctuation"
+    ],
+    "unicode": "⁉"
+  },
+  {
+    "name": "sweet_potato",
+    "tags": [
+      "sweet_potato",
+      "food",
+      "nature"
+    ],
+    "unicode": "🍠"
+  },
+  {
+    "name": "baby_bottle",
+    "tags": [
+      "baby_bottle",
+      "food",
+      "container"
+    ],
+    "unicode": "🍼"
+  },
+  {
+    "name": "dango",
+    "tags": [
+      "dango",
+      "food"
+    ],
+    "unicode": "🍡"
+  },
+  {
+    "name": "iphone",
+    "tags": [
+      "iphone",
+      "technology",
+      "apple",
+      "gadgets"
+    ],
+    "unicode": "📱"
+  },
+  {
+    "name": "phone",
+    "tags": [
+      "phone",
+      "technology",
+      "communication"
+    ],
+    "unicode": "☎"
+  },
+  {
+    "name": "swimmer",
+    "tags": [
+      "swimmer",
+      "sports"
+    ],
+    "unicode": "🏊"
+  },
+  {
+    "name": "dart",
+    "tags": [
+      "dart",
+      "game",
+      "bar"
+    ],
+    "unicode": "🎯"
+  },
+  {
+    "name": "it",
+    "tags": [
+      "it",
+      "italy"
+    ],
+    "unicode": "🇮🇹"
+  },
+  {
+    "name": "symbols",
+    "tags": [
+      "symbols",
+      "blue-square"
+    ],
+    "unicode": "🔣"
+  },
+  {
+    "name": "baby_symbol",
+    "tags": [
+      "baby_symbol",
+      "orange-square",
+      "child"
+    ],
+    "unicode": "🚼"
+  },
+  {
+    "name": "dash",
+    "tags": [
+      "dash",
+      "wind",
+      "air",
+      "fast",
+      "shoo"
+    ],
+    "unicode": "💨"
+  },
+  {
+    "name": "izakaya_lantern",
+    "tags": [
+      "izakaya_lantern",
+      "light"
+    ]
+  },
+  {
+    "name": "syringe",
+    "tags": [
+      "syringe",
+      "health",
+      "hospital",
+      "drugs",
+      "blood",
+      "medicine",
+      "needle"
+    ],
+    "unicode": "💉"
+  },
+  {
+    "name": "back",
+    "tags": [
+      "back",
+      "arrow"
+    ]
+  },
+  {
+    "name": "date",
+    "tags": [
+      "date",
+      "calendar",
+      "schedule"
+    ],
+    "unicode": "📅"
+  },
+  {
+    "name": "jack_o_lantern",
+    "tags": [
+      "jack_o_lantern",
+      "halloween"
+    ],
+    "unicode": "🎃"
+  },
+  {
+    "name": "tada",
+    "tags": [
+      "tada",
+      "party",
+      "contulations"
+    ],
+    "unicode": "🎉"
+  },
+  {
+    "name": "baggage_claim",
+    "tags": [
+      "baggage_claim",
+      "blue-square",
+      "airport",
+      "transport"
+    ],
+    "unicode": "🛄"
+  },
+  {
+    "name": "de",
+    "tags": [
+      "de",
+      "german",
+      "nation"
+    ],
+    "unicode": "🇩🇪"
+  },
+  {
+    "name": "japan",
+    "tags": [
+      "japan",
+      "nation"
+    ],
+    "unicode": "🗾"
+  },
+  {
+    "name": "pill",
+    "tags": [
+      "pill",
+      "health",
+      "medicine"
+    ],
+    "unicode": "💊"
+  },
+  {
+    "name": "tanabata_tree",
+    "tags": [
+      "tanabata_tree",
+      "plant",
+      "nature"
+    ],
+    "unicode": "🎋"
+  },
+  {
+    "name": "balloon",
+    "tags": [
+      "balloon",
+      "party"
+    ],
+    "unicode": "🎈"
+  },
+  {
+    "name": "japanese_castle",
+    "tags": [
+      "japanese_castle",
+      "photo",
+      "building"
+    ],
+    "unicode": "🏯"
+  },
+  {
+    "name": "pineapple",
+    "tags": [
+      "pineapple",
+      "fruit",
+      "nature",
+      "food"
+    ],
+    "unicode": "🍍"
+  },
+  {
+    "name": "tangerine",
+    "tags": [
+      "tangerine",
+      "food",
+      "fruit",
+      "nature"
+    ],
+    "unicode": "🍊"
+  },
+  {
+    "name": "ballot_box_with_check",
+    "tags": [
+      "ballot_box_with_check",
+      "ok",
+      "agree"
+    ],
+    "unicode": "☑"
+  },
+  {
+    "name": "department_store",
+    "tags": [
+      "department_store",
+      "building",
+      "shopping",
+      "mall"
+    ],
+    "unicode": "🏬"
+  },
+  {
+    "name": "pisces",
+    "tags": [
+      "pisces",
+      "purple-square",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♓"
+  },
+  {
+    "name": "taurus",
+    "tags": [
+      "taurus",
+      "purple-square",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♉"
+  },
+  {
+    "name": "bamboo",
+    "tags": [
+      "bamboo",
+      "plant",
+      "nature",
+      "vegetable"
+    ],
+    "unicode": "🎍"
+  },
+  {
+    "name": "diamond_shape_with_a_dot_inside",
+    "tags": [
+      "diamond_shape_with_a_dot_inside"
+    ],
+    "unicode": "💠"
+  },
+  {
+    "name": "japanese_ogre",
+    "tags": [
+      "japanese_ogre",
+      "monster"
+    ],
+    "unicode": "👹"
+  },
+  {
+    "name": "pizza",
+    "tags": [
+      "pizza",
+      "food",
+      "party"
+    ],
+    "unicode": "🍕"
+  },
+  {
+    "name": "taxi",
+    "tags": [
+      "taxi",
+      "uber",
+      "vehicle",
+      "cars",
+      "transportation"
+    ],
+    "unicode": "🚕"
+  },
+  {
+    "name": "banana",
+    "tags": [
+      "banana",
+      "fruit",
+      "food"
+    ],
+    "unicode": "🍌"
+  },
+  {
+    "name": "diamonds",
+    "tags": [
+      "diamonds",
+      "poker",
+      "cards"
+    ],
+    "unicode": "♦"
+  },
+  {
+    "name": "tea",
+    "tags": [
+      "tea",
+      "drink",
+      "bowl",
+      "breakfast",
+      "green",
+      "british"
+    ],
+    "unicode": "🍵"
+  },
+  {
+    "name": "bangbang",
+    "tags": [
+      "bangbang",
+      "exclamation",
+      "surprise"
+    ],
+    "unicode": "‼"
+  },
+  {
+    "name": "telephone",
+    "tags": [
+      "telephone",
+      "communication",
+      "technology"
+    ]
+  },
+  {
+    "name": "bank",
+    "tags": [
+      "bank",
+      "building"
+    ],
+    "unicode": "🏦"
+  },
+  {
+    "name": "telephone_receiver",
+    "tags": [
+      "telephone_receiver",
+      "technology",
+      "communication"
+    ],
+    "unicode": "📞"
+  },
+  {
+    "name": "bar_chart",
+    "tags": [
+      "bar_chart",
+      "graph",
+      "presentation",
+      "stats"
+    ],
+    "unicode": "📊"
+  },
+  {
+    "name": "jp",
+    "tags": [
+      "jp",
+      "japan",
+      "nation",
+      "flag"
+    ],
+    "unicode": "🇯🇵"
+  },
+  {
+    "name": "telescope",
+    "tags": [
+      "telescope",
+      "stars",
+      "space"
+    ],
+    "unicode": "🔭"
+  },
+  {
+    "name": "barber",
+    "tags": [
+      "barber",
+      "hair",
+      "salon",
+      "style"
+    ],
+    "unicode": "💈"
+  },
+  {
+    "name": "key",
+    "tags": [
+      "key",
+      "lock",
+      "door",
+      "password"
+    ],
+    "unicode": "🔑"
+  },
+  {
+    "name": "tennis",
+    "tags": [
+      "tennis",
+      "sports",
+      "balls",
+      "green"
+    ],
+    "unicode": "🎾"
+  },
+  {
+    "name": "baseball",
+    "tags": [
+      "baseball",
+      "sports",
+      "balls",
+      "MLB"
+    ],
+    "unicode": "⚾"
+  },
+  {
+    "name": "do_not_litter",
+    "tags": [
+      "do_not_litter",
+      "trash",
+      "bin",
+      "garbage"
+    ],
+    "unicode": "🚯"
+  },
+  {
+    "name": "keycap_ten",
+    "tags": [
+      "keycap_ten",
+      "numbers",
+      "10",
+      "blue-square"
+    ],
+    "unicode": "🔟"
+  },
+  {
+    "name": "police_car",
+    "tags": [
+      "police_car",
+      "vehicle",
+      "cars",
+      "transportation",
+      "law",
+      "enforcement"
+    ],
+    "unicode": "🚓"
+  },
+  {
+    "name": "tent",
+    "tags": [
+      "tent",
+      "photo",
+      "camp",
+      "outdoors"
+    ],
+    "unicode": "⛺"
+  },
+  {
+    "name": "basketball",
+    "tags": [
+      "basketball",
+      "sports",
+      "balls",
+      "NBA"
+    ],
+    "unicode": "🏀"
+  },
+  {
+    "name": "bath",
+    "tags": [
+      "bath",
+      "clean",
+      "shower"
+    ],
+    "unicode": "🛀"
+  },
+  {
+    "name": "three",
+    "tags": [
+      "three",
+      "3",
+      "numbers",
+      "prime",
+      "blue-square"
+    ],
+    "unicode": "3️⃣"
+  },
+  {
+    "name": "bathtub",
+    "tags": [
+      "bathtub",
+      "clean",
+      "shower"
+    ],
+    "unicode": "🛁"
+  },
+  {
+    "name": "dollar",
+    "tags": [
+      "dollar",
+      "money",
+      "bill",
+      "currency"
+    ],
+    "unicode": "💵"
+  },
+  {
+    "name": "post_office",
+    "tags": [
+      "post_office",
+      "building",
+      "email",
+      "communication"
+    ],
+    "unicode": "🏣"
+  },
+  {
+    "name": "battery",
+    "tags": [
+      "battery",
+      "power",
+      "energy",
+      "sustain"
+    ],
+    "unicode": "🔋"
+  },
+  {
+    "name": "dolls",
+    "tags": [
+      "dolls",
+      "japanese",
+      "toy",
+      "kimono"
+    ],
+    "unicode": "🎎"
+  },
+  {
+    "name": "postal_horn",
+    "tags": [
+      "postal_horn",
+      "instrument",
+      "music"
+    ],
+    "unicode": "📯"
+  },
+  {
+    "name": "postbox",
+    "tags": [
+      "postbox",
+      "email",
+      "letter",
+      "envelope"
+    ],
+    "unicode": "📮"
+  },
+  {
+    "name": "ticket",
+    "tags": [
+      "ticket",
+      "event",
+      "concert",
+      "pass"
+    ],
+    "unicode": "🎫"
+  },
+  {
+    "name": "door",
+    "tags": [
+      "door",
+      "house",
+      "entry",
+      "exit"
+    ],
+    "unicode": "🚪"
+  },
+  {
+    "name": "potable_water",
+    "tags": [
+      "potable_water",
+      "blue-square",
+      "liquid",
+      "restroom",
+      "cleaning",
+      "faucet"
+    ],
+    "unicode": "🚰"
+  },
+  {
+    "name": "beer",
+    "tags": [
+      "beer",
+      "relax",
+      "beverage",
+      "drink",
+      "drunk",
+      "party",
+      "pub"
+    ],
+    "unicode": "🍺"
+  },
+  {
+    "name": "doughnut",
+    "tags": [
+      "doughnut",
+      "food",
+      "desert",
+      "snack",
+      "sweet"
+    ],
+    "unicode": "🍩"
+  },
+  {
+    "name": "beers",
+    "tags": [
+      "beers",
+      "relax",
+      "beverage",
+      "drink",
+      "drunk",
+      "party",
+      "pub"
+    ],
+    "unicode": "🍻"
+  },
+  {
+    "name": "poultry_leg",
+    "tags": [
+      "poultry_leg",
+      "food",
+      "meat"
+    ],
+    "unicode": "🍗"
+  },
+  {
+    "name": "koko",
+    "tags": [
+      "koko",
+      "blue-square",
+      "here",
+      "katakana",
+      "japanese",
+      "destination"
+    ],
+    "unicode": "🈁"
+  },
+  {
+    "name": "pound",
+    "tags": [
+      "pound",
+      "british",
+      "sterling",
+      "money",
+      "bills",
+      "uk",
+      "england"
+    ],
+    "unicode": "💷"
+  },
+  {
+    "name": "tm",
+    "tags": [
+      "tm",
+      "trademark",
+      "brand"
+    ],
+    "unicode": "™"
+  },
+  {
+    "name": "beginner",
+    "tags": [
+      "beginner",
+      "badge",
+      "shield"
+    ],
+    "unicode": "🔰"
+  },
+  {
+    "name": "kr",
+    "tags": [
+      "kr",
+      "korea",
+      "nation",
+      "flag"
+    ],
+    "unicode": "🇰🇷"
+  },
+  {
+    "name": "toilet",
+    "tags": [
+      "toilet",
+      "restroom",
+      "wc"
+    ],
+    "unicode": "🚽"
+  },
+  {
+    "name": "bell",
+    "tags": [
+      "bell",
+      "sound",
+      "notification",
+      "christmas",
+      "xmas"
+    ],
+    "unicode": "🔔"
+  },
+  {
+    "name": "lantern",
+    "tags": [
+      "lantern",
+      "light"
+    ]
+  },
+  {
+    "name": "tokyo_tower",
+    "tags": [
+      "tokyo_tower",
+      "photo",
+      "japan"
+    ],
+    "unicode": "🗼"
+  },
+  {
+    "name": "bento",
+    "tags": [
+      "bento",
+      "food",
+      "japanese",
+      "box"
+    ],
+    "unicode": "🍱"
+  },
+  {
+    "name": "large_blue_circle",
+    "tags": [
+      "large_blue_circle"
+    ],
+    "unicode": "🔵"
+  },
+  {
+    "name": "tomato",
+    "tags": [
+      "tomato",
+      "fruit",
+      "vegetable",
+      "nature",
+      "food"
+    ],
+    "unicode": "🍅"
+  },
+  {
+    "name": "bicyclist",
+    "tags": [
+      "bicyclist",
+      "sports",
+      "bike",
+      "exercise",
+      "hipster"
+    ],
+    "unicode": "🚴"
+  },
+  {
+    "name": "dvd",
+    "tags": [
+      "dvd",
+      "cd"
+    ],
+    "unicode": "📀"
+  },
+  {
+    "name": "large_blue_diamond",
+    "tags": [
+      "large_blue_diamond",
+      "shape"
+    ],
+    "unicode": "🔷"
+  },
+  {
+    "name": "bike",
+    "tags": [
+      "bike",
+      "sports",
+      "bicycle",
+      "exercise",
+      "hipster"
+    ],
+    "unicode": "🚲"
+  },
+  {
+    "name": "e-mail",
+    "tags": [
+      "email",
+      "e-mail",
+      "communication",
+      "inbox"
+    ],
+    "unicode": "📧"
+  },
+  {
+    "name": "large_orange_diamond",
+    "tags": [
+      "large_orange_diamond",
+      "shape"
+    ],
+    "unicode": "🔶"
+  },
+  {
+    "name": "top",
+    "tags": [
+      "top",
+      "words",
+      "blue-square"
+    ],
+    "unicode": "🔝"
+  },
+  {
+    "name": "pushpin",
+    "tags": [
+      "pushpin",
+      "stationery"
+    ],
+    "unicode": "📌"
+  },
+  {
+    "name": "tractor",
+    "tags": [
+      "tractor",
+      "vehicle",
+      "car",
+      "farming",
+      "agriculture"
+    ],
+    "unicode": "🚜"
+  },
+  {
+    "name": "birthday",
+    "tags": [
+      "birthday",
+      "party"
+    ],
+    "unicode": "🎂"
+  },
+  {
+    "name": "laughing",
+    "tags": [
+      "laughing",
+      "happy",
+      "joy",
+      "lol"
+    ],
+    "unicode": "😆"
+  },
+  {
+    "name": "put_litter_in_its_place",
+    "tags": [
+      "put_litter_in_its_place",
+      "blue-square"
+    ],
+    "unicode": "🚮"
+  },
+  {
+    "name": "traffic_light",
+    "tags": [
+      "traffic_light",
+      "traffic",
+      "transportation"
+    ],
+    "unicode": "🚥"
+  },
+  {
+    "name": "black_circle",
+    "tags": [
+      "black_circle",
+      "shape"
+    ],
+    "unicode": "⚫"
+  },
+  {
+    "name": "question",
+    "tags": [
+      "question",
+      "doubt",
+      "confused"
+    ],
+    "unicode": "❓"
+  },
+  {
+    "name": "train",
+    "tags": [
+      "train",
+      "transportation"
+    ]
+  },
+  {
+    "name": "black_joker",
+    "tags": [
+      "black_joker",
+      "poker",
+      "cards",
+      "game"
+    ],
+    "unicode": "🃏"
+  },
+  {
+    "name": "ledger",
+    "tags": [
+      "ledger",
+      "notes"
+    ],
+    "unicode": "📒"
+  },
+  {
+    "name": "train2",
+    "tags": [
+      "train2",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚆"
+  },
+  {
+    "name": "black_large_square",
+    "tags": [
+      "black_large_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "egg",
+    "tags": [
+      "egg",
+      "food"
+    ],
+    "unicode": "🍳"
+  },
+  {
+    "name": "left_luggage",
+    "tags": [
+      "left_luggage",
+      "blue-square",
+      "travel"
+    ],
+    "unicode": "🛅"
+  },
+  {
+    "name": "tram",
+    "tags": [
+      "tram",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚊"
+  },
+  {
+    "name": "black_medium_small_square",
+    "tags": [
+      "black_medium_small_square"
+    ]
+  },
+  {
+    "name": "eggplant",
+    "tags": [
+      "eggplant",
+      "vegetable",
+      "nature",
+      "food"
+    ],
+    "unicode": "🍆"
+  },
+  {
+    "name": "left_right_arrow",
+    "tags": [
+      "left_right_arrow",
+      "shape"
+    ],
+    "unicode": "↔"
+  },
+  {
+    "name": "triangular_flag_on_post",
+    "tags": [
+      "triangular_flag_on_post"
+    ],
+    "unicode": "🚩"
+  },
+  {
+    "name": "black_medium_square",
+    "tags": [
+      "black_medium_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "eight",
+    "tags": [
+      "eight",
+      "8",
+      "blue-square",
+      "numbers"
+    ],
+    "unicode": "8️⃣"
+  },
+  {
+    "name": "leftwards_arrow_with_hook",
+    "tags": [
+      "leftwards_arrow_with_hook"
+    ],
+    "unicode": "↩"
+  },
+  {
+    "name": "radio",
+    "tags": [
+      "radio",
+      "communication",
+      "music",
+      "podcast",
+      "program"
+    ],
+    "unicode": "📻"
+  },
+  {
+    "name": "triangular_ruler",
+    "tags": [
+      "triangular_ruler",
+      "stationery",
+      "math",
+      "architect",
+      "sketch"
+    ],
+    "unicode": "📐"
+  },
+  {
+    "name": "black_nib",
+    "tags": [
+      "black_nib",
+      "pen",
+      "stationery"
+    ],
+    "unicode": "✒"
+  },
+  {
+    "name": "eight_pointed_black_star",
+    "tags": [
+      "eight_pointed_black_star"
+    ],
+    "unicode": "✴"
+  },
+  {
+    "name": "lemon",
+    "tags": [
+      "lemon",
+      "fruit",
+      "nature"
+    ],
+    "unicode": "🍋"
+  },
+  {
+    "name": "radio_button",
+    "tags": [
+      "radio_button",
+      "input"
+    ],
+    "unicode": "🔘"
+  },
+  {
+    "name": "trident",
+    "tags": [
+      "trident",
+      "weapon",
+      "spear"
+    ],
+    "unicode": "🔱"
+  },
+  {
+    "name": "black_small_square",
+    "tags": [
+      "black_small_square"
+    ]
+  },
+  {
+    "name": "eight_spoked_asterisk",
+    "tags": [
+      "eight_spoked_asterisk",
+      "star",
+      "sparkle",
+      "green-square"
+    ],
+    "unicode": "✳"
+  },
+  {
+    "name": "leo",
+    "tags": [
+      "leo",
+      "sign",
+      "purple-square",
+      "zodiac"
+    ],
+    "unicode": "♌"
+  },
+  {
+    "name": "rage",
+    "tags": [
+      "rage",
+      "angry",
+      "mad"
+    ],
+    "unicode": "😡"
+  },
+  {
+    "name": "black_square_button",
+    "tags": [
+      "black_square_button"
+    ],
+    "unicode": "🔲"
+  },
+  {
+    "name": "electric_plug",
+    "tags": [
+      "electric_plug",
+      "charger",
+      "power"
+    ],
+    "unicode": "🔌"
+  },
+  {
+    "name": "rage1",
+    "tags": [
+      "rage1",
+      "angry",
+      "mad",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "trolleybus",
+    "tags": [
+      "trolleybus",
+      "bart",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚎"
+  },
+  {
+    "name": "libra",
+    "tags": [
+      "libra",
+      "sign",
+      "purple-square",
+      "zodiac"
+    ],
+    "unicode": "♎"
+  },
+  {
+    "name": "rage2",
+    "tags": [
+      "rage2",
+      "angry",
+      "mad",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "trollface",
+    "tags": [
+      "trollface",
+      "internet",
+      "meme"
+    ]
+  },
+  {
+    "name": "email",
+    "tags": [
+      "email",
+      "inbox",
+      "communication"
+    ],
+    "unicode": "✉"
+  },
+  {
+    "name": "light_rail",
+    "tags": [
+      "light_rail",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚈"
+  },
+  {
+    "name": "rage3",
+    "tags": [
+      "rage3",
+      "angry",
+      "mad",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "trophy",
+    "tags": [
+      "trophy",
+      "win",
+      "award",
+      "contest",
+      "place",
+      "ftw",
+      "ceremony"
+    ],
+    "unicode": "🏆"
+  },
+  {
+    "name": "blue_book",
+    "tags": [
+      "blue_book",
+      "read",
+      "library",
+      "knowledge"
+    ],
+    "unicode": "📘"
+  },
+  {
+    "name": "end",
+    "tags": [
+      "end",
+      "words",
+      "arrow"
+    ],
+    "unicode": "🔚"
+  },
+  {
+    "name": "link",
+    "tags": [
+      "link",
+      "rings",
+      "url"
+    ],
+    "unicode": "🔗"
+  },
+  {
+    "name": "rage4",
+    "tags": [
+      "rage4",
+      "angry",
+      "mad",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "tropical_drink",
+    "tags": [
+      "tropical_drink",
+      "beverage"
+    ],
+    "unicode": "🍹"
+  },
+  {
+    "name": "blue_car",
+    "tags": [
+      "blue_car",
+      "car"
+    ],
+    "unicode": "🚙"
+  },
+  {
+    "name": "envelope",
+    "tags": [
+      "envelope",
+      "mail",
+      "letter",
+      "postal",
+      "communication"
+    ]
+  },
+  {
+    "name": "railway_car",
+    "tags": [
+      "railway_car",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚃"
+  },
+  {
+    "name": "envelope_with_arrow",
+    "tags": [
+      "envelope_with_arrow",
+      "email"
+    ]
+  },
+  {
+    "name": "truck",
+    "tags": [
+      "truck",
+      "cars",
+      "transportation"
+    ],
+    "unicode": "🚚"
+  },
+  {
+    "name": "es",
+    "tags": [
+      "es",
+      "spain",
+      "flag",
+      "nation"
+    ],
+    "unicode": "🇪🇸"
+  },
+  {
+    "name": "lock",
+    "tags": [
+      "lock",
+      "security"
+    ],
+    "unicode": "🔒"
+  },
+  {
+    "name": "trumpet",
+    "tags": [
+      "trumpet",
+      "music"
+    ],
+    "unicode": "🎺"
+  },
+  {
+    "name": "euro",
+    "tags": [
+      "euro",
+      "money",
+      "dollar"
+    ],
+    "unicode": "💶"
+  },
+  {
+    "name": "lock_with_ink_pen",
+    "tags": [
+      "lock_with_ink_pen",
+      "security",
+      "secret"
+    ],
+    "unicode": "🔏"
+  },
+  {
+    "name": "boat",
+    "tags": [
+      "boat",
+      "transportation"
+    ],
+    "unicode": "⛵"
+  },
+  {
+    "name": "european_castle",
+    "tags": [
+      "european_castle",
+      "building"
+    ],
+    "unicode": "🏰"
+  },
+  {
+    "name": "lollipop",
+    "tags": [
+      "lollipop",
+      "food",
+      "snack",
+      "candy",
+      "sweet"
+    ],
+    "unicode": "🍭"
+  },
+  {
+    "name": "raising_hand",
+    "tags": [
+      "raising_hand",
+      "female",
+      "girl",
+      "woman"
+    ]
+  },
+  {
+    "name": "bomb",
+    "tags": [
+      "bomb",
+      "boom",
+      "explode"
+    ],
+    "unicode": "💣"
+  },
+  {
+    "name": "european_post_office",
+    "tags": [
+      "european_post_office",
+      "building"
+    ],
+    "unicode": "🏤"
+  },
+  {
+    "name": "loop",
+    "tags": [
+      "loop",
+      "tape",
+      "cassette"
+    ],
+    "unicode": "➿"
+  },
+  {
+    "name": "book",
+    "tags": [
+      "book",
+      "library",
+      "literature"
+    ]
+  },
+  {
+    "name": "loudspeaker",
+    "tags": [
+      "loudspeaker",
+      "volume",
+      "sound"
+    ],
+    "unicode": "📢"
+  },
+  {
+    "name": "ramen",
+    "tags": [
+      "ramen",
+      "food",
+      "japanese",
+      "noodle",
+      "chipsticks"
+    ],
+    "unicode": "🍜"
+  },
+  {
+    "name": "tv",
+    "tags": [
+      "tv",
+      "technology",
+      "program",
+      "oldschool",
+      "show"
+    ],
+    "unicode": "📺"
+  },
+  {
+    "name": "bookmark",
+    "tags": [
+      "bookmark",
+      "favorite"
+    ],
+    "unicode": "🔖"
+  },
+  {
+    "name": "exclamation",
+    "tags": [
+      "exclamation",
+      "surprise"
+    ],
+    "unicode": "❗"
+  },
+  {
+    "name": "love_hotel",
+    "tags": [
+      "love_hotel",
+      "love",
+      "like",
+      "affection",
+      "dating"
+    ],
+    "unicode": "🏩"
+  },
+  {
+    "name": "twisted_rightwards_arrows",
+    "tags": [
+      "twisted_rightwards_arrows",
+      "blue-square"
+    ],
+    "unicode": "🔀"
+  },
+  {
+    "name": "bookmark_tabs",
+    "tags": [
+      "bookmark_tabs",
+      "favorite"
+    ],
+    "unicode": "📑"
+  },
+  {
+    "name": "recycle",
+    "tags": [
+      "recycle",
+      "arrow",
+      "environment",
+      "garbage",
+      "trash"
+    ],
+    "unicode": "♻"
+  },
+  {
+    "name": "two",
+    "tags": [
+      "two",
+      "numbers",
+      "2",
+      "prime",
+      "blue-square"
+    ],
+    "unicode": "2️⃣"
+  },
+  {
+    "name": "books",
+    "tags": [
+      "books",
+      "literature",
+      "library"
+    ],
+    "unicode": "📚"
+  },
+  {
+    "name": "low_brightness",
+    "tags": [
+      "low_brightness",
+      "sun"
+    ],
+    "unicode": "🔅"
+  },
+  {
+    "name": "red_car",
+    "tags": [
+      "red_car",
+      "transportation",
+      "vehicle"
+    ]
+  },
+  {
+    "name": "m",
+    "tags": [
+      "m",
+      "alphabet",
+      "blue-circle",
+      "letter"
+    ],
+    "unicode": "Ⓜ️"
+  },
+  {
+    "name": "red_circle",
+    "tags": [
+      "red_circle",
+      "shape"
+    ],
+    "unicode": "🔴"
+  },
+  {
+    "name": "mag",
+    "tags": [
+      "mag",
+      "search",
+      "zoom"
+    ],
+    "unicode": "🔍"
+  },
+  {
+    "name": "registered",
+    "tags": [
+      "registered",
+      "alphabet",
+      "circle"
+    ],
+    "unicode": "®"
+  },
+  {
+    "name": "factory",
+    "tags": [
+      "factory",
+      "building"
+    ],
+    "unicode": "🏭"
+  },
+  {
+    "name": "mag_right",
+    "tags": [
+      "mag_right",
+      "search",
+      "zoom"
+    ],
+    "unicode": "🔎"
+  },
+  {
+    "name": "u5272",
+    "tags": [
+      "u5272",
+      "cut",
+      "divide",
+      "chinese",
+      "kanji",
+      "pink"
+    ],
+    "unicode": "🈹"
+  },
+  {
+    "name": "mahjong",
+    "tags": [
+      "mahjong",
+      "game",
+      "chinese",
+      "kanji"
+    ],
+    "unicode": "🀄"
+  },
+  {
+    "name": "u5408",
+    "tags": [
+      "u5408",
+      "japanese",
+      "chinese",
+      "join",
+      "kanji"
+    ],
+    "unicode": "🈴"
+  },
+  {
+    "name": "bowling",
+    "tags": [
+      "bowling",
+      "sports",
+      "fun",
+      "play"
+    ],
+    "unicode": "🎳"
+  },
+  {
+    "name": "mailbox",
+    "tags": [
+      "mailbox",
+      "email",
+      "inbox",
+      "communication"
+    ],
+    "unicode": "📫"
+  },
+  {
+    "name": "repeat",
+    "tags": [
+      "repeat",
+      "loop",
+      "record"
+    ],
+    "unicode": "🔁"
+  },
+  {
+    "name": "u55b6",
+    "tags": [
+      "u55b6",
+      "japanese",
+      "opening hours"
+    ],
+    "unicode": "🈺"
+  },
+  {
+    "name": "bowtie",
+    "tags": [
+      "bowtie",
+      "face",
+      "formal",
+      "fashion",
+      "suit",
+      "classy"
+    ]
+  },
+  {
+    "name": "fast_forward",
+    "tags": [
+      "fast_forward",
+      "blue-square"
+    ],
+    "unicode": "⏩"
+  },
+  {
+    "name": "mailbox_closed",
+    "tags": [
+      "mailbox_closed",
+      "email",
+      "communication",
+      "inbox"
+    ],
+    "unicode": "📪"
+  },
+  {
+    "name": "repeat_one",
+    "tags": [
+      "repeat_one",
+      "blue-square",
+      "loop"
+    ],
+    "unicode": "🔂"
+  },
+  {
+    "name": "u6307",
+    "tags": [
+      "u6307",
+      "chinese",
+      "point",
+      "green-square",
+      "kanji"
+    ],
+    "unicode": "🈯"
+  },
+  {
+    "name": "fax",
+    "tags": [
+      "fax",
+      "communication",
+      "technology"
+    ],
+    "unicode": "📠"
+  },
+  {
+    "name": "mailbox_with_mail",
+    "tags": [
+      "mailbox_with_mail",
+      "email",
+      "inbox",
+      "communication"
+    ],
+    "unicode": "📬"
+  },
+  {
+    "name": "restroom",
+    "tags": [
+      "restroom",
+      "blue-square"
+    ],
+    "unicode": "🚻"
+  },
+  {
+    "name": "u6708",
+    "tags": [
+      "u6708",
+      "chinese",
+      "moon",
+      "japanese",
+      "orange-square",
+      "kanji"
+    ],
+    "unicode": "🈷"
+  },
+  {
+    "name": "bread",
+    "tags": [
+      "bread",
+      "food",
+      "wheat",
+      "breakfast",
+      "toast"
+    ],
+    "unicode": "🍞"
+  },
+  {
+    "name": "mailbox_with_no_mail",
+    "tags": [
+      "mailbox_with_no_mail",
+      "email",
+      "inbox"
+    ],
+    "unicode": "📭"
+  },
+  {
+    "name": "u6709",
+    "tags": [
+      "u6709",
+      "orange-square",
+      "chinese",
+      "have",
+      "kanji"
+    ],
+    "unicode": "🈶"
+  },
+  {
+    "name": "feelsgood",
+    "tags": [
+      "feelsgood",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "rewind",
+    "tags": [
+      "rewind",
+      "play",
+      "blue-square"
+    ],
+    "unicode": "⏪"
+  },
+  {
+    "name": "u6e80",
+    "tags": [
+      "u6e80",
+      "full",
+      "chinese",
+      "japanese",
+      "red-square",
+      "kanji"
+    ],
+    "unicode": "🈵"
+  },
+  {
+    "name": "bridge_at_night",
+    "tags": [
+      "bridge_at_night",
+      "photo",
+      "sanfrancisco"
+    ],
+    "unicode": "🌉"
+  },
+  {
+    "name": "feet",
+    "tags": [
+      "feet",
+      "animal"
+    ],
+    "unicode": "👣"
+  },
+  {
+    "name": "u7121",
+    "tags": [
+      "u7121",
+      "no",
+      "nothing",
+      "chinese",
+      "kanji",
+      "japanese",
+      "orange-square"
+    ],
+    "unicode": "🈚"
+  },
+  {
+    "name": "ferris_wheel",
+    "tags": [
+      "ferris_wheel",
+      "photo",
+      "carnival",
+      "londoneye"
+    ],
+    "unicode": "🎡"
+  },
+  {
+    "name": "rice",
+    "tags": [
+      "rice",
+      "food"
+    ],
+    "unicode": "🍚"
+  },
+  {
+    "name": "u7533",
+    "tags": [
+      "u7533",
+      "chinese",
+      "japanese",
+      "kanji"
+    ],
+    "unicode": "🈸"
+  },
+  {
+    "name": "file_folder",
+    "tags": [
+      "file_folder",
+      "documents"
+    ],
+    "unicode": "📁"
+  },
+  {
+    "name": "rice_ball",
+    "tags": [
+      "rice_ball",
+      "food",
+      "japanese"
+    ],
+    "unicode": "🍙"
+  },
+  {
+    "name": "u7981",
+    "tags": [
+      "u7981",
+      "kanji",
+      "japanese",
+      "chinese",
+      "forbidden",
+      "limit",
+      "restricted"
+    ],
+    "unicode": "🈲"
+  },
+  {
+    "name": "finnadie",
+    "tags": [
+      "finnadie",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "rice_cracker",
+    "tags": [
+      "rice_cracker",
+      "food",
+      "japanese"
+    ],
+    "unicode": "🍘"
+  },
+  {
+    "name": "u7a7a",
+    "tags": [
+      "u7a7a",
+      "kanji",
+      "japanese",
+      "chinese",
+      "empty"
+    ],
+    "unicode": "🈳"
+  },
+  {
+    "name": "bulb",
+    "tags": [
+      "bulb",
+      "light",
+      "electricity"
+    ],
+    "unicode": "💡"
+  },
+  {
+    "name": "rice_scene",
+    "tags": [
+      "rice_scene",
+      "photo"
+    ],
+    "unicode": "🎑"
+  },
+  {
+    "name": "uk",
+    "tags": [
+      "uk",
+      "british",
+      "england",
+      "union jack"
+    ]
+  },
+  {
+    "name": "bullettrain_front",
+    "tags": [
+      "bullettrain_front",
+      "transportation"
+    ],
+    "unicode": "🚅"
+  },
+  {
+    "name": "fire_engine",
+    "tags": [
+      "fire_engine",
+      "transportation",
+      "cars",
+      "vehicle"
+    ],
+    "unicode": "🚒"
+  },
+  {
+    "name": "bullettrain_side",
+    "tags": [
+      "bullettrain_side",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚄"
+  },
+  {
+    "name": "fireworks",
+    "tags": [
+      "fireworks",
+      "photo",
+      "festival",
+      "carnival",
+      "congratulations"
+    ],
+    "unicode": "🎆"
+  },
+  {
+    "name": "meat_on_bone",
+    "tags": [
+      "meat_on_bone",
+      "good",
+      "food"
+    ],
+    "unicode": "🍖"
+  },
+  {
+    "name": "rocket",
+    "tags": [
+      "rocket",
+      "launch",
+      "ship",
+      "staffmode"
+    ],
+    "unicode": "🚀"
+  },
+  {
+    "name": "bus",
+    "tags": [
+      "bus",
+      "car",
+      "vehicle",
+      "transportation"
+    ],
+    "unicode": "🚌"
+  },
+  {
+    "name": "mega",
+    "tags": [
+      "mega",
+      "sound",
+      "speaker",
+      "volume"
+    ],
+    "unicode": "📣"
+  },
+  {
+    "name": "roller_coaster",
+    "tags": [
+      "roller_coaster",
+      "carnival",
+      "playground",
+      "photo",
+      "play",
+      "fun"
+    ],
+    "unicode": "🎢"
+  },
+  {
+    "name": "underage",
+    "tags": [
+      "underage",
+      "18",
+      "drink",
+      "pub",
+      "night"
+    ],
+    "unicode": "🔞"
+  },
+  {
+    "name": "busstop",
+    "tags": [
+      "busstop",
+      "transportation"
+    ],
+    "unicode": "🚏"
+  },
+  {
+    "name": "melon",
+    "tags": [
+      "melon",
+      "fruit",
+      "nature",
+      "food"
+    ],
+    "unicode": "🍈"
+  },
+  {
+    "name": "memo",
+    "tags": [
+      "memo",
+      "documents",
+      "stationery"
+    ],
+    "unicode": "📝"
+  },
+  {
+    "name": "unlock",
+    "tags": [
+      "unlock",
+      "privacy",
+      "security"
+    ],
+    "unicode": "🔓"
+  },
+  {
+    "name": "fish_cake",
+    "tags": [
+      "fish_cake",
+      "food"
+    ],
+    "unicode": "🍥"
+  },
+  {
+    "name": "mens",
+    "tags": [
+      "mens",
+      "toilet",
+      "restroom",
+      "wc"
+    ],
+    "unicode": "🚹"
+  },
+  {
+    "name": "rotating_light",
+    "tags": [
+      "rotating_light",
+      "police",
+      "ambulance",
+      "911",
+      "emergency"
+    ],
+    "unicode": "🚨"
+  },
+  {
+    "name": "up",
+    "tags": [
+      "up",
+      "blue-square"
+    ],
+    "unicode": "🆙"
+  },
+  {
+    "name": "fishing_pole_and_fish",
+    "tags": [
+      "fishing_pole_and_fish",
+      "food",
+      "hobby"
+    ],
+    "unicode": "🎣"
+  },
+  {
+    "name": "metal",
+    "tags": [
+      "metal",
+      "fingers",
+      "rocknroll",
+      "concert",
+      "band"
+    ]
+  },
+  {
+    "name": "round_pushpin",
+    "tags": [
+      "round_pushpin",
+      "stationery"
+    ],
+    "unicode": "📍"
+  },
+  {
+    "name": "us",
+    "tags": [
+      "us",
+      "nation",
+      "flag",
+      "american",
+      "country",
+      "banner"
+    ],
+    "unicode": "🇺🇸"
+  },
+  {
+    "name": "cake",
+    "tags": [
+      "cake",
+      "food",
+      "desert"
+    ],
+    "unicode": "🍰"
+  },
+  {
+    "name": "metro",
+    "tags": [
+      "metro",
+      "transportation",
+      "blue-square",
+      "mrt",
+      "underground",
+      "tube"
+    ],
+    "unicode": "🚇"
+  },
+  {
+    "name": "rowboat",
+    "tags": [
+      "rowboat",
+      "sports",
+      "hobby",
+      "water",
+      "ship"
+    ],
+    "unicode": "🚣"
+  },
+  {
+    "name": "calendar",
+    "tags": [
+      "calendar",
+      "schedule"
+    ],
+    "unicode": "📆"
+  },
+  {
+    "name": "five",
+    "tags": [
+      "five",
+      "numbers",
+      "blue-square",
+      "prime"
+    ],
+    "unicode": "5️⃣"
+  },
+  {
+    "name": "microphone",
+    "tags": [
+      "microphone",
+      "sound",
+      "music",
+      "PA"
+    ],
+    "unicode": "🎤"
+  },
+  {
+    "name": "ru",
+    "tags": [
+      "ru",
+      "russian",
+      "nation",
+      "flag",
+      "banner"
+    ],
+    "unicode": "🇷🇺"
+  },
+  {
+    "name": "vertical_traffic_light",
+    "tags": [
+      "vertical_traffic_light",
+      "transportation"
+    ],
+    "unicode": "🚦"
+  },
+  {
+    "name": "calling",
+    "tags": [
+      "calling",
+      "iphone",
+      "incoming"
+    ],
+    "unicode": "📲"
+  },
+  {
+    "name": "flags",
+    "tags": [
+      "flags",
+      "fish",
+      "japanese",
+      "koinobori",
+      "carp",
+      "banner"
+    ],
+    "unicode": "🎏"
+  },
+  {
+    "name": "microscope",
+    "tags": [
+      "microscope",
+      "laboratory",
+      "experiment",
+      "zoomin"
+    ],
+    "unicode": "🔬"
+  },
+  {
+    "name": "rugby_football",
+    "tags": [
+      "rugby_football",
+      "sports"
+    ],
+    "unicode": "🏉"
+  },
+  {
+    "name": "vhs",
+    "tags": [
+      "vhs",
+      "record",
+      "video",
+      "oldschool"
+    ],
+    "unicode": "📼"
+  },
+  {
+    "name": "flashlight",
+    "tags": [
+      "flashlight",
+      "dark"
+    ],
+    "unicode": "🔦"
+  },
+  {
+    "name": "vibration_mode",
+    "tags": [
+      "vibration_mode",
+      "orange-square",
+      "phone"
+    ],
+    "unicode": "📳"
+  },
+  {
+    "name": "camera",
+    "tags": [
+      "camera",
+      "gadgets",
+      "photo"
+    ],
+    "unicode": "📷"
+  },
+  {
+    "name": "floppy_disk",
+    "tags": [
+      "floppy_disk",
+      "oldschool",
+      "technology",
+      "save"
+    ],
+    "unicode": "💾"
+  },
+  {
+    "name": "minibus",
+    "tags": [
+      "minibus",
+      "vehicle",
+      "car",
+      "transportation"
+    ],
+    "unicode": "🚐"
+  },
+  {
+    "name": "video_camera",
+    "tags": [
+      "video_camera",
+      "film"
+    ],
+    "unicode": "📹"
+  },
+  {
+    "name": "cancer",
+    "tags": [
+      "cancer",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♋"
+  },
+  {
+    "name": "flower_playing_cards",
+    "tags": [
+      "flower_playing_cards"
+    ],
+    "unicode": "🎴"
+  },
+  {
+    "name": "minidisc",
+    "tags": [
+      "minidisc",
+      "technology",
+      "record",
+      "data"
+    ],
+    "unicode": "💽"
+  },
+  {
+    "name": "video_game",
+    "tags": [
+      "video_game",
+      "play"
+    ],
+    "unicode": "🎮"
+  },
+  {
+    "name": "candy",
+    "tags": [
+      "candy",
+      "snack",
+      "desert"
+    ],
+    "unicode": "🍬"
+  },
+  {
+    "name": "mobile_phone_off",
+    "tags": [
+      "mobile_phone_off",
+      "mute"
+    ],
+    "unicode": "📴"
+  },
+  {
+    "name": "sa",
+    "tags": [
+      "sa",
+      "japanese",
+      "blue-square"
+    ],
+    "unicode": "🈂"
+  },
+  {
+    "name": "violin",
+    "tags": [
+      "violin",
+      "music",
+      "instrument"
+    ],
+    "unicode": "🎻"
+  },
+  {
+    "name": "capital_abcd",
+    "tags": [
+      "capital_abcd",
+      "alphabet",
+      "words",
+      "blue-square"
+    ],
+    "unicode": "🔠"
+  },
+  {
+    "name": "money_with_wings",
+    "tags": [
+      "money_with_wings",
+      "dollar",
+      "bills"
+    ],
+    "unicode": "💸"
+  },
+  {
+    "name": "sagittarius",
+    "tags": [
+      "sagittarius",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♐"
+  },
+  {
+    "name": "virgo",
+    "tags": [
+      "virgo",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♍"
+  },
+  {
+    "name": "capricorn",
+    "tags": [
+      "capricorn",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♑"
+  },
+  {
+    "name": "football",
+    "tags": [
+      "football",
+      "sports",
+      "balls"
+    ],
+    "unicode": "🏈"
+  },
+  {
+    "name": "moneybag",
+    "tags": [
+      "moneybag",
+      "dollar"
+    ],
+    "unicode": "💰"
+  },
+  {
+    "name": "sailboat",
+    "tags": [
+      "sailboat",
+      "transportation",
+      "ship"
+    ]
+  },
+  {
+    "name": "car",
+    "tags": [
+      "car",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚗"
+  },
+  {
+    "name": "sake",
+    "tags": [
+      "sake",
+      "wine",
+      "drink",
+      "drunk",
+      "beverage"
+    ],
+    "unicode": "🍶"
+  },
+  {
+    "name": "vs",
+    "tags": [
+      "vs",
+      "words",
+      "orange-square"
+    ],
+    "unicode": "🆚"
+  },
+  {
+    "name": "card_index",
+    "tags": [
+      "card_index",
+      "business",
+      "stationery"
+    ],
+    "unicode": "📇"
+  },
+  {
+    "name": "fork_and_knife",
+    "tags": [
+      "fork_and_knife",
+      "cutlery",
+      "kitchen"
+    ],
+    "unicode": "🍴"
+  },
+  {
+    "name": "carousel_horse",
+    "tags": [
+      "carousel_horse",
+      "photo",
+      "carnival",
+      "horse"
+    ],
+    "unicode": "🎠"
+  },
+  {
+    "name": "fountain",
+    "tags": [
+      "fountain",
+      "photo"
+    ],
+    "unicode": "⛲"
+  },
+  {
+    "name": "monorail",
+    "tags": [
+      "monorail",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚝"
+  },
+  {
+    "name": "santa",
+    "tags": [
+      "santa",
+      "festival",
+      "man",
+      "male",
+      "christmas",
+      "xmas",
+      "father christmas"
+    ],
+    "unicode": "🎅"
+  },
+  {
+    "name": "four",
+    "tags": [
+      "four",
+      "4",
+      "numbers",
+      "blue-square"
+    ],
+    "unicode": "4️⃣"
+  },
+  {
+    "name": "satellite",
+    "tags": [
+      "satellite",
+      "communication"
+    ],
+    "unicode": "📡"
+  },
+  {
+    "name": "mortar_board",
+    "tags": [
+      "mortar_board",
+      "school",
+      "college",
+      "degree",
+      "university",
+      "graduation"
+    ],
+    "unicode": "🎓"
+  },
+  {
+    "name": "warning",
+    "tags": [
+      "warning",
+      "exclamation",
+      "wip"
+    ],
+    "unicode": "⚠"
+  },
+  {
+    "name": "cd",
+    "tags": [
+      "cd",
+      "technology",
+      "dvd"
+    ],
+    "unicode": "💿"
+  },
+  {
+    "name": "fr",
+    "tags": [
+      "fr",
+      "banner",
+      "flag",
+      "nation",
+      "france",
+      "french"
+    ],
+    "unicode": "🇫🇷"
+  },
+  {
+    "name": "mount_fuji",
+    "tags": [
+      "mount_fuji",
+      "photo",
+      "mountain",
+      "nature",
+      "japan"
+    ],
+    "unicode": "🗻"
+  },
+  {
+    "name": "saxophone",
+    "tags": [
+      "saxophone",
+      "music",
+      "instrument"
+    ],
+    "unicode": "🎷"
+  },
+  {
+    "name": "watch",
+    "tags": [
+      "watch",
+      "time",
+      "accessories"
+    ],
+    "unicode": "⌚"
+  },
+  {
+    "name": "chart",
+    "tags": [
+      "chart",
+      "green-square",
+      "graph"
+    ],
+    "unicode": "💹"
+  },
+  {
+    "name": "free",
+    "tags": [
+      "free",
+      "blue-square",
+      "words"
+    ],
+    "unicode": "🆓"
+  },
+  {
+    "name": "mountain_bicyclist",
+    "tags": [
+      "mountain_bicyclist",
+      "transportation",
+      "sports",
+      "human"
+    ],
+    "unicode": "🚵"
+  },
+  {
+    "name": "school",
+    "tags": [
+      "school",
+      "building"
+    ],
+    "unicode": "🏫"
+  },
+  {
+    "name": "chart_with_downwards_trend",
+    "tags": [
+      "chart_with_downwards_trend",
+      "graph"
+    ],
+    "unicode": "📉"
+  },
+  {
+    "name": "fried_shrimp",
+    "tags": [
+      "fried_shrimp",
+      "food",
+      "animal"
+    ],
+    "unicode": "🍤"
+  },
+  {
+    "name": "mountain_cableway",
+    "tags": [
+      "mountain_cableway",
+      "transportation",
+      "vehicle"
+    ],
+    "unicode": "🚠"
+  },
+  {
+    "name": "school_satchel",
+    "tags": [
+      "school_satchel",
+      "student",
+      "education",
+      "bag"
+    ],
+    "unicode": "🎒"
+  },
+  {
+    "name": "watermelon",
+    "tags": [
+      "watermelon",
+      "fruit",
+      "food"
+    ],
+    "unicode": "🍉"
+  },
+  {
+    "name": "chart_with_upwards_trend",
+    "tags": [
+      "chart_with_upwards_trend",
+      "graph"
+    ],
+    "unicode": "📈"
+  },
+  {
+    "name": "fries",
+    "tags": [
+      "fries",
+      "food",
+      "chips"
+    ],
+    "unicode": "🍟"
+  },
+  {
+    "name": "mountain_railway",
+    "tags": [
+      "mountain_railway",
+      "transportation"
+    ],
+    "unicode": "🚞"
+  },
+  {
+    "name": "scissors",
+    "tags": [
+      "scissors",
+      "stationery",
+      "cut"
+    ],
+    "unicode": "✂"
+  },
+  {
+    "name": "checkered_flag",
+    "tags": [
+      "checkered_flag",
+      "contest",
+      "finishline",
+      "rase",
+      "gokart"
+    ],
+    "unicode": "🏁"
+  },
+  {
+    "name": "scorpius",
+    "tags": [
+      "scorpius",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♏"
+  },
+  {
+    "name": "wavy_dash",
+    "tags": [
+      "wavy_dash",
+      "draw",
+      "line"
+    ],
+    "unicode": "〰"
+  },
+  {
+    "name": "cherries",
+    "tags": [
+      "cherries",
+      "food",
+      "fruit"
+    ],
+    "unicode": "🍒"
+  },
+  {
+    "name": "fuelpump",
+    "tags": [
+      "fuelpump",
+      "gas station"
+    ],
+    "unicode": "⛽"
+  },
+  {
+    "name": "movie_camera",
+    "tags": [
+      "movie_camera",
+      "film",
+      "record"
+    ],
+    "unicode": "🎥"
+  },
+  {
+    "name": "waxing_gibbous_moon",
+    "tags": [
+      "waxing_gibbous_moon",
+      "nature"
+    ],
+    "unicode": "🌔"
+  },
+  {
+    "name": "moyai",
+    "tags": [
+      "moyai",
+      "stone",
+      "island"
+    ],
+    "unicode": "🗿"
+  },
+  {
+    "name": "scroll",
+    "tags": [
+      "scroll",
+      "documents"
+    ],
+    "unicode": "📜"
+  },
+  {
+    "name": "wc",
+    "tags": [
+      "wc",
+      "toilet",
+      "restroom",
+      "blue-square"
+    ],
+    "unicode": "🚾"
+  },
+  {
+    "name": "seat",
+    "tags": [
+      "seat",
+      "sit"
+    ],
+    "unicode": "💺"
+  },
+  {
+    "name": "children_crossing",
+    "tags": [
+      "children_crossing",
+      "school"
+    ],
+    "unicode": "🚸"
+  },
+  {
+    "name": "game_die",
+    "tags": [
+      "game_die",
+      "dice"
+    ],
+    "unicode": "🎲"
+  },
+  {
+    "name": "secret",
+    "tags": [
+      "secret",
+      "privacy"
+    ],
+    "unicode": "㊙"
+  },
+  {
+    "name": "wedding",
+    "tags": [
+      "wedding",
+      "love",
+      "like",
+      "affection",
+      "couple",
+      "marriage"
+    ],
+    "unicode": "💒"
+  },
+  {
+    "name": "chocolate_bar",
+    "tags": [
+      "chocolate_bar",
+      "food",
+      "snack",
+      "desert"
+    ],
+    "unicode": "🍫"
+  },
+  {
+    "name": "gb",
+    "tags": [
+      "gb",
+      "banner",
+      "nation",
+      "flag",
+      "britsh",
+      "UK"
+    ],
+    "unicode": "🇬🇧"
+  },
+  {
+    "name": "musical_keyboard",
+    "tags": [
+      "musical_keyboard",
+      "piano",
+      "instrument"
+    ],
+    "unicode": "🎹"
+  },
+  {
+    "name": "musical_note",
+    "tags": [
+      "musical_note",
+      "score"
+    ],
+    "unicode": "🎵"
+  },
+  {
+    "name": "church",
+    "tags": [
+      "church",
+      "building",
+      "religion",
+      "christ"
+    ],
+    "unicode": "⛪"
+  },
+  {
+    "name": "gemini",
+    "tags": [
+      "gemini",
+      "sign",
+      "zodiac"
+    ],
+    "unicode": "♊"
+  },
+  {
+    "name": "musical_score",
+    "tags": [
+      "musical_score"
+    ],
+    "unicode": "🎼"
+  },
+  {
+    "name": "seven",
+    "tags": [
+      "seven",
+      "7",
+      "numbers",
+      "blue-square",
+      "prime"
+    ],
+    "unicode": "7️⃣"
+  },
+  {
+    "name": "wheelchair",
+    "tags": [
+      "wheelchair",
+      "blue-square",
+      "disabled"
+    ],
+    "unicode": "♿"
+  },
+  {
+    "name": "cinema",
+    "tags": [
+      "cinema",
+      "blue-square",
+      "record",
+      "film",
+      "movie"
+    ],
+    "unicode": "🎦"
+  },
+  {
+    "name": "ghost",
+    "tags": [
+      "ghost",
+      "halloween"
+    ],
+    "unicode": "👻"
+  },
+  {
+    "name": "mute",
+    "tags": [
+      "mute",
+      "sound",
+      "volume"
+    ],
+    "unicode": "🔇"
+  },
+  {
+    "name": "shaved_ice",
+    "tags": [
+      "shaved_ice",
+      "hot",
+      "desert"
+    ],
+    "unicode": "🍧"
+  },
+  {
+    "name": "white_check_mark",
+    "tags": [
+      "white_check_mark",
+      "green-square",
+      "ok",
+      "agree"
+    ],
+    "unicode": "✅"
+  },
+  {
+    "name": "circus_tent",
+    "tags": [
+      "circus_tent",
+      "festival",
+      "carnival",
+      "party"
+    ],
+    "unicode": "🎪"
+  },
+  {
+    "name": "gift",
+    "tags": [
+      "gift",
+      "present",
+      "birthday",
+      "christmas",
+      "xmas"
+    ],
+    "unicode": "🎁"
+  },
+  {
+    "name": "white_circle",
+    "tags": [
+      "white_circle",
+      "shape"
+    ],
+    "unicode": "⚪"
+  },
+  {
+    "name": "city_sunrise",
+    "tags": [
+      "city_sunrise",
+      "photo"
+    ],
+    "unicode": "🌇"
+  },
+  {
+    "name": "gift_heart",
+    "tags": [
+      "gift_heart",
+      "love",
+      "valentines"
+    ],
+    "unicode": "💝"
+  },
+  {
+    "name": "name_badge",
+    "tags": [
+      "name_badge",
+      "fire",
+      "forbid"
+    ],
+    "unicode": "📛"
+  },
+  {
+    "name": "white_flower",
+    "tags": [
+      "white_flower",
+      "japanese"
+    ],
+    "unicode": "💮"
+  },
+  {
+    "name": "city_sunset",
+    "tags": [
+      "city_sunset",
+      "photo"
+    ],
+    "unicode": "🌆"
+  },
+  {
+    "name": "neckbeard",
+    "tags": [
+      "neckbeard",
+      "nerdy"
+    ]
+  },
+  {
+    "name": "ship",
+    "tags": [
+      "ship",
+      "transportation",
+      "titanic"
+    ],
+    "unicode": "🚢"
+  },
+  {
+    "name": "white_large_square",
+    "tags": [
+      "white_large_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "cl",
+    "tags": [
+      "cl",
+      "alphabet",
+      "words",
+      "red-square"
+    ],
+    "unicode": "🆑"
+  },
+  {
+    "name": "shipit",
+    "tags": [
+      "shipit",
+      "squirrel",
+      "detective"
+    ]
+  },
+  {
+    "name": "white_medium_small_square",
+    "tags": [
+      "white_medium_small_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "negative_squared_cross_mark",
+    "tags": [
+      "negative_squared_cross_mark",
+      "x",
+      "green-square",
+      "no",
+      "deny"
+    ],
+    "unicode": "❎"
+  },
+  {
+    "name": "white_medium_square",
+    "tags": [
+      "white_medium_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "clapper",
+    "tags": [
+      "clapper",
+      "movie",
+      "film",
+      "record"
+    ],
+    "unicode": "🎬"
+  },
+  {
+    "name": "goberserk",
+    "tags": [
+      "goberserk",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "white_small_square",
+    "tags": [
+      "white_small_square",
+      "shape"
+    ]
+  },
+  {
+    "name": "clipboard",
+    "tags": [
+      "clipboard",
+      "stationery",
+      "documents"
+    ],
+    "unicode": "📋"
+  },
+  {
+    "name": "godmode",
+    "tags": [
+      "godmode",
+      "ghonly"
+    ]
+  },
+  {
+    "name": "new",
+    "tags": [
+      "new",
+      "blue-square"
+    ],
+    "unicode": "🆕"
+  },
+  {
+    "name": "white_square_button",
+    "tags": [
+      "white_square_button",
+      "shape"
+    ],
+    "unicode": "🔳"
+  },
+  {
+    "name": "clock1",
+    "tags": [
+      "clock1",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕐"
+  },
+  {
+    "name": "golf",
+    "tags": [
+      "golf",
+      "sports",
+      "business"
+    ],
+    "unicode": "⛳"
+  },
+  {
+    "name": "shower",
+    "tags": [
+      "shower",
+      "clean",
+      "bath"
+    ],
+    "unicode": "🚿"
+  },
+  {
+    "name": "wind_chime",
+    "tags": [
+      "wind_chime",
+      "nature",
+      "ding"
+    ],
+    "unicode": "🎐"
+  },
+  {
+    "name": "clock10",
+    "tags": [
+      "clock10",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕙"
+  },
+  {
+    "name": "grapes",
+    "tags": [
+      "grapes",
+      "fruit",
+      "food"
+    ],
+    "unicode": "🍇"
+  },
+  {
+    "name": "signal_strength",
+    "tags": [
+      "signal_strength",
+      "blue-square"
+    ],
+    "unicode": "📶"
+  },
+  {
+    "name": "wine_glass",
+    "tags": [
+      "wine_glass",
+      "drink",
+      "beverage",
+      "drunk"
+    ],
+    "unicode": "🍷"
+  },
+  {
+    "name": "clock1030",
+    "tags": [
+      "clock1030",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕥"
+  },
+  {
+    "name": "green_apple",
+    "tags": [
+      "green_apple",
+      "fruit",
+      "nature"
+    ],
+    "unicode": "🍏"
+  },
+  {
+    "name": "newspaper",
+    "tags": [
+      "newspaper",
+      "press"
+    ],
+    "unicode": "📰"
+  },
+  {
+    "name": "six",
+    "tags": [
+      "six",
+      "6",
+      "numbers",
+      "blue-square"
+    ],
+    "unicode": "6️⃣"
+  },
+  {
+    "name": "clock11",
+    "tags": [
+      "clock11",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕚"
+  },
+  {
+    "name": "green_book",
+    "tags": [
+      "green_book",
+      "read",
+      "library",
+      "knowledge"
+    ],
+    "unicode": "📗"
+  },
+  {
+    "name": "ng",
+    "tags": [
+      "ng",
+      "blue-square"
+    ],
+    "unicode": "🆖"
+  },
+  {
+    "name": "six_pointed_star",
+    "tags": [
+      "six_pointed_star",
+      "purple-square"
+    ],
+    "unicode": "🔯"
+  },
+  {
+    "name": "clock1130",
+    "tags": [
+      "clock1130",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕦"
+  },
+  {
+    "name": "nine",
+    "tags": [
+      "nine",
+      "blue-square",
+      "numbers",
+      "9"
+    ],
+    "unicode": "9️⃣"
+  },
+  {
+    "name": "ski",
+    "tags": [
+      "ski",
+      "sports",
+      "winter",
+      "cold"
+    ],
+    "unicode": "🎿"
+  },
+  {
+    "name": "clock12",
+    "tags": [
+      "clock12",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕛"
+  },
+  {
+    "name": "grey_exclamation",
+    "tags": [
+      "grey_exclamation",
+      "surprise"
+    ],
+    "unicode": "❕"
+  },
+  {
+    "name": "no_bell",
+    "tags": [
+      "no_bell",
+      "sound",
+      "volume",
+      "mute"
+    ],
+    "unicode": "🔕"
+  },
+  {
+    "name": "clock1230",
+    "tags": [
+      "clock1230",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕧"
+  },
+  {
+    "name": "grey_question",
+    "tags": [
+      "grey_question",
+      "doubts"
+    ],
+    "unicode": "❔"
+  },
+  {
+    "name": "no_bicycles",
+    "tags": [
+      "no_bicycles"
+    ],
+    "unicode": "🚳"
+  },
+  {
+    "name": "clock130",
+    "tags": [
+      "clock130",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕜"
+  },
+  {
+    "name": "no_entry",
+    "tags": [
+      "no_entry",
+      "limit",
+      "security",
+      "privacy"
+    ],
+    "unicode": "⛔"
+  },
+  {
+    "name": "womens",
+    "tags": [
+      "womens",
+      "purple-square"
+    ],
+    "unicode": "🚺"
+  },
+  {
+    "name": "clock2",
+    "tags": [
+      "clock2",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕑"
+  },
+  {
+    "name": "no_entry_sign",
+    "tags": [
+      "no_entry_sign",
+      "forbid"
+    ],
+    "unicode": "🚫"
+  },
+  {
+    "name": "slot_machine",
+    "tags": [
+      "slot_machine",
+      "bet",
+      "gamble",
+      "vegas"
+    ],
+    "unicode": "🎰"
+  },
+  {
+    "name": "clock230",
+    "tags": [
+      "clock230",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕝"
+  },
+  {
+    "name": "small_blue_diamond",
+    "tags": [
+      "small_blue_diamond",
+      "shape"
+    ],
+    "unicode": "🔹"
+  },
+  {
+    "name": "wrench",
+    "tags": [
+      "wrench",
+      "tools",
+      "diy",
+      "ikea"
+    ],
+    "unicode": "🔧"
+  },
+  {
+    "name": "clock3",
+    "tags": [
+      "clock3",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕒"
+  },
+  {
+    "name": "no_mobile_phones",
+    "tags": [
+      "no_mobile_phones",
+      "iphone",
+      "mute"
+    ],
+    "unicode": "📵"
+  },
+  {
+    "name": "small_orange_diamond",
+    "tags": [
+      "small_orange_diamond",
+      "shape"
+    ],
+    "unicode": "🔸"
+  },
+  {
+    "name": "x",
+    "tags": [
+      "x",
+      "no",
+      "delete",
+      "remove"
+    ],
+    "unicode": "❌"
+  },
+  {
+    "name": "clock330",
+    "tags": [
+      "clock330",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕞"
+  },
+  {
+    "name": "guitar",
+    "tags": [
+      "guitar",
+      "music",
+      "instrument"
+    ],
+    "unicode": "🎸"
+  },
+  {
+    "name": "small_red_triangle",
+    "tags": [
+      "small_red_triangle",
+      "shape"
+    ],
+    "unicode": "🔺"
+  },
+  {
+    "name": "clock4",
+    "tags": [
+      "clock4",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕓"
+  },
+  {
+    "name": "gun",
+    "tags": [
+      "gun",
+      "violence",
+      "weapon"
+    ],
+    "unicode": "🔫"
+  },
+  {
+    "name": "no_pedestrians",
+    "tags": [
+      "no_pedestrians",
+      "rules",
+      "crossing"
+    ],
+    "unicode": "🚷"
+  },
+  {
+    "name": "small_red_triangle_down",
+    "tags": [
+      "small_red_triangle_down",
+      "shape"
+    ],
+    "unicode": "🔻"
+  },
+  {
+    "name": "yen",
+    "tags": [
+      "yen",
+      "money",
+      "japanese",
+      "dollar"
+    ],
+    "unicode": "💴"
+  },
+  {
+    "name": "clock430",
+    "tags": [
+      "clock430",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕟"
+  },
+  {
+    "name": "no_smoking",
+    "tags": [
+      "no_smoking",
+      "cigarette"
+    ],
+    "unicode": "🚭"
+  },
+  {
+    "name": "clock5",
+    "tags": [
+      "clock5",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕔"
+  },
+  {
+    "name": "hamburger",
+    "tags": [
+      "hamburger",
+      "food",
+      "meat"
+    ],
+    "unicode": "🍔"
+  },
+  {
+    "name": "non-potable_water",
+    "tags": [
+      "non-potable_water",
+      "drink",
+      "faucet",
+      "tap"
+    ]
+  },
+  {
+    "name": "clock530",
+    "tags": [
+      "clock530",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕠"
+  },
+  {
+    "name": "hammer",
+    "tags": [
+      "hammer",
+      "tools",
+      "verdict",
+      "judge",
+      "done",
+      "law",
+      "ruling"
+    ],
+    "unicode": "🔨"
+  },
+  {
+    "name": "zero",
+    "tags": [
+      "zero",
+      "numbers",
+      "blue-square",
+      "null"
+    ],
+    "unicode": "0️⃣"
+  },
+  {
+    "name": "clock6",
+    "tags": [
+      "clock6",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕕"
+  },
+  {
+    "name": "notebook",
+    "tags": [
+      "notebook",
+      "stationery"
+    ],
+    "unicode": "📓"
+  },
+  {
+    "name": "clock630",
+    "tags": [
+      "clock630",
+      "time",
+      "clock"
+    ],
+    "unicode": "🕡"
+  },
+  {
+    "name": "notebook_with_decorative_cover",
+    "tags": [
+      "notebook_with_decorative_cover",
+      "classroom"
+    ],
+    "unicode": "📔"
+  },
+  {
+    "name": "horse_racing",
+    "tags": [
+      "horse_racing",
+      "animal",
+      "betting"
+    ],
+    "unicode": "🏇"
+  },
+  {
+    "name": "christmas_tree",
+    "tags": [
+      "christmas_tree",
+      "festival",
+      "vacation",
+      "december",
+      "xmas"
+    ],
+    "unicode": "🎄"
+  },
+  {
+    "name": "fu",
+    "tags": [
+      "fu",
+      "fuck",
+      "finger"
+    ]
+  }
+]

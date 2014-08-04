@@ -1,0 +1,116 @@
+
+body {
+  font: 1em Lato, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+  background-color: rgb(43, 175, 255);
+  color: rgb(251, 251, 251);}
+  .header h1 {
+    font-size: 3em;
+    font-weight: bold;	
+    margin: 0em;
+    padding-left: .5em;
+  }
+  .header a:link, a:visited, a:active, a:hover {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+  }
+
+.is-center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  float: right;
+}
+
+.pure-g {
+  box-sizing: border-box;
+  margin: 15px;
+}
+
+.l-box {
+  margin: 1em;
+}
+
+.emoji-wrapper {
+  background-color: rgb(120, 204, 255);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;    
+  padding-top: 25px;
+  max-width: 250px;
+  max-height: 250px; }
+
+  .emoji-wrapper h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 15px;    
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);}
+  
+  .emoji-wrapper p {
+    font-size: .99em;
+    padding-left: 15px;
+    font-style: italic;
+    margin-top: 0px;
+    font-weight: lighter;
+    color: #2c3e50;}  
+
+.emoji {
+  font-size: 3em;
+}
+
+.red {
+
+}
+
+.blue {
+
+}
+
+.yellow {
+
+}
+
+.search {
+  font-size: 4em;
+  font-family: "Lato";
+  color: rgb(120, 204, 255);
+  font-style: italic; 
+  margin-top: .5em;
+  margin-bottom: .5em;
+  }
+
+  .search input {    
+    border: 3px solid rgb(0, 179, 89);
+    font-style: italic;
+  }
+
+  .textarea {
+      width: 85%;
+  }
+
+::-webkit-input-placeholder {
+  color: rgb(120, 204, 255);
+  padding-left: .15em;
+  font-family: "Lato"
+  font-style: italic;
+  font-weight: lighter;
+}

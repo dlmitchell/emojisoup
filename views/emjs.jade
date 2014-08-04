@@ -1,0 +1,18 @@
+div
+    -var colors = ['red', 'blue', 'yellow']
+    each emj, i in emojis
+        -var color = colors[Math.floor(Math.random() * 3)]
+        div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4')
+            span.emoji= emj.unicode
+            h3(class='left')= emj.name
+            p(class='left emoji-tags')
+                strong= "Tags: " 
+                span= emj.tags
+
+    each r, i in recipes
+        div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4')
+            span.emoji= r.unicode
+            h3(class='left')= r.title
+            p(class='left emoji-tags')
+                strong= "Recipe: " 
+                span= r.recipe
