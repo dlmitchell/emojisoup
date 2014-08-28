@@ -7,7 +7,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongodb')
 var monk = require('monk')
-var db = monk('localhost:27017/enodji')
+
+var mongoUri = process.env.MONGOLAB_URI ||
+  process.env.MONGOHQ_URL ||
+  'localhost:27017/enodji';
+
+var db = monk(mongoUri)
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
