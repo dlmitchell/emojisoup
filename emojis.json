@@ -282,7 +282,8 @@
       "phew",
       "sweat",
       "nervous"
-    ]
+    ],
+    "unicode": "😥"
   },
   {
     "name": "cold_sweat",
@@ -886,31 +887,15 @@
     "unicode": "👽"
   },
   {
-    "name": "hankey",
-    "tags": [
-      "hankey",
-      "poop",
-      "shit",
-      "shitface"
-    ]
-  },
-  {
     "name": "poop",
     "tags": [
       "poop",
       "poop",
       "shit",
-      "shitface"
+      "shitface",
+      "hankey"
     ],
     "unicode": "💩"
-  },
-  {
-    "name": "shit",
-    "tags": [
-      "shit",
-      "poop",
-      "face"
-    ]
   },
   {
     "name": "fire",
@@ -965,7 +950,8 @@
       "boom",
       "bomb",
       "blown"
-    ]
+    ],
+    "unicode": "💥"
   },
   {
     "name": "anger",
@@ -1050,15 +1036,6 @@
     "unicode": "👄"
   },
   {
-    "name": "+1",
-    "tags": [
-      "+1",
-      "thumb",
-      "thumbs",
-      "thumbsup"
-    ]
-  },
-  {
     "name": "thumbsup",
     "tags": [
       "thumbsup",
@@ -1067,15 +1044,6 @@
       "yes"
     ],
     "unicode": "👍"
-  },
-  {
-    "name": "-1",
-    "tags": [
-      "-1",
-      "thumb",
-      "thumbs",
-      "thumbsdown"
-    ]
   },
   {
     "name": "thumbsdown",
@@ -1104,17 +1072,6 @@
       "fist"
     ],
     "unicode": "👊"
-  },
-  {
-    "name": "facepunch",
-    "tags": [
-      "facepunch",
-      "angry",
-      "violence",
-      "fist",
-      "hit",
-      "attack"
-    ]
   },
   {
     "name": "fist",
@@ -1279,16 +1236,6 @@
     "unicode": "🏃"
   },
   {
-    "name": "running",
-    "tags": [
-      "running",
-      "man",
-      "walking",
-      "exercise",
-      "fun"
-    ]
-  },
-  {
     "name": "dancer",
     "tags": [
       "dancer",
@@ -1336,6 +1283,7 @@
       "couple",
       "love",
       "like",
+      "gay",
       "bromance",
       "friends"
     ],
@@ -1348,6 +1296,7 @@
       "friends",
       "couple",
       "love",
+      "gay",
       "like",
       "female"
     ],
@@ -1537,15 +1486,8 @@
       "athletic_shoe",
       "shoes",
       "sports"
-    ]
-  },
-  {
-    "name": "shoe",
-    "tags": [
-      "shoe",
-      "accessories",
-      "fashion"
-    ]
+    ],
+    "unicode": "👟"
   },
   {
     "name": "mans_shoe",
@@ -1585,19 +1527,13 @@
     "unicode": "👢"
   },
   {
-    "name": "tshirt",
-    "tags": [
-      "tshirt",
-      "cloth",
-      "fashion"
-    ]
-  },
-  {
     "name": "shirt",
     "tags": [
       "shirt",
       "fashion",
-      "cloth"
+      "cloth",
+      "t-shirt",
+      "tee"
     ],
     "unicode": "👕"
   },
@@ -1964,7 +1900,8 @@
     "tags": [
       "footprints",
       "feet"
-    ]
+    ],
+    "unicode": "👣"
   },
   {
     "name": "thought_balloon",
@@ -2251,14 +2188,6 @@
       "insect"
     ],
     "unicode": "🐝"
-  },
-  {
-    "name": "bee",
-    "tags": [
-      "bee",
-      "animal",
-      "insect"
-    ]
   },
   {
     "name": "ant",
@@ -2904,7 +2833,8 @@
     "tags": [
       "crescent_moon",
       "night"
-    ]
+    ],
+    "unicode": "🌙"
   },
   {
     "name": "earth_africa",
@@ -3350,9 +3280,12 @@
     "name": "hash",
     "tags": [
       "hash",
-      "symbol"
+      "symbol",
+      "number sign",
+      "number-sign",
+      "number"
     ],
-    "unicode": "#️⃣"
+    "unicode": "#️"
   },
   {
     "name": "headphones",
@@ -3415,7 +3348,8 @@
     "tags": [
       "heavy_exclamation_mark",
       "surprise"
-    ]
+    ],
+    "unicode": "❗"
   },
   {
     "name": "heavy_minus_sign",
@@ -3471,17 +3405,6 @@
       "letter"
     ],
     "unicode": "🅾"
-  },
-  {
-    "name": "octocat",
-    "tags": [
-      "octocat",
-      "animal",
-      "octopus",
-      "cat",
-      "github",
-      "ghonly"
-    ]
   },
   {
     "name": "oden",
@@ -3569,7 +3492,7 @@
       "numbers",
       "1"
     ],
-    "unicode": "1️⃣"
+    "unicode": "1️"
   },
   {
     "name": "smoking",
@@ -3660,7 +3583,8 @@
       "sparkle",
       "stars",
       "green-square"
-    ]
+    ],
+    "unicode": "❇"
   },
   {
     "name": "sparkler",
@@ -3698,7 +3622,8 @@
       "read",
       "library",
       "knowledge"
-    ]
+    ],
+    "unicode": "📖"
   },
   {
     "name": "apple",
@@ -3820,16 +3745,6 @@
     "unicode": "⛎"
   },
   {
-    "name": "squirrel",
-    "tags": [
-      "squirrel",
-      "animal",
-      "sherlock",
-      "inspector",
-      "dectective"
-    ]
-  },
-  {
     "name": "arrow_double_down",
     "tags": [
       "arrow_double_down",
@@ -3935,7 +3850,8 @@
       "package",
       "mail",
       "gift"
-    ]
+    ],
+    "unicode": "📦"
   },
   {
     "name": "station",
@@ -4220,13 +4136,6 @@
     "unicode": "↕"
   },
   {
-    "name": "hurtrealbad",
-    "tags": [
-      "hurtrealbad",
-      "mad"
-    ]
-  },
-  {
     "name": "passport_control",
     "tags": [
       "passport_control",
@@ -4343,7 +4252,8 @@
       "documents",
       "paper",
       "write"
-    ]
+    ],
+    "unicode": "✏"
   },
   {
     "name": "sunrise_over_mountains",
@@ -4456,14 +4366,6 @@
       "email"
     ],
     "unicode": "📥"
-  },
-  {
-    "name": "suspect",
-    "tags": [
-      "suspect",
-      "mad",
-      "ghonly"
-    ]
   },
   {
     "name": "custard",
@@ -4653,7 +4555,8 @@
     "tags": [
       "izakaya_lantern",
       "light"
-    ]
+    ],
+    "unicode": "🏮"
   },
   {
     "name": "syringe",
@@ -4673,7 +4576,8 @@
     "tags": [
       "back",
       "arrow"
-    ]
+    ],
+    "unicode": "🔙"
   },
   {
     "name": "date",
@@ -4912,7 +4816,8 @@
       "telephone",
       "communication",
       "technology"
-    ]
+    ],
+    "unicode": "☎"
   },
   {
     "name": "bank",
@@ -5070,7 +4975,7 @@
       "prime",
       "blue-square"
     ],
-    "unicode": "3️⃣"
+    "unicode": "3️"
   },
   {
     "name": "bathtub",
@@ -5292,13 +5197,6 @@
     "unicode": "🔔"
   },
   {
-    "name": "lantern",
-    "tags": [
-      "lantern",
-      "light"
-    ]
-  },
-  {
     "name": "tokyo_tower",
     "tags": [
       "tokyo_tower",
@@ -5476,7 +5374,8 @@
     "tags": [
       "train",
       "transportation"
-    ]
+    ],
+    "unicode": "🚆"
   },
   {
     "name": "black_joker",
@@ -5510,7 +5409,8 @@
     "tags": [
       "black_large_square",
       "shape"
-    ]
+    ],
+    "unicode": "⬛"
   },
   {
     "name": "egg",
@@ -5542,7 +5442,8 @@
     "name": "black_medium_small_square",
     "tags": [
       "black_medium_small_square"
-    ]
+    ],
+    "unicode": "◾"
   },
   {
     "name": "eggplant",
@@ -5574,7 +5475,8 @@
     "tags": [
       "black_medium_square",
       "shape"
-    ]
+    ],
+    "unicode": "◼"
   },
   {
     "name": "eight",
@@ -5584,7 +5486,7 @@
       "blue-square",
       "numbers"
     ],
-    "unicode": "8️⃣"
+    "unicode": "8️"
   },
   {
     "name": "leftwards_arrow_with_hook",
@@ -5661,7 +5563,8 @@
     "name": "black_small_square",
     "tags": [
       "black_small_square"
-    ]
+    ],
+    "unicode": "▪"
   },
   {
     "name": "eight_spoked_asterisk",
@@ -5709,15 +5612,6 @@
     "unicode": "🔌"
   },
   {
-    "name": "rage1",
-    "tags": [
-      "rage1",
-      "angry",
-      "mad",
-      "ghonly"
-    ]
-  },
-  {
     "name": "trolleybus",
     "tags": [
       "trolleybus",
@@ -5738,23 +5632,6 @@
     "unicode": "♎"
   },
   {
-    "name": "rage2",
-    "tags": [
-      "rage2",
-      "angry",
-      "mad",
-      "ghonly"
-    ]
-  },
-  {
-    "name": "trollface",
-    "tags": [
-      "trollface",
-      "internet",
-      "meme"
-    ]
-  },
-  {
     "name": "email",
     "tags": [
       "email",
@@ -5771,15 +5648,6 @@
       "vehicle"
     ],
     "unicode": "🚈"
-  },
-  {
-    "name": "rage3",
-    "tags": [
-      "rage3",
-      "angry",
-      "mad",
-      "ghonly"
-    ]
   },
   {
     "name": "trophy",
@@ -5823,15 +5691,6 @@
     "unicode": "🔗"
   },
   {
-    "name": "rage4",
-    "tags": [
-      "rage4",
-      "angry",
-      "mad",
-      "ghonly"
-    ]
-  },
-  {
     "name": "tropical_drink",
     "tags": [
       "tropical_drink",
@@ -5855,7 +5714,8 @@
       "letter",
       "postal",
       "communication"
-    ]
+    ],
+    "unicode": "✉"
   },
   {
     "name": "railway_car",
@@ -5871,7 +5731,8 @@
     "tags": [
       "envelope_with_arrow",
       "email"
-    ]
+    ],
+    "unicode": "📩"
   },
   {
     "name": "truck",
@@ -5954,15 +5815,6 @@
     "unicode": "🍭"
   },
   {
-    "name": "raising_hand",
-    "tags": [
-      "raising_hand",
-      "female",
-      "girl",
-      "woman"
-    ]
-  },
-  {
     "name": "bomb",
     "tags": [
       "bomb",
@@ -5987,14 +5839,6 @@
       "cassette"
     ],
     "unicode": "➿"
-  },
-  {
-    "name": "book",
-    "tags": [
-      "book",
-      "library",
-      "literature"
-    ]
   },
   {
     "name": "loudspeaker",
@@ -6090,7 +5934,7 @@
       "prime",
       "blue-square"
     ],
-    "unicode": "2️⃣"
+    "unicode": "2️"
   },
   {
     "name": "books",
@@ -6108,14 +5952,6 @@
       "sun"
     ],
     "unicode": "🔅"
-  },
-  {
-    "name": "red_car",
-    "tags": [
-      "red_car",
-      "transportation",
-      "vehicle"
-    ]
   },
   {
     "name": "m",
@@ -6242,17 +6078,6 @@
     "unicode": "🈺"
   },
   {
-    "name": "bowtie",
-    "tags": [
-      "bowtie",
-      "face",
-      "formal",
-      "fashion",
-      "suit",
-      "classy"
-    ]
-  },
-  {
     "name": "fast_forward",
     "tags": [
       "fast_forward",
@@ -6359,13 +6184,6 @@
       "kanji"
     ],
     "unicode": "🈶"
-  },
-  {
-    "name": "feelsgood",
-    "tags": [
-      "feelsgood",
-      "ghonly"
-    ]
   },
   {
     "name": "rewind",
@@ -6477,13 +6295,6 @@
     "unicode": "🈲"
   },
   {
-    "name": "finnadie",
-    "tags": [
-      "finnadie",
-      "ghonly"
-    ]
-  },
-  {
     "name": "rice_cracker",
     "tags": [
       "rice_cracker",
@@ -6519,15 +6330,6 @@
       "photo"
     ],
     "unicode": "🎑"
-  },
-  {
-    "name": "uk",
-    "tags": [
-      "uk",
-      "british",
-      "england",
-      "union jack"
-    ]
   },
   {
     "name": "bullettrain_front",
@@ -6712,16 +6514,6 @@
     "unicode": "🎣"
   },
   {
-    "name": "metal",
-    "tags": [
-      "metal",
-      "fingers",
-      "rocknroll",
-      "concert",
-      "band"
-    ]
-  },
-  {
     "name": "round_pushpin",
     "tags": [
       "round_pushpin",
@@ -6789,7 +6581,7 @@
       "blue-square",
       "prime"
     ],
-    "unicode": "5️⃣"
+    "unicode": "5️"
   },
   {
     "name": "microphone",
@@ -7061,7 +6853,8 @@
       "sailboat",
       "transportation",
       "ship"
-    ]
+    ],
+    "unicode": "⛵"
   },
   {
     "name": "car",
@@ -7158,7 +6951,7 @@
       "numbers",
       "blue-square"
     ],
-    "unicode": "4️⃣"
+    "unicode": "4️"
   },
   {
     "name": "satellite",
@@ -7562,7 +7355,7 @@
       "blue-square",
       "prime"
     ],
-    "unicode": "7️⃣"
+    "unicode": "7️"
   },
   {
     "name": "wheelchair",
@@ -7692,13 +7485,6 @@
     "unicode": "🌆"
   },
   {
-    "name": "neckbeard",
-    "tags": [
-      "neckbeard",
-      "nerdy"
-    ]
-  },
-  {
     "name": "ship",
     "tags": [
       "ship",
@@ -7712,7 +7498,8 @@
     "tags": [
       "white_large_square",
       "shape"
-    ]
+    ],
+    "unicode": "⬜"
   },
   {
     "name": "cl",
@@ -7725,19 +7512,12 @@
     "unicode": "🆑"
   },
   {
-    "name": "shipit",
-    "tags": [
-      "shipit",
-      "squirrel",
-      "detective"
-    ]
-  },
-  {
     "name": "white_medium_small_square",
     "tags": [
       "white_medium_small_square",
       "shape"
-    ]
+    ],
+    "unicode": "◽"
   },
   {
     "name": "negative_squared_cross_mark",
@@ -7755,7 +7535,8 @@
     "tags": [
       "white_medium_square",
       "shape"
-    ]
+    ],
+    "unicode": "◻"
   },
   {
     "name": "clapper",
@@ -7768,18 +7549,12 @@
     "unicode": "🎬"
   },
   {
-    "name": "goberserk",
-    "tags": [
-      "goberserk",
-      "ghonly"
-    ]
-  },
-  {
     "name": "white_small_square",
     "tags": [
       "white_small_square",
       "shape"
-    ]
+    ],
+    "unicode": "▫"
   },
   {
     "name": "clipboard",
@@ -7789,13 +7564,6 @@
       "documents"
     ],
     "unicode": "📋"
-  },
-  {
-    "name": "godmode",
-    "tags": [
-      "godmode",
-      "ghonly"
-    ]
   },
   {
     "name": "new",
@@ -7919,7 +7687,7 @@
       "numbers",
       "blue-square"
     ],
-    "unicode": "6️⃣"
+    "unicode": "6️"
   },
   {
     "name": "clock11",
@@ -7973,7 +7741,7 @@
       "numbers",
       "9"
     ],
-    "unicode": "9️⃣"
+    "unicode": "9"
   },
   {
     "name": "ski",
@@ -8266,7 +8034,8 @@
       "drink",
       "faucet",
       "tap"
-    ]
+    ],
+    "unicode": "🚱"
   },
   {
     "name": "clock530",
@@ -8298,7 +8067,7 @@
       "blue-square",
       "null"
     ],
-    "unicode": "0️⃣"
+    "unicode": "0️"
   },
   {
     "name": "clock6",
@@ -8353,13 +8122,5 @@
       "xmas"
     ],
     "unicode": "🎄"
-  },
-  {
-    "name": "fu",
-    "tags": [
-      "fu",
-      "fuck",
-      "finger"
-    ]
   }
 ]

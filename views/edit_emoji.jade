@@ -1,0 +1,5 @@
+div#my_modal(class='emoji_edit modal hide fade' role='dialog' aria-hidden='true')       
+    h1= "Edit Emoji"
+    form(name="recipe_add",method="post",action="/recipe_add")
+        input(type="text", placeholder="Name", name="title")
+        button#btnSubmit(type="submit") Save

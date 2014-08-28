@@ -8,11 +8,28 @@ router.get('/', function(req, res) {
 
 /* GET Userlist page */
 router.get('/emojis', function(req, res) {
+	console.log("find all");
     var db = req.db;
     var collection = db.get('emojis');
     collection.find({},{},function(e,docs){
         res.render('emojis', {
             emojis : docs,
+            recipes : []
+        });
+    });
+});
+
+router.get('/emojis/:emoji', function(req, res) {
+	var emj = req.params['emoji'];
+
+    var db = req.db;
+    var collection = db.get('emojis');
+
+    collection.findOne({name: emj},function(e,docs){
+    	console.log(e);
+    	console.log(docs);
+        res.render('emojis', {
+            emojis : [docs],
             recipes : []
         });
     });
@@ -47,6 +64,7 @@ router.get('/search', function(req, res) {
     	// search recipes
     	recColl.find(recQuery,{},function(e, recDocs){
 			res.location("emojis");
+			console.log(emjDocs)
 	        res.render('emojis', {
 	            emojis : emjDocs,
 	            recipes : recDocs
@@ -69,6 +87,22 @@ router.get('/recipe', function(req, res) {
 				recipes : recDocs
 			});
     	});		
+    });
+});
+
+router.get('/recipe/:recipe', function(req, res) {
+	var rec = req.params['recipe'];
+
+    var db = req.db;
+    var collection = db.get('recipes');
+
+    collection.findOne({title: rec},function(e,docs){
+    	console.log(e);
+    	console.log(docs);
+        res.render('emojis', {
+            emojis : [],
+            recipes : [docs]
+        });
     });
 });
 
@@ -97,5 +131,9 @@ router.post('/recipe_add', function(req, res) {
 		}
 	});
 });
+
+// router.post('/add_tag', function(req, res)) {
+// 	return {};
+// }
 
 module.exports = router;
