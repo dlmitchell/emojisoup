@@ -20,9 +20,9 @@ div
             p(class='left emoji-tags')
                 //- strong= "Tags: "         
                 each t, i in emj.tags
-                    a(class='tag', href='./search?q=' + t)= t     
+                    a(class='tag', href='/tags/' + t)= t     
 
-                a(href='#my_modal' data-toggle='modal' data-emoji-name=emj.name)= "+"
+                //- a(href='#my_modal' data-toggle='modal' data-emoji-name=emj.name)= "+"
 
         //- h3(class='pure-u-lg-1-8') 
         //-     a(href='#modal' role='button' data-toggle='modal')= "fuck"                     

@@ -30,12 +30,33 @@ router.get('/emojis/:emoji', function(req, res) {
     });
 });
 
-
-router.get('/search', function(req, res) {
-	var db = req.db;
-
+router.get('/tags', function(req, res) {
+	console.log(req)
 	var searchTerm = req.query.q;
+	if (searchTerm)
+		search(searchTerm, req, res);
+	else
+	{
+		console.log("find all");
+	    var db = req.db;
+	    var collection = db.get('emojis');
+	    collection.find({},{},function(e,docs){
+	        res.render('tags', {
+	            emojis : docs,
+	            recipes : []
+	        });
+	    });		
+	}
+});
 
+router.get('/tags/:tagname', function(req, res) {
+	console.log(req)
+	var searchTerm = req.params['tagname'];
+	search(searchTerm, req, res);
+});
+
+search = function(searchTerm, req, res) {
+	var db = req.db;
 	var query = {
 	  tags: {
 	    $regex: searchTerm,
@@ -65,8 +86,8 @@ router.get('/search', function(req, res) {
 	            recipes : recDocs
 	        });
     	});	
-	});
-});
+	});	
+}
 
 /** GET new recipe **/
 router.get('/recipe', function(req, res) {

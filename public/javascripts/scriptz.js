@@ -22,3 +22,13 @@ $('#my_modal').on('show.bs.modal', function(e) {
    // $(e.currentTarget).find('input[name="bookId"]').val(bookId);
    // console.log($(e.relatedTarget).find('.data-id'))
 });
+
+
+$( document ).ready(function() {
+  
+  // adds the url text to the search box
+  if (window.location.pathname.indexOf('/tags/') >= 0)
+    $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
+
+  $('#inputSearch').focus()
+});
