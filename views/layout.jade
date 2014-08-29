@@ -10,11 +10,12 @@ html
 
   body
     div.header
-        h1(class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4')
-            a(href="./emojis") EM😃JISOUP
+        //- h1(class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4')
+        h1.a(href="./") EM😃JISOUP            
+        p="Emoji definitions, made by you 👍"
 
-        h3(class='pure-u-lg-1-8') 
-            a(href="./recipe") Create
+        //- h3(class='pure-u-lg-1-8') 
+        //-     a(href="./recipe") Create
 
     div.content-wrapper
         div(class='content is-center')
@@ -24,3 +25,11 @@ html
 
 
     script(type='text/javascript' src='/javascripts/scriptz.js')      
+    script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-54259648-1', 'auto');
+        ga('send', 'pageview');

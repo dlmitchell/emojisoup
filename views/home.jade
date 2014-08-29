@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	form#formSearch(class="search" name="search",method="get",action="/search")
+		input#inputSearch(class="textarea", type="text", placeholder="Search", name="q")   
+
+	-var searchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats']
+
+	div(class='suggestions')
+		each s, i in searchSuggestions			
+			a(class='pure-u-1 pure-u-md-1-8' href='./search?q=' + s)= '#' + s
+
+	include ./emjs.jade
+//-  			
+
+	

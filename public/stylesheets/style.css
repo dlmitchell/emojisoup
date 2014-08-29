@@ -19,20 +19,26 @@ a:link, a:visited, a:active {
   text-decoration: none;
 }
 
-
-
 .header {
   background-color: rgb(43, 175, 255);
-  color: rgb(251, 251, 251);}
+  color: rgb(251, 251, 251);
+  padding-left: .8em;}
   .header h1 {
+    letter-spacing: .1em;
     font-size: 3em;
     font-weight: bold;	
     margin: 0em;
-    padding-left: .5em;
+    margin-left: -2px;
   }
   .header a:hover {
     color: rgb(251, 251, 251);
     text-decoration: none;
+  }
+  .header p {
+    letter-spacing: 1px;
+    padding-left: 0em;
+    margin-top: 0em;
+    padding-bottom: .4em;
   }
 
 a:hover {
@@ -78,6 +84,7 @@ a:hover {
     font-size: 1.2em;
     padding-left: 15px;    
     margin-bottom: 0px;
+    letter-spacing: .1em;
     color: rgb(255, 255, 255);}
   
   .emoji-wrapper p {
@@ -131,6 +138,23 @@ a:hover {
   .textarea {
       width: 85%;
   }
+
+  .suggestions {
+    margin-bottom: 1.5em;
+  }
+
+  .suggestions a {
+    color: rgb(120, 204, 255);
+    font-size: 2em;
+  }
+
+  .suggestions.l-box {
+    margin: 0em;
+  }
+
+  .suggestions.pure-g {
+    margin: 0px;
+  }  
 
 .emoji_edit {
   padding: 10px;  

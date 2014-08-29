@@ -18,7 +18,7 @@ div
             span.emoji= emj.unicode
             h3(class='left')= emj.name
             p(class='left emoji-tags')
-                strong= "Tags: "         
+                //- strong= "Tags: "         
                 each t, i in emj.tags
                     a(class='tag', href='./search?q=' + t)= t     
 

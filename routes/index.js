@@ -1,18 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET home page */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'fuck' });
-});
-
-/* GET Userlist page */
-router.get('/emojis', function(req, res) {
 	console.log("find all");
     var db = req.db;
     var collection = db.get('emojis');
     collection.find({},{},function(e,docs){
-        res.render('emojis', {
+        res.render('home', {
             emojis : docs,
             recipes : []
         });
@@ -63,9 +58,9 @@ router.get('/search', function(req, res) {
 
     	// search recipes
     	recColl.find(recQuery,{},function(e, recDocs){
-			res.location("emojis");
+			res.location("home");
 			console.log(emjDocs)
-	        res.render('emojis', {
+	        res.render('home', {
 	            emojis : emjDocs,
 	            recipes : recDocs
 	        });
