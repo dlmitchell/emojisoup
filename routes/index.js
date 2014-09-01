@@ -1,155 +1,91 @@
 var express = require('express');
 var router = express.Router();
+var DAO = require('./dao');
+var dao = new DAO();
 
-/* GET home page */
 router.get('/', function(req, res) {
-	console.log("find all");
-    var db = req.db;
-    var collection = db.get('emojis');
-    collection.find({},{},function(e,docs){
-        res.render('home', {
-            emojis : docs,
-            recipes : []
-        });
-    });
+	dao.emojis_all(req, function(e, emojis) {
+		renderEmojis(res, 'home', emojis, []);
+	});	
 });
 
 router.get('/emojis/:emoji', function(req, res) {
 	var emj = req.params['emoji'];
-
-    var db = req.db;
-    var collection = db.get('emojis');
-
-    collection.findOne({name: emj},function(e,docs){
-    	console.log(e);
-    	console.log(docs);
-        res.render('emojis', {
-            emojis : [docs],
-            recipes : []
-        });
-    });
+	dao.emojis_find_one(req, emj, function(e, emojis) {
+		renderEmojis(res, 'home', [emojis], []);
+	});
 });
 
 router.get('/tags', function(req, res) {
-	console.log(req)
 	var searchTerm = req.query.q;
-	if (searchTerm)
-		search(searchTerm, req, res);
-	else
-	{
-		console.log("find all");
-	    var db = req.db;
-	    var collection = db.get('emojis');
-	    collection.find({},{},function(e,docs){
-	        res.render('tags', {
-	            emojis : docs,
-	            recipes : []
-	        });
-	    });		
+	if (searchTerm) {
+		dao.search(req, searchTerm, function(e, emojis, recipes) {
+			renderEmojis(res, 'home', emojis, recipes)
+		});
+	}
+	else  {
+		dao.tags_all(req, function(e, tags) {
+			renderTags(res, tags);
+		});			
 	}
 });
 
-router.get('/tags/:tagname', function(req, res) {
-	console.log(req)
-	var searchTerm = req.params['tagname'];
-	search(searchTerm, req, res);
+router.get('/tags/:tagname', function(req, res) {	
+	dao.search(req, req.params['tagname'], function(e, emojis, recipes) {
+		renderEmojis(res, 'home', emojis, recipes)
+	});
 });
-
-search = function(searchTerm, req, res) {
-	var db = req.db;
-	var query = {
-	  tags: {
-	    $regex: searchTerm,
-	    $options: 'i' //i: ignore case, m: multiline, etc
-	  }
-	};
-
-	// search emojis
-	var emjColl = db.get('emojis');
-	emjColl.find(query, {}, function(e, emjDocs){
-
-		var recQuery = {
-		  title: {
-		    $regex: searchTerm,
-		    $options: 'i' //i: ignore case, m: multiline, etc
-		  }
-		};
-
-    	var recColl = db.get('recipes');
-
-    	// search recipes
-    	recColl.find(recQuery,{},function(e, recDocs){
-			res.location("home");
-			console.log(emjDocs)
-	        res.render('home', {
-	            emojis : emjDocs,
-	            recipes : recDocs
-	        });
-    	});	
-	});	
-}
 
 /** GET new recipe **/
-router.get('/recipe', function(req, res) {
-    var db = req.db;
-    var emjColl = db.get('emojis');
-
-    emjColl.find({},{},function(e,emjDocs){    	
-    	var recColl = db.get('recipes');
-    	recColl.find({},{},function(e, recDocs){
-				res.render('recipe_add', { 
-				title: "Add new user",
-				emojis : emjDocs,
-				recipes : recDocs
-			});
-    	});		
-    });
+router.get('/recipes', function(req, res) {
+	dao.all(req, function(e, emojis, recipes) {
+		renderRecipes(res, emojis, recipes);
+	});
 });
 
-router.get('/recipe/:recipe', function(req, res) {
-	var rec = req.params['recipe'];
-
-    var db = req.db;
-    var collection = db.get('recipes');
-
-    collection.findOne({title: rec},function(e,docs){
-    	console.log(e);
-    	console.log(docs);
-        res.render('emojis', {
-            emojis : [],
-            recipes : [docs]
-        });
-    });
+router.get('/recipes/:recipe', function(req, res) {
+	dao.recipes_find_one(req, req.params['recipe'], function(e, recipe) {
+		renderEmojis(res, 'home', [], [recipe]);
+	});
 });
-
 
 /** POST new recipe **/
 router.post('/recipe_add', function(req, res) {
-	var db = req.db;
-
 	var title = req.body.title;
 	var recipe = req.body.recipe;
 	var emjs = req.body.emojilist
 
-	var collection = db.get('recipes');
-	collection.insert({
-		"title" : title,
-		"recipe" : recipe,
-		"translation" : "no translation",
-		"unicode" : emjs
-	}, function(err, doc) {
-		if (err) {
-
-		}
-		else {
-			res.location("recipe");
-			res.redirect("recipe");
-		}
+	dao.recipes_add(req, title, recipe, emjs, function(e, recipe) {
+		res.location("recipe");
+		res.redirect("recipe");
 	});
 });
 
-// router.post('/add_tag', function(req, res)) {
-// 	return {};
-// }
+// -------------------------
+/** RENDERING FUNCTIONS **/
+// -------------------------
+
+renderTags = function(res, tags) {
+    res.render('tags', {
+        emojis : tags,
+        recipes : []
+    });	
+}
+
+renderRecipes = function(res, emojis, recipes) {
+		res.render('recipe_add', { 
+		title: "Add new recipe",
+		emojis : emojis,
+		recipes : recipes
+	});	
+}
+
+renderEmojis = function(res, page, emojis, recipes) {
+	res.location(page);	
+    res.render(page, {
+        emojis : emojis,
+        recipes : recipes
+    });	
+}
 
 module.exports = router;
