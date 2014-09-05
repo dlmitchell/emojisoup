@@ -1,0 +1,15 @@
+extends layout
+
+block content	
+	-var emj = emojis[0]
+	div(class='emoji_edit')       
+		h1= "Edit Emoji: " + emj.name
+		
+		form
+			input#tag_name(type="text", placeholder="tag name", name="tag")
+			button#emoji_add_tag(type="submit" data-emoji-name=emj.name) Add Tag
+
+		div(class='emoji-tags')
+			each t, i in emj.tags
+				button(class='tag_edit pure-u-1 pure-u-md-1-12' data-tag-name=t data-emoji-name=emj.name)
+					span=t

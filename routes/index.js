@@ -9,10 +9,49 @@ router.get('/', function(req, res) {
 	});	
 });
 
+router.post('/emojis', function(req, res) {
+	var name = req.body.name;
+	var tags = req.body.tags;
+
+	dao.emojis_edit(req, name, tags, function(e, emoji) {
+		res.redirect("home");
+	});
+});
+
 router.get('/emojis/:emoji', function(req, res) {
 	var emj = req.params['emoji'];
 	dao.emojis_find_one(req, emj, function(e, emojis) {
 		renderEmojis(res, 'home', [emojis], []);
+	});
+});
+
+router.get('/emojis/:emoji/edit', function(req, res) {
+	var emj = req.params['emoji'];
+	dao.emojis_find_one(req, emj, function(e, emojis) {
+		renderEmojis(res, 'emoji_edit', [emojis], []);
+	});
+});
+
+router.post('/add_tag', function(req, res) {
+	var emj = req.body.emoji;
+	var tag = req.body.tag;
+
+	console.log(req.body)
+
+	dao.emojis_add_tag(req, emj, tag, function(e, emoji) {		
+		res.json({e: false})
+	});
+});
+
+router.post('/delete_tag', function(req, res) {
+	var emj = req.body.emoji;
+	var tag = req.body.tag;
+
+	dao.emojis_delete_tag(req, emj, tag, function(e, emoji) {
+		if (e == null)
+			res.json({e: false});
+		else
+			res.json({e: true});		
 	});
 });
 
@@ -39,7 +78,7 @@ router.get('/tags/:tagname', function(req, res) {
 /** GET new recipe **/
 router.get('/recipes', function(req, res) {
 	dao.all(req, function(e, emojis, recipes) {
-		renderRecipes(res, emojis, recipes);
+		renderRecipes(res, [], recipes);
 	});
 });
 
