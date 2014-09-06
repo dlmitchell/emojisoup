@@ -1,11 +1,11 @@
-div#my_modal(class='emoji_edit modal hide fade' role='dialog' aria-hidden='true')          
-    h1= "Edit Emoji: " + emj.name
+//- div#my_modal(class='emoji_edit modal hide fade' role='dialog' aria-hidden='true')          
+//-     h1= "Edit Emoji: " + emj.name
 
-    p(class='emoji-tags')
-        each t, i in emj.tags
-            span(class='tag_edit')= t        
+//-     p(class='emoji-tags')
+//-         each t, i in emj.tags
+//-             span(class='tag_edit')= t        
             
-    form(name="emoji_tag_add", method="post", action="/add_tag")
-        input(type="text", placeholder="tag name", name="tag")
-        input(type="hidden", value=emj.name, name="emoji")
-        button#btnSubmit(type="submit") Add Tag
+//-     form(name="emoji_tag_add", method="post", action="/add_tag")
+//-         input(type="text", placeholder="tag name", name="tag")
+//-         input(type="hidden", value=emj.name, name="emoji")
+//-         button#btnSubmit(type="submit") Add Tag

@@ -1,5 +1,5 @@
 var DAO = function() {}
-
+    
 /**
  * @function
  * Searches emojis and recipes

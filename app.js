@@ -14,8 +14,9 @@ var mongoUri = process.env.MONGOLAB_URI ||
 
 var db = monk(mongoUri)
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var routes = require('./controllers/index');
+var users = require('./controllers/users');
+var emojis = require('./controllers/emojis');
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/emojis', emojis);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -9,12 +9,16 @@ $(document).on('click', '.emoji', function(e) {
 });	
 
 $(document).on('click', '.tag_edit', function(e) {
-  var params = {emoji: $(this).attr('data-emoji-name'), tag:$(this).attr('data-tag-name')};
-  var fuck = $(this);
-  $.post('/delete_tag', params, function(data) {
-    if (!data.e) {
-      fuck.remove();
-    }      
+  var emj = $(this).attr('data-emoji-name');
+  var tag = $(this).attr('data-tag-name');
+  var tag = $(this);
+
+  $.ajax({
+      url: '/emojis/' + emj + '/tags/' + tag,
+      type: 'DELETE',
+      success: function(result) {
+        tag.remove()
+      }
   });
 }); 
 
@@ -23,9 +27,9 @@ $(document).on('click', '#emoji_add_tag', function(e) {
   var emj = $(this).attr('data-emoji-name');
   var params = {emoji: emj, tag: tag };
 
-  $.post('/add_tag', params, function(data) {
-    console.log(data);
-    // console.log("hey");
+  $.post('/emojis/' + emj + '/tags', params, function(data) {
+    console.log("hey");
+    console.log(data);    
   });
 }); 
 
@@ -52,7 +56,6 @@ $('.tag_edit').hover(
     });
 
 $( document ).ready(function() {
-  
   // adds the url text to the search box
   if (window.location.pathname.indexOf('/tags/') >= 0)
     $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
