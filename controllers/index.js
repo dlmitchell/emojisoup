@@ -29,31 +29,6 @@ router.get('/tags/:tagname', function(req, res) {
 	});
 });
 
-/** GET new recipe **/
-router.get('/recipes', function(req, res) {
-	dao.all(req, function(e, emojis, recipes) {
-		renderRecipes(res, [], recipes);
-	});
-});
-
-router.get('/recipes/:recipe', function(req, res) {
-	dao.recipes_find_one(req, req.params['recipe'], function(e, recipe) {
-		renderEmojis(res, 'home', [], [recipe]);
-	});
-});
-
-/** POST new recipe **/
-router.post('/recipe_add', function(req, res) {
-	var title = req.body.title;
-	var recipe = req.body.recipe;
-	var emjs = req.body.emojilist
-
-	dao.recipes_add(req, title, recipe, emjs, function(e, recipe) {
-		res.location("recipe");
-		res.redirect("recipe");
-	});
-});
-
 // -------------------------
 /** RENDERING FUNCTIONS **/
 // -------------------------
@@ -63,14 +38,6 @@ renderTags = function(res, tags) {
         emojis : tags,
         recipes : []
     });	
-}
-
-renderRecipes = function(res, emojis, recipes) {
-		res.render('recipe_add', { 
-		title: "Add new recipe",
-		emojis : emojis,
-		recipes : recipes
-	});	
 }
 
 renderEmojis = function(res, page, emojis, recipes) {

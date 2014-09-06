@@ -2,7 +2,7 @@ extends layout
 
 block content
     h1= "Add new recipe"
-    form(name="recipe_add",method="post",action="/recipe_add")
+    form(name="recipe_add", method="post", action="/recipe")
         input(type="text", placeholder="Name", name="title")
         input.hidden(type="text", placeholder="Recipe" name="recipe")
         input.pot(type="text", placeholder="Emojis" name="emojilist")
