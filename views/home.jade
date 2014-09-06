@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	form#formSearch(class="search" name="search",method="get", action="/tags")
+	form#formSearch(class="search" name="search",method="get", action="/")
 		input#inputSearch(class="textarea", type="text", placeholder="Search", name="q")   
 
 	-var searchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats']

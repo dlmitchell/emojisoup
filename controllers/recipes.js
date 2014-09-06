@@ -35,24 +35,4 @@ router.route('/:recipe?')
 		});
 	})
 
-// -------------------------
-/** RENDERING FUNCTIONS **/
-// -------------------------
-
-// renderRecipes = function(res, emojis, recipes) {
-// 		res.render('recipe_add', { 
-// 		title: "Add new recipe",
-// 		emojis : emojis,
-// 		recipes : recipes
-// 	});	
-// }
-
-renderEmojis = function(res, page, emojis, recipes) {
-	res.location(page);	
-    res.render(page, {
-        emojis : emojis,
-        recipes : recipes
-    });	
-}
-
 module.exports = router;

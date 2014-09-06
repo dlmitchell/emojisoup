@@ -18,6 +18,7 @@ var routes = require('./controllers/index');
 var users = require('./controllers/users');
 var emojis = require('./controllers/emojis');
 var recipes = require('./controllers/recipes');
+var tags = require('./controllers/tags');
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/emojis', emojis);
 app.use('/recipes', recipes);
+app.use('/tags', tags);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

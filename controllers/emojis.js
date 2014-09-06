@@ -51,15 +51,4 @@ router.route('/:emoji/tags/:tag?')
 		}
 	});
 
-//---------------------------------
-// RENDERING
-//---------------------------------
-renderEmojis = function(res, page, emojis, recipes) {
-	res.location(page);	
-    res.render(page, {
-        emojis : emojis,
-        recipes : recipes
-    });	
-}
-
 module.exports = router;
