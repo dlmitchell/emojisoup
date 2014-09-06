@@ -15,7 +15,6 @@ router.param('emoji', function(req, res, next, name) {
 
 router.route('/:emoji?')
 	.get(function(req, res, next) {	
-		console.log("getting emoji: " + req.params.emoji)
 		if (req.params.emoji)
 			renderEmojis(res, req.query.edit ? 'emoji_edit' : 'home', [req.emoji], []);
 		else 
@@ -29,20 +28,16 @@ router.route('/:emoji?')
 //---------------------------------
 router.route('/:emoji/tags/:tag?')
 	.post(function(req, res, next) {
-		var emj = req.body.emoji;
 		var tag = req.body.tag;
 
-		console.log(req.body)
-
-		dao.emojis_add_tag(req, emj, tag, function(e, emoji) {		
+		dao.emojis_add_tag(req, req.emoji, tag, function(e, emoji) {		
 			res.json({e: false})
 		});
 	})
 	.delete(function(req, res, next) {
-		console.log(req.body)
-
 		if (req.params.tag) {
-			dao.emojis_delete_tag(req, req.params.emoji, req.params.tag, function(e, emoji) {
+			console.log("tag: " + req.params.tag)
+			dao.emojis_delete_tag(req, req.emoji, req.params.tag, function(e, emoji) {
 				if (e == null)
 					res.json({e: false});
 				else

@@ -51,35 +51,29 @@ DAO.prototype.emojis_find_one = function(req, searchTerm, callback) {
     });	
 }
 
-DAO.prototype.emojis_add_tag = function(req, name, tag, callback) {
+DAO.prototype.emojis_add_tag = function(req, emoji, tag, callback) {
     var db = req.db;
-    console.log("name: " + name + " tag: " + tag);
 
-    db.get('emojis').findOne({name: name},function(e, emoji){
-        emoji.tags.push(tag);
-
-        db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags}}, function(e) {
-            callback(e, emoji);            
-        });        
-    });             
+    emoji.tags.push(tag);
+    db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags}}, function(e) {
+        callback(e, emoji);            
+    });                
 }
 
-DAO.prototype.emojis_delete_tag = function(req, name, tag, callback) {
-    console.log("name: " + name + " tag: " + tag);
-
+DAO.prototype.emojis_delete_tag = function(req, emoji, tag, callback) {
     var db = req.db;    
+    var i = emoji.tags.indexOf(tag);
 
-    db.get('emojis').findOne({name: name},function(e, emoji){
-        var i = emoji.tags.indexOf(tag);
+    console.log(emoji.tags)
+    console.log(tag)
+    if(i != -1)
+        emoji.tags.splice(i, 1);
 
-        if(i != -1) {
-            emoji.tags.splice(i, 1);
-        }
+    console.log(emoji.tags);
 
-        db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags}}, function(e) {
-            callback(e, emoji);            
-        });        
-    });             
+    db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags}}, function(e) {
+        callback(e, emoji);            
+    });        
 }
 
 DAO.prototype.emojis_edit = function(req, name, tags, callback) {

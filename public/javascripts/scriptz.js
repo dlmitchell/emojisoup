@@ -9,15 +9,15 @@ $(document).on('click', '.emoji', function(e) {
 });	
 
 $(document).on('click', '.tag_edit', function(e) {
-  var emj = $(this).attr('data-emoji-name');
-  var tag = $(this).attr('data-tag-name');
-  var tag = $(this);
+  var btn = $(this);
+  var emj = btn.attr('data-emoji-name');
+  var tag = btn.attr('data-tag-name');
 
   $.ajax({
       url: '/emojis/' + emj + '/tags/' + tag,
       type: 'DELETE',
       success: function(result) {
-        tag.remove()
+        btn.remove()
       }
   });
 }); 
@@ -26,11 +26,7 @@ $(document).on('click', '#emoji_add_tag', function(e) {
   var tag = $("#tag_name").val();
   var emj = $(this).attr('data-emoji-name');
   var params = {emoji: emj, tag: tag };
-
-  $.post('/emojis/' + emj + '/tags', params, function(data) {
-    console.log("hey");
-    console.log(data);    
-  });
+  $.post('/emojis/' + emj + '/tags', params, function(data) {});
 }); 
 
 $('#my_modal').on('show.bs.modal', function(e) {
