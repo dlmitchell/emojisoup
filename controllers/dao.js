@@ -7,28 +7,41 @@ var DAO = function() {}
 DAO.prototype.search = function(req, searchTerm, callback) {
 	console.log(searchTerm)
 	var db = req.db;
-	var query = {
-	  tags: {
-	    $regex: searchTerm,
-	    $options: 'i' //i: ignore case, m: multiline, etc
-	  }
-	};
 
+    var query = {
+        $or: 
+        [
+            {
+                tags: {
+                    $regex: searchTerm, 
+                    $options: 'i'
+                }
+            },
+            { 
+                unicode: searchTerm 
+            } 
+        ]    
+    }
+ 
 	// search emojis
-	var emjColl = db.get('emojis');
-
-	emjColl.find(query, {}, function(e, emjDocs){
+	db.get('emojis').find(query, {}, function(e, emjDocs){
 		var recQuery = {
-		  title: {
-		    $regex: searchTerm,
-		    $options: 'i' //i: ignore case, m: multiline, etc
-		  }
+            $or: 
+            [
+                {
+                    title: {
+            		    $regex: searchTerm,
+            		    $options: 'i' //i: ignore case, m: multiline, etc
+            		}
+                },
+                {
+                    unicode: searchTerm
+                }
+            ]
 		};
 
-    	var recColl = db.get('recipes');
-
     	// search recipes
-    	recColl.find(recQuery,{},function(e, recDocs){
+    	db.get('recipes').find(recQuery,{},function(e, recDocs){
 	    	callback(e, emjDocs, recDocs);
     	});	
 	});		
