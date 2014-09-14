@@ -4,9 +4,28 @@ makeRecipe = function() {
 }
 
 $(document).on('click', '.emoji', function(e) {
-	$(this).clone().appendTo(".pot");
-	console.log(this);
 });	
+
+var client = new ZeroClipboard( $('[data-emoji-name]') );
+
+client.on( "ready", function( readyEvent ) {
+  
+  // alert( "ZeroClipboard SWF is ready!" );
+  client.on("copy", function(event) { 
+
+    var copyval = event.target.getAttribute("data-clipboard-value");
+    console.log(copyval)
+    event.clipboardData.setData( "text/plain", copyval);
+  });
+
+  client.on( "aftercopy", function( event ) {
+    // `this` === `client`
+    // `event.target` === the element that was clicked
+    // console.log(event)
+    // event.target.style.display = "none";
+    // console.log("Copied text to clipboard: " + event.data["text/plain"] );
+  } );
+} );
 
 $(document).on('click', '.tag_edit', function(e) {
   var btn = $(this);
