@@ -69,7 +69,7 @@ $('.tag_edit').hover(
   function(e) {
     $(this)
       .removeClass('orange')
-      .removeClass('green');
+      .removeClass('green')
       .removeClass('purple');            
 });
 
