@@ -88,15 +88,46 @@ a:hover {
     color: rgb(255, 255, 255);}
   
   .emoji-wrapper p {
-    font-size: .99em;
+    font-size: 1em;
     padding-left: 15px;
     font-style: italic;
     margin-top: 0px;
-    /*font-weight: lighter;*/
+    font-weight: light;
     color: #2c3e50;}  
 
+.emoji-wrapper-cover {
+  background-color: rgb(237, 28, 36);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px; 
+  width: 250px;
+  height: 250px;   
+  display: block;
+  position: absolute;}
+
+  .emoji-wrapper-cover h2 {
+    color: white;
+    padding: 0px;
+    font-style: normal;
+    font-size: 2.5em;    
+    font-weight: bolder;
+    text-align: center; }
+
+  .emoji-wrapper-cover p {
+    color: white;
+    padding: 0px;
+    margin-top: -20px;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: light;
+    text-align: center;
+    letter-spacing: -.5px;
+  }
+
+
 .emoji {
-  font-size: 5em;
+  font-size: 5em; 
+  cursor: pointer;
 }
 
 .tag {

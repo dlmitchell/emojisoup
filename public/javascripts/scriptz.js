@@ -1,32 +1,45 @@
+//------------------------------------------------------
+// DOCUMENT READY
+//------------------------------------------------------
+$( document ).ready(function() {
+  // adds the url text to the search box
+  if (window.location.pathname.indexOf('/tags/') >= 0)
+    $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
+
+  $('#inputSearch').focus()
+});
+
 makeRecipe = function() {
   r = $.map($('.pot .fuck'), function(e){ return ":" + $(e).attr("title") + ":"; }).join("");
   $("#hiddenz").attr('value', r);
 }
 
-$(document).on('click', '.emoji', function(e) {
-});	
-
-var client = new ZeroClipboard( $('[data-emoji-name]') );
+//------------------------------------------------------
+// COPY / PASTE EMOJIS
+//------------------------------------------------------
+var client = new ZeroClipboard( $('[data-clipboard-name]') );
 
 client.on( "ready", function( readyEvent ) {
-  
-  // alert( "ZeroClipboard SWF is ready!" );
-  client.on("copy", function(event) { 
 
-    var copyval = event.target.getAttribute("data-clipboard-value");
-    console.log(copyval)
-    event.clipboardData.setData( "text/plain", copyval);
+  client.on("copy", function(event) { 
+    $('.emoji-wrapper-cover').remove();
+    event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
   });
 
   client.on( "aftercopy", function( event ) {
-    // `this` === `client`
-    // `event.target` === the element that was clicked
-    // console.log(event)
-    // event.target.style.display = "none";
-    // console.log("Copied text to clipboard: " + event.data["text/plain"] );
-  } );
-} );
+    // add copied text to emoji
+    $(event.target.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
+    var height = $(event.target.parentNode).height();
+    $('.emoji-wrapper-cover')
+      .height(height + 26)
+      .css('margin-top', (-1 * height) -26)
+      .delay(1500).fadeOut();
+  });
+});
 
+//------------------------------------------------------
+// EDIT TAGS
+//------------------------------------------------------
 $(document).on('click', '.tag_edit', function(e) {
   var btn = $(this);
   var emj = btn.attr('data-emoji-name');
@@ -48,6 +61,22 @@ $(document).on('click', '#emoji_add_tag', function(e) {
   $.post('/emojis/' + emj + '/tags', params, function(data) {});
 }); 
 
+$('.tag_edit').hover(
+  function(e) {
+    var colors = ['orange', 'green', 'purple'];
+    $(this).addClass(colors[Math.floor(Math.random() * 3)]);
+  },
+  function(e) {
+    $(this)
+      .removeClass('orange')
+      .removeClass('green');
+      .removeClass('purple');            
+});
+
+//------------------------------------------------------
+// THE MODAL
+//------------------------------------------------------
+
 $('#my_modal').on('show.bs.modal', function(e) {
    var target = $(e.relatedTarget);
    var currentTarget = $(e.currentTarget);
@@ -59,21 +88,3 @@ $('#my_modal').on('show.bs.modal', function(e) {
 });
 
 
-$('.tag_edit').hover(
-    function(e) {
-      var colors = ['orange', 'green', 'purple'];
-      $(this).addClass(colors[Math.floor(Math.random() * 3)]);
-    },
-    function(e) {
-      $(this).removeClass('orange');
-      $(this).removeClass('green');
-      $(this).removeClass('purple');            
-    });
-
-$( document ).ready(function() {
-  // adds the url text to the search box
-  if (window.location.pathname.indexOf('/tags/') >= 0)
-    $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
-
-  $('#inputSearch').focus()
-});

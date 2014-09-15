@@ -3,8 +3,8 @@ div
 
 	each r, i in recipes
 		-var color = colors[Math.floor(Math.random() * 4)]
-		div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4')
-			span(class='emoji' data-emoji-name=r.title data-clipboard-value=r.unicode)= r.unicode
+		div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 ' + color)
+			span(class='emoji' data-clipboard-name=r.title data-clipboard-value=r.unicode)= r.unicode
 			h3(class='left')= r.title
 			p(class='left emoji-tags')
 				strong= "Recipe: " 
@@ -13,12 +13,12 @@ div
 	each emj, i in emojis
 		-var color = colors[Math.floor(Math.random() * 4)]
 		div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 ' + color)
-			span(class='emoji' data-emoji-name=''+emj.name data-clipboard-value='' + emj.unicode)= emj.unicode
+			span(class='emoji' data-clipboard-name=''+emj.name data-clipboard-value='' + emj.unicode)= emj.unicode
 			h3(class='left')= emj.name
 			p(class='left emoji-tags')
 				each t, i in emj.tags
 					a(class='tag', href='/tags/' + t)= t     
 
-				//- a(href='#my_modal' data-toggle='modal' data-emoji-tags=emj.tags data-emoji-name=emj.name)= "+"
 				a(href='/emojis/' + emj.name + '?edit=true' data-toggle='modal' data-emoji-tags=emj.tags data-emoji-name=emj.name)= "+"                
+
 
