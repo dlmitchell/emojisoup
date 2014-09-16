@@ -20,6 +20,11 @@ html
             a(href="./") EM😃JISOUP            
         p="Emoji definitions, by you and for you! 👍"
 
+    div#the-pot
+        div.emojis
+        //- button#create-recipe="CREATE RECIPE"
+        button#copy-recipe(data-clipboard-name='copy-recipe' data-clipboard-value)="COPY"
+
     div.content-wrapper
         div(class='content is-center')
             block content

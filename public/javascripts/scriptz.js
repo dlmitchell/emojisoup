@@ -10,9 +10,29 @@ $( document ).ready(function() {
 });
 
 makeRecipe = function() {
-  r = $.map($('.pot .fuck'), function(e){ return ":" + $(e).attr("title") + ":"; }).join("");
+  r = $.map($('#the-pot .fuck'), function(e){ return ":" + $(e).attr("title") + ":"; }).join("");
   $("#hiddenz").attr('value', r);
 }
+
+//------------------------------------------------------
+// MAKING RECIPES
+//------------------------------------------------------
+$(document).on('click', '.emoji-wrapper > .emoji', function(e) {    
+  $('#the-pot .emojis').append($(e.currentTarget).clone())  
+  $('#copy-recipe').show();
+  var targetUnicode = $(e.currentTarget).attr('data-clipboard-value');
+  var currentUnicode = $('#copy-recipe').attr('data-clipboard-value');
+  $('#copy-recipe').attr('data-clipboard-value', currentUnicode + targetUnicode);
+}); 
+
+$(document).on('click', '#the-pot > .emojis > .emoji', function(e) {  
+  var targetUnicode = $(e.currentTarget).attr('data-clipboard-value');
+  var currentUnicode = $('#copy-recipe').attr('data-clipboard-value');  
+
+  $('#copy-recipe').attr('data-clipboard-value', currentUnicode.replace(targetUnicode, ''));  
+
+  $(e.currentTarget).fadeOut();
+}); 
 
 //------------------------------------------------------
 // COPY / PASTE EMOJIS
