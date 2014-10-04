@@ -1,12 +1,13 @@
 extends layout
 
 block content
-    h1= "Add new recipe"
-    form(name="recipe_add", method="post", action="/recipe")
-        input(type="text", placeholder="Name", name="title")
-        input.hidden(type="text", placeholder="Recipe" name="recipe")
-        input.pot(type="text", placeholder="Emojis" name="emojilist")
-        button#btnSubmit(type="submit") Save
-        
-    include ./emjs.jade
-                    
+	h1= "Add new recipe"
+	div.emojis
+	form(name="recipe_add", method="post", action="/recipe")
+		input(class='textarea' type='text', placeholder='Title', name='title')
+		input(class='textarea' type='text' placeholder='Definition' name='definition')
+		input(class='textarea' type='text', placeholder='Tags', name='tags')
+		input.hidden(type="text", placeholder="Recipe" name="recipe")
+		//- input.pot(type="text", placeholder="Emojis" name="emojilist")
+		input#btnSubmit(type="submit")="Save"
+					

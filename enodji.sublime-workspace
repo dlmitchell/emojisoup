@@ -4,6 +4,102 @@
 		"selected_items":
 		[
 			[
+				"MIX",
+				"MIXPANEL_API_KEY"
+			],
+			[
+				"even",
+				"event_name"
+			],
+			[
+				"showpot",
+				"showPot"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"dataclip",
+				"data-clipboard-value"
+			],
+			[
+				"th",
+				"the-pot"
+			],
+			[
+				"targ",
+				"targetUnicode"
+			],
+			[
+				"curr",
+				"currentUnicode"
+			],
+			[
+				"data-cli",
+				"data-clipboard-value"
+			],
+			[
+				"style",
+				"border-style"
+			],
+			[
+				"sub",
+				"subtitle"
+			],
+			[
+				"data-clip",
+				"data-clipboard-name"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"emoji-",
+				"emoji-wrapper-cover"
+			],
+			[
+				"emo",
+				"emoji-wrapper"
+			],
+			[
+				"fad",
+				"fadeOut  (function)"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"copy",
+				"copyval"
+			],
+			[
+				"jav",
+				"javascripts"
+			],
+			[
+				"Original",
+				"OriginalProduct"
+			],
+			[
+				"recomm",
+				"Recommendations"
+			],
+			[
+				"recomme",
+				"recommendations"
+			],
+			[
+				"com",
+				"compliment"
+			],
+			[
 				"redner",
 				"renderEmojis"
 			],
@@ -12,20 +108,12 @@
 				"new_multiple"
 			],
 			[
-				"add",
-				"addClass  (function)"
-			],
-			[
 				"baclk",
 				"background-color"
 			],
 			[
 				"background-c",
 				"background-color"
-			],
-			[
-				"emo",
-				"emoji"
 			],
 			[
 				"tags",
@@ -86,10 +174,6 @@
 			[
 				"st",
 				"stylesheet"
-			],
-			[
-				"style",
-				"stylesheets"
 			],
 			[
 				"padding",
@@ -216,10 +300,6 @@
 				"HttpResponse"
 			],
 			[
-				"recomm",
-				"recommend"
-			],
-			[
 				"artist",
 				"artistTuple"
 			],
@@ -323,9 +403,53 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 203.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"ind",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -357,13 +481,9 @@
 			[
 				"package",
 				"Package Control: Install Package"
-			],
-			[
-				"json",
-				"Set Syntax: JSON"
 			]
 		],
-		"width": 583.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -384,142 +504,142 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/administrator/dev/enodeji/enodeji"
+		"/Users/administrator/dev/cassandra-scripts"
 	],
 	"file_history":
 	[
-		"/Users/administrator/dev/enodeji/enodeji/controllers/dao.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/pure-grids-responsive-min.css",
-		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
+		"/Users/administrator/dev/cassandra-scripts/generic_event_reader.py",
+		"/Users/administrator/dev/search/ab_web.results",
+		"/Users/administrator/dev/search/ab_facets.results",
+		"/Users/administrator/dev/search/sleepy.hardware",
+		"/Users/administrator/dev/search/ab_aggs.json",
+		"/Users/administrator/dev/search/ab_facets.json",
+		"/Users/administrator/dev/search/ab_aggs.results",
+		"/Users/administrator/dev/search/local_ab.results",
+		"/Users/administrator/dev/search/product_search_tags.json",
+		"/Users/administrator/dev/search/search_product.json",
+		"/Users/administrator/dev/search/users.json",
+		"/Users/administrator/dev/search/related_complement.json",
+		"/Users/administrator/dev/search/related_tags.json",
+		"/Users/administrator/Downloads/tzdata2014h/zone.tab",
+		"/Users/administrator/Downloads/tzdata2014h/northamerica",
+		"/Users/administrator/Downloads/us_cities_and_states/cities.sql",
+		"/Users/administrator/Downloads/us_cities_and_states/cities_extended.sql",
+		"/Users/administrator/Downloads/us_cities_and_states/states.sql",
+		"/Users/administrator/Downloads/timezonedb.csv/database.sql",
+		"/Volumes/C/dev/shopsavvy/Lib/Services/Search/production_mapping.json",
+		"/Users/administrator/dev/search/related_substitute.json",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/functionscore/FunctionScoreQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/function/FiltersFunctionScoreQuery.java",
+		"/Users/administrator/dev/elasticsearch/docs/reference/query-dsl.asciidoc",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/examples/queries.js",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/BaseQueryBuilder.java",
+		"/Users/administrator/dev/shopsavvy-web/config/recipes/base.rb",
+		"/Users/administrator/dev/shopsavvy-web/config/initializers/backtrace_silencers.rb",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/util/BigArray.java",
+		"/Users/administrator/dev/shopsavvy-web/config/boot.rb",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchResultProvider.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/validate/query/QueryExplanation.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/cache/query/parser/QueryParserCache.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/BoolQueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/SpanQueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/TermQueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryPhaseExecutionException.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/FuzzyQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/MatchQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/TermQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/BoolQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryBinaryParseElement.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryStringQueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/fetch/QueryFetchSearchResult.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryStringQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/IdsQueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/IdsQueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queryparser/classic/QueryParserSettings.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetExecutor.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParsingException.java",
+		"/Users/administrator/dev/elasticsearch/src/test/java/org/elasticsearch/search/rescore/QueryRescorerTests.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchRequest.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParserFactory.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryFilterBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/action/support/QuerySourceBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchResult.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryParseElement.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParseContext.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryFilterParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/support/QueryParsers.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacet.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/rescore/QueryRescorer.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryBuilders.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryBuilder.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParser.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryPhase.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ChildrenConstantScoreQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ParentConstantScoreQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queries/ExtendedCommonTermsQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/nested/IncludeNestedDocsQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MultiPhrasePrefixQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/function/FunctionScoreQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/XConstantScoreQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MoreLikeThisQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MatchNoDocsQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/TopChildrenQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/search/vectorhighlight/CustomFieldQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queries/BlendedTermQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/MultiMatchQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/XFilteredQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/all/AllTermQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ChildrenQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ParentQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/ParsedQuery.java",
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/MatchQuery.java",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/replicaset/query_secondaries_test.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/lib/mongodb/commands/query_command.js",
+		"/Users/administrator/dev/elasticsearch/docs/reference/search/facets/query-facet.asciidoc",
+		"/Users/administrator/dev/elasticsearch/docs/reference/query-dsl/filters/query-filter.asciidoc",
+		"/Users/administrator/dev/elasticsearch/docs/reference/search/request/query.asciidoc",
+		"/Users/administrator/dev/elasticsearch/docs/java-api/query-dsl-queries.asciidoc",
+		"/Users/administrator/dev/elasticsearch/docs/java-api/query-dsl-filters.asciidoc",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/express/lib/middleware/query.js",
+		"/Users/administrator/dev/shopsavvy-web/app/workers/eyewitness_worker.rb",
+		"/Users/administrator/dev/shopsavvy-web/config/initializers/mixpanel.rb",
+		"/Users/administrator/dev/shopsavvy-web/app/controllers/concerns/eyewitness.rb",
+		"/Users/administrator/dev/shopsavvy-web/Gemfile",
+		"/Users/administrator/dev/shopsavvy-web/app/views/layouts/_footer.html.erb",
+		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/mobile.js.coffee",
+		"/Users/administrator/dev/shopsavvy-web/config/routes.rb",
+		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/metrics.js.coffee",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/node_modules/mongoskin/node_modules/mongodb/node_modules/kerberos/lib/worker.cc",
+		"/Users/administrator/dev/shopsavvy-web/app/models/api/history_item.rb",
+		"/Users/administrator/dev/enodeji/enodeji/views/recipes.jade",
+		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/application.js",
+		"/Users/administrator/dev/shopsavvy-web/app/views/comments/_form.html.erb",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/_config.yml",
+		"/Users/administrator/dev/shopsavvy-web/app/assets/stylesheets/footer.css.sass",
+		"/Users/administrator/dev/cassandra-scripts/feed_story_clicks.py",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/examples/sticky-footer/sticky-footer.css",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/_includes/footer.html",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/less/forms.less",
+		"/Users/administrator/dev/enodeji/enodeji/views/recipe_add.jade",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/recipes.js",
 		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
+		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
+		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
+		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/index.js",
 		"/Users/administrator/dev/enodeji/enodeji/app.js",
-		"/Users/administrator/dev/enodeji/enodeji/controllers/emojis.js",
-		"/Users/administrator/dev/enodeji/enodeji/controllers/recipes.js",
-		"/Users/administrator/dev/enodeji/enodeji/views/recipe_add.jade",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
-		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
-		"/Users/administrator/dev/shopsavvy-web/config/initializers/string_is_number.rb",
-		"/Users/administrator/dev/enodeji/enodeji/views/edit_emoji.jade",
-		"/Users/administrator/dev/enodeji/enodeji/views/emoji_edit.jade",
-		"/Users/administrator/dev/enodeji/enodeji/routes/index.js",
-		"/Users/administrator/dev/enodeji/enodeji/routes/emojis.js",
-		"/Users/administrator/dev/enodeji/enodeji/bin/www",
-		"/Users/administrator/dev/shopsavvy-web/lib/shopsavvy.rb",
-		"/Users/administrator/dev/shopsavvy-web/lib/cache.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/products_controller.rb",
-		"/Users/administrator/dev/shopsavvy-web/config/routes.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/views/products/recommend.html.erb",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/product.rb",
-		"/Users/administrator/dev/enodeji/enodeji/views/recipes.jade",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/stylesheets/apu.css.sass",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/base.rb",
-		"/Users/administrator/dev/enodeji/enodeji/routes/dao.js",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/recommendation.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/list.rb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/configstore.js",
-		"/Users/administrator/dev/shopsavvy-web/spec/spec_helper.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/bargain_card.rb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/node_modules/mongoskin/node_modules/mongodb/lib/mongodb/connection/base.js",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/store.rb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/graceful-fs/polyfills.js",
-		"/Users/administrator/dev/shopsavvy-web/test/functional/search_controller_test.rb",
-		"/Users/administrator/dev/shopsavvy-web/Capfile",
-		"/Users/administrator/dev/shopsavvy-web/spec/requests/compression_spec.rb",
-		"/Users/administrator/dev/enodeji/enodeji/emojis.json",
-		"/Users/administrator/Desktop/Package Control Messages.md",
-		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/images/Developer Network  Application Details   LinkedIn_files/css",
-		"/Users/administrator/dev/enodeji/enodeji/views/tags_add.jade",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/.bin/jade",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/api.js",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/HISTORY",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/node_modules/mongoskin/node_modules/mongodb/lib/mongodb/auth/mongodb_sspi.js",
-		"/Users/administrator/dev/cassandra-scripts/productviews.py",
-		"/Users/administrator/dev/shopsavvy-web/app/views/pages/personalizer_contest_rules.html.erb",
-		"/Users/administrator/dev/shopsavvy-web/config/database.yml",
-		"/Users/administrator/dev/shopsavvy-web/dump.rdb",
-		"/Users/administrator/dev/enodeji/enodeji/package.json",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/pages_controller.rb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/test/promises-A.js",
-		"/Users/administrator/dev/shopsavvy-web/config/recipes/nginx.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/notifications_controller.rb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/lib/nodes/node.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/body-parser/index.js",
-		"/Users/administrator/dev/enodeji/enodeji/views/index.jade",
-		"/Users/administrator/dev/shopsavvy-web/app/views/products/tag.html.erb",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/home_controller.rb",
-		"/Users/administrator/dev/enodeji/enodeji/views/error.jade",
-		"/Users/administrator/dev/enodeji/enodeji/views/tags.jade",
-		"/Volumes/C/dev/shopsavvy/Lib/DAOs/SqlServer/ShopSavvyAccounts.edmx",
-		"/Users/administrator/dev/emojis/emoji/javascripts/stuff.js",
-		"/Users/administrator/dev/emojis/emoji/javascripts/speedy.js",
-		"/Users/administrator/dev/emojis/emoji/_assets/stuff.coffee",
-		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/ga.js",
-		"/Users/administrator/dev/shopsavvy-web/config/initializers/google_analytics.rb",
-		"/Users/administrator/dev/shopsavvy-web/Gemfile",
-		"/Users/administrator/dev/emojisoup/soupme/models.py",
-		"/Users/administrator/dev/shopsavvy-web/config/initializers/metrics.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/views/pages/store_contest_rules.html.erb",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/search_controller.rb",
-		"/Users/administrator/dev/emojisoup/emojisoup/settings.py",
-		"/Users/administrator/dev/cassandra-scripts/user_feedback_to_sql.py",
-		"/Users/administrator/dev/cassandra-scripts/generic_event_reader.py",
-		"/Users/administrator/dev/emojisoup/soupme/templates/soupme/index.html",
-		"/Users/administrator/Downloads/Web.config",
-		"/Users/administrator/dev/emojisoup/soupme/static/stylesheets/pure-release-0.5.0/grids-responsive-old-ie.css",
-		"/Users/administrator/dev/shopsavvy-web/app/middleware/search_suggestions.rb",
-		"/Users/administrator/dev/cassandra-scripts/view_list.py",
-		"/Users/administrator/dev/cassandra-scripts/keyword_search.py",
-		"/Users/administrator/dev/cassandra-scripts/pushopened.py",
-		"/Users/administrator/dev/how_to_es.md",
-		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/bootstrap.3.2.0.min.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/bootstrap.min.css",
-		"/Users/administrator/dev/emojis/gemoji/spec/output.txt",
-		"/Users/administrator/dev/emojis/gemoji/spec/input.txt",
-		"/Users/administrator/dev/enodeji/enodeji/views/edit_emoji.jade.cs",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/bootstrap.modal.css",
-		"/Users/administrator/dev/enodeji/enodeji/emunji.rb",
-		"/Users/administrator/dev/ProductBlastRecommender.cs",
-		"/Users/administrator/dev/emojisoup/soupme/static/stylesheets/style.css",
-		"/Users/administrator/dev/emojisoup/soupme/static/javascripts/soupme.js",
-		"/Users/administrator/dev/emojisoup/soupme/admin.py",
-		"/Users/administrator/dev/emojisoup/README.md",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/from/LICENSE.APACHE2",
-		"/Users/administrator/Downloads/pure-layout-marketing/LICENSE.md",
-		"/Users/administrator/dev/enodeji/enodeji/views/emojis.jade",
-		"/Users/administrator/dev/emojisoup/soupme/static/emojis.json",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/lib/mongodb/connection/strategies/statistics_strategy.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/compress/concat-strings.js",
-		"/Users/administrator/dev/emojisoup/soupme/static/flat/components.html",
-		"/Users/administrator/dev/cassandra-scripts/feed_story_clicks.py",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/monocle/node_modules/readdirp/test/bed/root_file1.ext1",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/replicaset/query_secondaries_test.js",
-		"/Users/administrator/dev/enodeji/enodeji/routes/users.js",
-		"/Users/administrator/dev/emojisoup/emojisoup/urls.py",
-		"/Users/administrator/dev/emojisoup/manage.py",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/body-parser/node_modules/type-is/node_modules/mime/test.js",
-		"/Users/administrator/dev/emojisoup/soupme/static/flat/index.html",
-		"/Users/administrator/dev/enodeji/enodeji/tags.json",
-		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
-		"/Users/administrator/dev/jstest.js",
-		"/Users/administrator/dev/user_feedback.py",
-		"/Users/administrator/dev/feed_story_clicks.py",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/node_modules/mongoskin/node_modules/mongodb/node_modules/kerberos/test/win32/security_buffer_descriptor_tests.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/gridstore/grid_store_file_test.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/dev/tools/test_set_runner.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/example/reflect.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/mkdirp/test/umask_sync.js",
-		"/Users/administrator/dev/enodeji/enodeji/bin/emojis_unicode.json",
-		"/Users/administrator/dev/enodeji/enodeji/views/emungi.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/images/thumbs_up_sign.svg",
-		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/administrator/dev/emojisoup/soupme/views.py",
-		"/Users/administrator/dev/enodeji/enodeji/views/newuser.jade",
-		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/dev/tools/doc-templates/index_no_header.ejs",
+		"/Users/administrator/dev/cassandra-scripts/topinviteusers.py",
+		"/Users/administrator/dev/shopsavvy-web/config/recipes/templates/unicorn_init.erb"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -534,6 +654,82 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
+			"lager",
+			"memory",
+			"memor",
+			"ns",
+			"public static void main",
+			"MIXPANEL_API_KEY",
+			"Mixpanel",
+			"perform_async",
+			"eyewitness_track",
+			"eyewitness",
+			"Eyewitness",
+			"mobile.js",
+			"ssm-download-app",
+			"ss-download",
+			"ssm-download-app",
+			"select-type",
+			"hover-body",
+			"select-type",
+			"ft-btn",
+			"copy",
+			"input",
+			"form",
+			"searc",
+			"search",
+			"body",
+			"184805",
+			"body",
+			"input",
+			"body",
+			"data-clip",
+			"create",
+			"title",
+			"my_modal",
+			"select * from users where id in (2669097, 2520734, 413809, 2473779, 2839725, 2848811, 2761357, 2839415, 2830463, 2816260, 2026926, 1307110, 941051, 2304712, 2844622, 2846303, 2339385, 1230177, 2636048, 2492343, 2846185, 2486635, 2843791, 535159)",
+			"you are",
+			"footer_instagram_hover",
+			"height",
+			"color",
+			"cursor",
+			"ft-btn-soc",
+			"ft-company-hover",
+			"careers",
+			"edit",
+			"modal",
+			"button",
+			"print",
+			"('/',",
+			"alfredify",
+			"xml",
+			"toxml",
+			"xml",
+			"print",
+			".emoji",
+			"blue",
+			"que",
+			"view",
+			"query",
+			"-",
+			"css",
+			"user-lists-select",
+			"related_products_type",
+			"related",
+			"recommend",
+			"random",
+			"products_matching_tag",
+			"tags",
+			"	",
+			"app-card-wrapper",
+			"Comment",
+			"shopsavvy_production",
+			"sass",
+			"css",
+			"pageable",
+			"pageablepageable",
+			"pageable",
 			"tags",
 			"🏠",
 			"recipe_add",
@@ -585,90 +781,15 @@
 			"browse",
 			"production_v3",
 			"fuck",
-			"Omnisearch",
-			"custom_filters",
-			"sql",
-			"print",
-			"number",
-			"collision",
-			"disappointed_relieved",
-			"white_medi",
-			"white_large",
-			"telephone",
-			"sparkle",
-			"one",
-			"nine",
-			"lantern",
-			"langer",
-			"heavy",
-			"four",
-			"five",
-			"envelop",
-			"disapp",
-			"crescent",
-			"moon",
-			"black_medium",
-			"medium_small_square",
-			"medium",
-			"back",
-			"squirr",
-			"shoe",
-			"shit",
-			"running",
-			"metal",
-			"lantern",
-			"uk",
-			"rage1",
-			"octo",
-			"hankey",
-			"fu",
-			"book",
-			"bee",
-			"two",
-			"shirt",
-			"hand",
-			"nine",
-			"shit",
-			"envelop",
-			"book",
-			"black",
-			"square",
-			"athletic",
-			"shoe",
-			"athletic_shoe",
-			"emoji",
-			"2013",
-			"copy",
-			"dresses",
-			"datetime",
-			"u",
-			"emoji",
-			"stir",
-			"pot",
-			".5",
-			"sys",
-			"query",
-			"tab",
-			"space",
-			"db",
-			"express",
-			"get",
-			"print",
-			"_non",
-			"non",
-			"margin",
-			"width",
-			"div",
-			"(.)core_message_id\": \"*\"",
-			"core_message",
-			".emoji"
+			"Omnisearch"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"",
 			"#####",
 			"",
 			"####",
@@ -726,7 +847,7 @@
 	"project": "enodji.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -735,16 +856,148 @@
 		"selected_items":
 		[
 			[
-				"lay",
-				"enodeji/enodeji/views/layout.jade"
+				"functionscorequeryparser.java",
+				"elasticsearch/src/main/java/org/elasticsearch/index/query/functionscore/FunctionScoreQueryParser.java"
+			],
+			[
+				"routes",
+				"shopsavvy-web/config/routes.rb"
+			],
+			[
+				"_foot",
+				"shopsavvy-web/app/views/layouts/_footer.html.erb"
+			],
+			[
+				"foot",
+				"shopsavvy-web/app/assets/stylesheets/footer.css.sass"
+			],
+			[
+				"footer",
+				"shopsavvy-web/app/views/layouts/_footer.html.erb"
 			],
 			[
 				"app",
-				"enodeji/enodeji/app.js"
+				"enodeji/app.js"
+			],
+			[
+				"styles",
+				"enodeji/public/stylesheets/style.css"
+			],
+			[
+				"home",
+				"enodeji/views/home.jade"
+			],
+			[
+				"inde",
+				"enodeji/controllers/index.js"
 			],
 			[
 				"layout",
-				"enodeji/enodeji/views/layout.jade"
+				"enodeji/views/layout.jade"
+			],
+			[
+				"recipe",
+				"enodeji/views/recipe_add.jade"
+			],
+			[
+				"scripts",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"style",
+				"enodeji/public/stylesheets/style.css"
+			],
+			[
+				"sty",
+				"enodeji/public/stylesheets/style.css"
+			],
+			[
+				"scr",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"lay",
+				"enodeji/views/layout.jade"
+			],
+			[
+				"emjs",
+				"enodeji/views/emjs.jade"
+			],
+			[
+				"userf",
+				"cassandra-scripts/user_feedback_to_sql.py"
+			],
+			[
+				"user_fee",
+				"cassandra-scripts/user_feedback_to_sql.py"
+			],
+			[
+				"layou",
+				"enodeji/views/layout.jade"
+			],
+			[
+				"scri",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"api",
+				"enodeji/controllers/api.js"
+			],
+			[
+				"app.s",
+				"enodeji/app.js"
+			],
+			[
+				"script",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"recip",
+				"enodeji/views/recipes.jade"
+			],
+			[
+				"recomm",
+				"shopsavvy-web/app/views/products/recommend.html.erb"
+			],
+			[
+				"product_contr",
+				"shopsavvy-web/app/controllers/products_controller.rb"
+			],
+			[
+				"recomme",
+				"shopsavvy-web/app/views/products/recommend.html.erb"
+			],
+			[
+				"product/show",
+				"shopsavvy-web/app/views/products/show.html.erb"
+			],
+			[
+				"show",
+				"shopsavvy-web/app/views/feeds/show.html.erb"
+			],
+			[
+				"product",
+				"shopsavvy-web/app/views/welcome/products.html.erb"
+			],
+			[
+				"related",
+				"shopsavvy-web/app/views/lisa/_related_product.html.erb"
+			],
+			[
+				"tag",
+				"shopsavvy-web/app/views/products/tag.html.erb"
+			],
+			[
+				"recommend",
+				"shopsavvy-web/app/views/products/recommend.html.erb"
+			],
+			[
+				"dao",
+				"controllers/dao.js"
+			],
+			[
+				"hom",
+				"views/home.jade"
 			],
 			[
 				"scrit",
@@ -755,52 +1008,16 @@
 				"enodeji/enodeji/controllers/index.js"
 			],
 			[
-				"scripts",
-				"enodeji/enodeji/public/javascripts/scriptz.js"
-			],
-			[
 				"scrip",
 				"enodeji/enodeji/public/javascripts/scriptz.js"
-			],
-			[
-				"script",
-				"enodeji/enodeji/public/javascripts/scriptz.js"
-			],
-			[
-				"inde",
-				"enodeji/enodeji/routes/index.js"
-			],
-			[
-				"routes",
-				"shopsavvy-web/config/routes.rb"
 			],
 			[
 				"shopsavvy",
 				"shopsavvy-web/lib/shopsavvy.rb"
 			],
 			[
-				"dao",
-				"enodeji/enodeji/routes/dao.js"
-			],
-			[
-				"sty",
-				"enodeji/enodeji/public/stylesheets/style.css"
-			],
-			[
-				"emjs",
-				"enodeji/enodeji/views/emjs.jade"
-			],
-			[
 				"da",
 				"enodeji/enodeji/routes/dao.js"
-			],
-			[
-				"style",
-				"enodeji/enodeji/public/stylesheets/style.css"
-			],
-			[
-				"home",
-				"enodeji/enodeji/views/home.jade"
 			],
 			[
 				"jad",
@@ -809,10 +1026,6 @@
 			[
 				"productcon",
 				"shopsavvy-web/app/controllers/products_controller.rb"
-			],
-			[
-				"layou",
-				"enodeji/enodeji/views/layout.jade"
 			],
 			[
 				"edit",
@@ -935,10 +1148,6 @@
 				"emojisoup/soupme/models.py"
 			],
 			[
-				"styles",
-				"emojisoup/soupme/static/stylesheets/styles.css"
-			],
-			[
 				"",
 				"untitled"
 			],
@@ -969,10 +1178,6 @@
 			[
 				"utils",
 				"loopme/loopme/utils.py"
-			],
-			[
-				"api",
-				"loopme/loopme/api.py"
 			],
 			[
 				"admin",
@@ -1013,7 +1218,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 220.0,
+	"side_bar_width": 147.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -20,12 +20,17 @@ router.get('/', function(req, res) {
 /** RENDERING FUNCTIONS **/
 // -------------------------
 
-renderEmojis = function(res, page, emojis, recipes) {
+renderEmojis = function(res, page, emojis, recipes) {	
 	res.location(page);	
     res.render(page, {
         emojis : emojis,
         recipes : recipes
     });	
+}
+
+renderRecipeAdd = function(req, res) {
+	res.render('recipe_add', {
+	});
 }
 
 renderTags = function(res, tags) {

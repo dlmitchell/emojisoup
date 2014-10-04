@@ -1,0 +1,12 @@
+{
+  "name": "sitemap-generator",
+  "version": "0.0.1",
+  "private": true,
+  "bin": {
+    "sitemap": "sitemap_generator.js"
+  },
+  "dependencies": {
+    "mongodb": "0",
+    "monk": "0"
+  }
+}

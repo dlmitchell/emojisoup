@@ -10,11 +10,20 @@ router.param('recipe', function(req, res, next, name) {
 	});		
 });
 
-router.route('/:recipe?')
+router.route('/fucked/new')
+	.post(function(req, res, next){
+		console.log("post");
+	})
+	.get(function(req, res, next) {
+		console.log("get");
+		console.log(req);						
+		renderRecipeAdd(req, res);
+	})
+
+router.route('/:recipe')
 	.get(function(req, res, next) {	
 		if (req.params.recipe)
 		{
-			console.log(req.recipe)
 			renderEmojis(res, 'home', [], [req.recipe]);
 		}
 		else 
@@ -25,14 +34,22 @@ router.route('/:recipe?')
 		}
 	})
 	.post(function(req, res, next) {
-		var title = req.body.title;
-		var recipe = req.body.recipe;
-		var emjs = req.body.emojilist
+		console.log("post");
+		console.log(req.body);
+		renderRecipeAdd(req, res);
 
-		dao.recipes_add(req, title, recipe, emjs, function(e, recipe) {
-			res.location("recipe");
-			res.redirect("recipe");
-		});
+		// var title = req.body.title;
+		// var recipe = req.body.recipe;
+		// var emjs = req.body.emojilist
+
+		// dao.recipes_add(req, title, recipe, emjs, function(e, recipe) {
+		// 	res.location("recipe");
+		// 	res.redirect("recipe");
+		// });
 	})
+	.put(function(req, res, next) {
+		console.log("put");
+		renderRecipeAdd(req, res);
+	})	
 
 module.exports = router;

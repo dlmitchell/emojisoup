@@ -21,11 +21,20 @@ button {
   font-weight: bold;  
 }
 
+
 #the-pot button {
   /*display: block;*/
     display: none;
   margin: .5em;
 }
+
+#the-pot input {
+  border-style: none;
+  color: white;
+  height: 3em;
+  font-weight: bold;  
+}
+
 
 #copy-recipe {
   background-color: rgb(0, 179, 89);
@@ -177,23 +186,26 @@ a:hover {
   margin: 1em;
 }
 
-.search {
+.textarea {
+  width: 85%;
   font-size: 4em;
+}
+
+input {    
+  border: 3px solid rgb(0, 179, 89);
+  font-style: italic;
+}
+
+form {
+  margin: 2em;
+}
+
+.search {  
   font-family: "Lato";
   color: rgb(120, 204, 255);
   font-style: italic; 
   margin-top: .5em;
-  margin-bottom: .5em;
-  }
-
-  .search input {    
-    border: 3px solid rgb(0, 179, 89);
-    font-style: italic;
-  }
-
-  .textarea {
-      width: 85%;
-  }
+  margin-bottom: .5em;}
 
   .suggestions {
     margin-bottom: 1.5em;
