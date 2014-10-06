@@ -403,9 +403,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 203.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -483,7 +487,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 457.0
+		"width": 610.0
 	},
 	"console":
 	{
@@ -504,10 +508,30 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/administrator/dev/cassandra-scripts"
+		"/Users/administrator/dev/enodeji/enodeji",
+		"/Users/administrator/dev/enodeji/enodeji/dump",
+		"/Users/administrator/dev/enodeji/enodeji/public",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap"
 	],
 	"file_history":
 	[
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/robots.txt",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap/sitemap.xml",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap/sitemap_generator.js",
+		"/Users/administrator/Downloads/gunicorn-18.0/docs/site/sitemap.xml",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/sitemap.xml",
+		"/Users/administrator/dev/enodeji/enodeji/public/sitemap.xml",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
+		"/Users/administrator/dev/enodeji/enodeji/app.js",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap/package.json",
+		"/Users/administrator/dev/enodeji/enodeji/package.json",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/users.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/streaming_test.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/examples/sticky-footer/sticky-footer.css",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap_generator.js",
+		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js",
 		"/Users/administrator/dev/cassandra-scripts/generic_event_reader.py",
 		"/Users/administrator/dev/search/ab_web.results",
 		"/Users/administrator/dev/search/ab_facets.results",
@@ -618,24 +642,7 @@
 		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/application.js",
 		"/Users/administrator/dev/shopsavvy-web/app/views/comments/_form.html.erb",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/_config.yml",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/stylesheets/footer.css.sass",
-		"/Users/administrator/dev/cassandra-scripts/feed_story_clicks.py",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/examples/sticky-footer/sticky-footer.css",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/_includes/footer.html",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/less/forms.less",
-		"/Users/administrator/dev/enodeji/enodeji/views/recipe_add.jade",
-		"/Users/administrator/dev/enodeji/enodeji/controllers/recipes.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
-		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
-		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
-		"/Users/administrator/dev/enodeji/enodeji/controllers/index.js",
-		"/Users/administrator/dev/enodeji/enodeji/app.js",
-		"/Users/administrator/dev/enodeji/enodeji/controllers/api.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/HISTORY",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/dev/tools/doc-templates/index_no_header.ejs",
-		"/Users/administrator/dev/cassandra-scripts/topinviteusers.py",
-		"/Users/administrator/dev/shopsavvy-web/config/recipes/templates/unicorn_init.erb"
+		"/Users/administrator/dev/shopsavvy-web/app/assets/stylesheets/footer.css.sass"
 	],
 	"find":
 	{
@@ -654,6 +661,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"for",
+			"each",
+			"db",
 			"\\",
 			"lager",
 			"memory",
@@ -778,10 +788,7 @@
 			"user",
 			":",
 			"@",
-			"browse",
-			"production_v3",
-			"fuck",
-			"Omnisearch"
+			"browse"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -856,6 +863,18 @@
 		"selected_items":
 		[
 			[
+				"scripts",
+				"public/javascripts/scriptz.js"
+			],
+			[
+				"site",
+				"sitemap/sitemap_generator.js"
+			],
+			[
+				"ap",
+				"app.js"
+			],
+			[
 				"functionscorequeryparser.java",
 				"elasticsearch/src/main/java/org/elasticsearch/index/query/functionscore/FunctionScoreQueryParser.java"
 			],
@@ -898,10 +917,6 @@
 			[
 				"recipe",
 				"enodeji/views/recipe_add.jade"
-			],
-			[
-				"scripts",
-				"enodeji/public/javascripts/scriptz.js"
 			],
 			[
 				"style",
@@ -1218,7 +1233,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 147.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

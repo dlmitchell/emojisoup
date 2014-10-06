@@ -21,7 +21,7 @@ makeRecipe = function() {
 // MAKING RECIPES
 //------------------------------------------------------
 $(document).on('click', '.emoji-wrapper > .emoji', function(e) {    
-  $('#the-pot .emojis').append($(e.currentTarget).clone())  
+  $('#the-pot .emojis').append($(e.currentTarget.parentNode).clone())  
   $('#copy-recipe').show();
   $('#create-recipe').show();
 
@@ -74,8 +74,8 @@ client.on( "ready", function( readyEvent ) {
 
   client.on( "aftercopy", function( event ) {
     // add copied text to emoji
-    $(event.target.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-    var height = $(event.target.parentNode).height();
+    $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
+    var height = $(event.target.parentNode.parentNode).height();
     $('.emoji-wrapper-cover')
       .height(height + 26)
       .css('margin-top', (-1 * height) -26)

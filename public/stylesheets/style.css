@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: openSansEmoji;
+    src: url(../fonts/OpenSansEmoji.ttf);
+}
+
 body {
   font: 1em Lato, Helvetica, Arial, sans-serif;
 }
@@ -24,7 +29,7 @@ button {
 
 #the-pot button {
   /*display: block;*/
-    display: none;
+  display: none;
   margin: .5em;
 }
 
@@ -156,7 +161,11 @@ a:hover {
 
 
 .emoji {
-  font-size: 5em; 
+  font: 1em openSansEmoji;
+}
+
+.emoji-blanket {
+  font-size: 5em;
   cursor: pointer;
 }
 
