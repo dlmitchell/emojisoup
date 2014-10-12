@@ -20,6 +20,7 @@ var emojis = require('./controllers/emojis');
 var recipes = require('./controllers/recipes');
 var tags = require('./controllers/tags');
 var api = require('./controllers/api');
+var fs   = require('fs');
 
 var app = express();
 
@@ -27,6 +28,10 @@ app.use(function(req, res, next) {
     req.db = db;
     next();
 });
+
+var config = JSON.parse(fs.readFileSync('config.json', 'utf8'))
+var envVariables = process.env.NODE_ENV == 'dev' ? config.development : config.production;
+app.set('environment', envVariables);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

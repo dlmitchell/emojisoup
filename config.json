@@ -1,0 +1,8 @@
+{
+  "production": {
+    "sendAnalytics": true
+  },
+  "development": {
+    "sendAnalytics": false
+  }
+}

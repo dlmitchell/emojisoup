@@ -20,7 +20,7 @@ makeRecipe = function() {
 //------------------------------------------------------
 // MAKING RECIPES
 //------------------------------------------------------
-$(document).on('click', '.emoji-wrapper > .emoji', function(e) {    
+$(document).on('click', '.emoji-blanket > .emoji', function(e) {    
   $('#the-pot .emojis').append($(e.currentTarget.parentNode).clone())  
   $('#copy-recipe').show();
   $('#create-recipe').show();
