@@ -1,18 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongodb')
 var monk = require('monk')
 
-var mongoUri = process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL ||
-  'localhost:27017/enodji';
+var app = express();
 
-var db = monk(mongoUri)
+//------------------------------------------------
+// ROUTES
+//------------------------------------------------
 
 var routes = require('./controllers/index');
 var users = require('./controllers/users');
@@ -22,22 +21,35 @@ var tags = require('./controllers/tags');
 var api = require('./controllers/api');
 var fs   = require('fs');
 
-var app = express();
+//------------------------------------------------
+// CONFIG
+//------------------------------------------------
+
+var config = JSON.parse(fs.readFileSync('config.json', 'utf8'))
+var envVariables = process.env.NODE_ENV == 'dev' ? config.development : config.production;
+app.set('environment', envVariables);
+
+//------------------------------------------------
+// VIEWS
+//------------------------------------------------
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+//------------------------------------------------
+// MIDDLEWARE
+//------------------------------------------------
+var mongoUri = process.env.MONGOLAB_URI ||
+  process.env.MONGOHQ_URL ||
+  'localhost:27017/enodji';
+
+var db = monk(mongoUri)
 
 app.use(function(req, res, next) {
     req.db = db;
     next();
 });
 
-var config = JSON.parse(fs.readFileSync('config.json', 'utf8'))
-var envVariables = process.env.NODE_ENV == 'dev' ? config.development : config.production;
-app.set('environment', envVariables);
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
