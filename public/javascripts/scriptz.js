@@ -21,6 +21,7 @@ makeRecipe = function() {
 // MAKING RECIPES
 //------------------------------------------------------
 $(document).on('click', '.emoji-blanket > .emoji', function(e) {    
+  console.log("clicked");
   $('#the-pot .emojis').append($(e.currentTarget.parentNode).clone())  
   $('#copy-recipe').show();
   $('#create-recipe').show();
@@ -47,15 +48,15 @@ function renderSavedCookie() {
   for (var c = 0; c < text.length; c++)
   {
     var val = text.charAt(c);
-    console.log(val);
+    // console.log(val);
     var meh = '<span data-clipboard-name="smiley" data-clipboard-value="' + val +'" class="emoji zeroclipboard-is-hover">' + val + ' </span>'
     $('#the-pot .emojis').append(meh);
   }  
 }
 
 function showPot(newValue) {
-  console.log("in ShowPot");
-  console.log(newValue);
+  // console.log("in ShowPot");
+  // console.log(newValue);
   $('#copy-recipe').attr('data-clipboard-value', newValue); 
   $('#hidden-recipe').attr('value', newValue);
   setCookie("recipe", newValue, 1);  
@@ -63,25 +64,29 @@ function showPot(newValue) {
 //------------------------------------------------------
 // COPY / PASTE EMOJIS
 //------------------------------------------------------
-var client = new ZeroClipboard( $('[data-clipboard-name]') );
+// var client = new ZeroClipboard( $('[data-clipboard-name]') );
 
-client.on( "ready", function( readyEvent ) {
+// client.on( "ready", function( readyEvent ) {
+//   console.log("clippy ready");
+//   client.on("copy", function(event) {  
 
-  client.on("copy", function(event) { 
-    $('.emoji-wrapper-cover').remove();
-    event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
-  });
+//     console.log("copying");
+    
+//     $('.emoji-wrapper-cover').remove();
+//     event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
+//   });
 
-  client.on( "aftercopy", function( event ) {
-    // add copied text to emoji
-    $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-    var height = $(event.target.parentNode.parentNode).height();
-    $('.emoji-wrapper-cover')
-      .height(height + 26)
-      .css('margin-top', (-1 * height) -26)
-      .delay(1500).fadeOut();
-  });
-});
+//   client.on( "aftercopy", function( event ) {
+//     console.log("after copying");
+//     // add copied text to emoji
+//     $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
+//     var height = $(event.target.parentNode.parentNode).height();
+//     $('.emoji-wrapper-cover')
+//       .height(height + 26)
+//       .css('margin-top', (-1 * height) -26)
+//       .delay(1500).fadeOut();
+//   });
+// });
 
 //------------------------------------------------------
 // EDIT TAGS
@@ -140,22 +145,3 @@ function getCookie(cname) {
     }
     return "";
 }
-
-
-//------------------------------------------------------
-// THE MODAL
-//------------------------------------------------------
-
-// $('#save-recipe-modal').on('show.bs.modal', function(e) {
-//   console.log("fuck");
-//   var target = $(e.relatedTarget);
-//   console.log(target)
-//   // var currentTarget = $(e.currentTarget);
-
-//   // var name = target.data('emoji-name');	
-//   // var tags = target.data('emoji-tags');
-//   // currentTarget.find('input[name="name"]').val(name);
-//   // currentTarget.find('input[name="tags"]').val(tags);
-// });
-
-

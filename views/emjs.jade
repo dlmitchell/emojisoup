@@ -16,6 +16,7 @@ div
 		div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 ' + color)
 			div.emoji-blanket
 				span(class='emoji' data-clipboard-name=''+emj.name data-clipboard-value='' + emj.unicode)= emj.unicode
+				
 			h3(class='left')= emj.name
 			p(class='left emoji-tags')
 				each t, i in emj.tags

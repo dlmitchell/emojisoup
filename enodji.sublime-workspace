@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"env",
+				"envVariables"
+			],
+			[
 				"MIX",
 				"MIXPANEL_API_KEY"
 			],
@@ -407,6 +411,10 @@
 		"selected_items":
 		[
 			[
+				"int",
+				"Indentation: Convert to Tabs"
+			],
+			[
 				"inst",
 				"Package Control: Install Package"
 			],
@@ -487,7 +495,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 610.0
+		"width": 475.0
 	},
 	"console":
 	{
@@ -509,25 +517,45 @@
 	"expanded_folders":
 	[
 		"/Users/administrator/dev/enodeji/enodeji",
-		"/Users/administrator/dev/enodeji/enodeji/dump",
-		"/Users/administrator/dev/enodeji/enodeji/public",
-		"/Users/administrator/dev/enodeji/enodeji/sitemap"
+		"/Users/administrator/dev/enodeji/enodeji/node_modules",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/angular",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/partials"
 	],
 	"file_history":
 	[
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/app.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/controllers.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/partials/phone-list.html",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/index.html",
+		"/Users/administrator/dev/enodeji/enodeji/config.json",
+		"/Users/administrator/dev/enodeji/enodeji/app.js",
+		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
 		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/js-yaml/lib/js-yaml/loader.js",
+		"/Users/administrator/dev/enodeji/enodeji/package.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/test/promises-A.js",
+		"/Volumes/C/dev/shopsavvy/Lib/Services/Search/production_mapping.json",
+		"/Users/administrator/Desktop/koolaid",
+		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/from/LICENSE.APACHE2",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/LICENSE",
+		"/Users/administrator/dev/enodeji/enodeji/views/emoji_modal.jade",
+		"/Users/administrator/dev/enodeji/enodeji/emojis.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/body-parser/.npmignore",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/zeroclipboard/dist/ZeroClipboard.Core.min.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/certificates/mycert.pem",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/.editorconfig",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/streaming_test.js",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap/sitemap_generator.js",
 		"/Users/administrator/dev/enodeji/enodeji/public/robots.txt",
 		"/Users/administrator/dev/enodeji/enodeji/sitemap/sitemap.xml",
-		"/Users/administrator/dev/enodeji/enodeji/sitemap/sitemap_generator.js",
 		"/Users/administrator/Downloads/gunicorn-18.0/docs/site/sitemap.xml",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/sitemap.xml",
 		"/Users/administrator/dev/enodeji/enodeji/public/sitemap.xml",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
-		"/Users/administrator/dev/enodeji/enodeji/app.js",
 		"/Users/administrator/dev/enodeji/enodeji/sitemap/package.json",
-		"/Users/administrator/dev/enodeji/enodeji/package.json",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/users.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/streaming_test.js",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/examples/sticky-footer/sticky-footer.css",
 		"/Users/administrator/dev/enodeji/enodeji/sitemap_generator.js",
 		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
@@ -551,7 +579,6 @@
 		"/Users/administrator/Downloads/us_cities_and_states/cities_extended.sql",
 		"/Users/administrator/Downloads/us_cities_and_states/states.sql",
 		"/Users/administrator/Downloads/timezonedb.csv/database.sql",
-		"/Volumes/C/dev/shopsavvy/Lib/Services/Search/production_mapping.json",
 		"/Users/administrator/dev/search/related_substitute.json",
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/functionscore/FunctionScoreQueryParser.java",
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/function/FiltersFunctionScoreQuery.java",
@@ -623,26 +650,7 @@
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/replicaset/query_secondaries_test.js",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/lib/mongodb/commands/query_command.js",
 		"/Users/administrator/dev/elasticsearch/docs/reference/search/facets/query-facet.asciidoc",
-		"/Users/administrator/dev/elasticsearch/docs/reference/query-dsl/filters/query-filter.asciidoc",
-		"/Users/administrator/dev/elasticsearch/docs/reference/search/request/query.asciidoc",
-		"/Users/administrator/dev/elasticsearch/docs/java-api/query-dsl-queries.asciidoc",
-		"/Users/administrator/dev/elasticsearch/docs/java-api/query-dsl-filters.asciidoc",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/express/lib/middleware/query.js",
-		"/Users/administrator/dev/shopsavvy-web/app/workers/eyewitness_worker.rb",
-		"/Users/administrator/dev/shopsavvy-web/config/initializers/mixpanel.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/controllers/concerns/eyewitness.rb",
-		"/Users/administrator/dev/shopsavvy-web/Gemfile",
-		"/Users/administrator/dev/shopsavvy-web/app/views/layouts/_footer.html.erb",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/mobile.js.coffee",
-		"/Users/administrator/dev/shopsavvy-web/config/routes.rb",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/metrics.js.coffee",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/node_modules/mongoskin/node_modules/mongodb/node_modules/kerberos/lib/worker.cc",
-		"/Users/administrator/dev/shopsavvy-web/app/models/api/history_item.rb",
-		"/Users/administrator/dev/enodeji/enodeji/views/recipes.jade",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/javascripts/application.js",
-		"/Users/administrator/dev/shopsavvy-web/app/views/comments/_form.html.erb",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/_config.yml",
-		"/Users/administrator/dev/shopsavvy-web/app/assets/stylesheets/footer.css.sass"
+		"/Users/administrator/dev/elasticsearch/docs/reference/query-dsl/filters/query-filter.asciidoc"
 	],
 	"find":
 	{
@@ -661,6 +669,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"phonecatApp",
+			"PhoneListCtrl",
+			"}\n",
+			"fav",
+			"mark",
+			"layout",
+			"men",
+			"has",
+			"6606776",
+			"copy",
+			".emoji",
 			"for",
 			"each",
 			"db",
@@ -777,18 +796,7 @@
 			"recommend",
 			"=======",
 			"input-search",
-			"wrapper",
-			"tags",
-			"left",
-			"letter",
-			"box",
-			"emojis.jade",
-			"[0-9]",
-			"[0-1]",
-			"user",
-			":",
-			"@",
-			"browse"
+			"wrapper"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -863,6 +871,34 @@
 		"selected_items":
 		[
 			[
+				"laoyt",
+				"views/layout.jade"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"script",
+				"public/javascripts/scriptz.js"
+			],
+			[
+				"layout",
+				"views/layout.jade"
+			],
+			[
+				"stye",
+				"public/stylesheets/style.css"
+			],
+			[
+				"emjs.",
+				"views/emjs.jade"
+			],
+			[
 				"scripts",
 				"public/javascripts/scriptz.js"
 			],
@@ -895,10 +931,6 @@
 				"shopsavvy-web/app/views/layouts/_footer.html.erb"
 			],
 			[
-				"app",
-				"enodeji/app.js"
-			],
-			[
 				"styles",
 				"enodeji/public/stylesheets/style.css"
 			],
@@ -909,10 +941,6 @@
 			[
 				"inde",
 				"enodeji/controllers/index.js"
-			],
-			[
-				"layout",
-				"enodeji/views/layout.jade"
 			],
 			[
 				"recipe",
@@ -961,10 +989,6 @@
 			[
 				"app.s",
 				"enodeji/app.js"
-			],
-			[
-				"script",
-				"enodeji/public/javascripts/scriptz.js"
 			],
 			[
 				"recip",
@@ -1233,7 +1257,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 250.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

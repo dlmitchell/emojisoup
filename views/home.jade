@@ -1,13 +1,14 @@
 extends layout
 
 block content
-	form#formSearch(class="search" name="search",method="get", action="/")
-		input#inputSearch(class="textarea", type="text", placeholder="Search", name="q")   
+	div(ng-controller='EmojiController')		
+		form#formSearch(class="search" name="search",method="get", action="/")
+			input#inputSearch(class="textarea", type="text", placeholder="Search", name="q" ng-model="query" ng-keyup="searchEmojis(query)")
+				
+		div(class='suggestions')
+			a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#")='#{{suggestion}}'
 
-	-var searchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats']
-
-	div(class='suggestions')
-		each s, i in searchSuggestions			
-			a(class='pure-u-1 pure-u-md-1-8' href='/tags/' + s)= '#' + s
-
-	include ./emjs.jade
+		div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 green' ng-repeat="emoji in emojis")
+			div.emoji-blanket
+				span(class='emoji' data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
+			h3(class='left')='{{emoji.name}}'			

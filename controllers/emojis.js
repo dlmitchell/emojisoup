@@ -13,6 +13,7 @@ router.param('emoji', function(req, res, next, name) {
 	});		
 });
 
+
 router.route('/:emoji?')
 	.get(function(req, res, next) {	
 		if (req.params.emoji)
