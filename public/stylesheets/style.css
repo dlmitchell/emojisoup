@@ -1,9 +1,3 @@
-
-@font-face {
-    font-family: openSansEmoji;
-    src: url(../fonts/OpenSansEmoji.ttf);
-}
-
 body {
   font: 1em Lato, Helvetica, Arial, sans-serif;
 }
@@ -196,6 +190,8 @@ a:hover {
 }
 
 .textarea {
+  text-align: left;
+  letter-spacing: .05em;
   width: 85%;
   font-size: 4em;
 }
@@ -210,7 +206,6 @@ form {
 }
 
 .search {  
-  font-family: "Lato";
   color: rgb(120, 204, 255);
   font-style: italic; 
   margin-top: .5em;

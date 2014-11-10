@@ -6,8 +6,18 @@ var enodjiApp = angular.module('enodjiApp', [
     'ngRoute'
   ]);
 
-enodjiApp.controller('EmojiController', function ($scope, $http) {
-	
+enodjiApp.run(function($rootScope) {
+	$rootScope.isChrome = !!window.chrome;
+
+	$rootScope.hasChromoji = function() {
+		if ($rootScope.isChrome)
+		{
+			console.log("fuck")
+		}
+	};
+});
+
+enodjiApp.controller('EmojiController', function ($scope, $http) {	
 	$scope.searchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 
 	// search emojis
@@ -23,7 +33,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http) {
 	});
 
 	$scope.getRandomColor = function(){		 
-		var colors = 'green';
+		// var colors = 'green';
 		// var colors = ['orange', 'green', 'purple'];
 		// return colors[Math.floor(Math.random() * 3)];
 	}

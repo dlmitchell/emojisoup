@@ -1,0 +1,13 @@
+/* Chrome doesn't support emojis, so include open emoji font: */
+@font-face {
+    font-family: openSansEmoji;
+    src: url(../fonts/OpenSansEmoji.ttf);
+}
+
+.textarea {
+  text-align: left;
+  letter-spacing: .04em;
+  width: 85%;
+  font-size: 3.8em;
+  font: 3.8em openSansEmoji;
+}

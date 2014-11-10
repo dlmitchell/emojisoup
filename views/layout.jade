@@ -8,7 +8,8 @@ html(ng-app='enodjiApp')
     meta(property='description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')        
     title= EmojiSoup
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/pure-grids-responsive-min.css')    
+    link(rel='stylesheet', href='/stylesheets/pure-grids-responsive-min.css')  
+    link(rel='stylesheet', href='/stylesheets/chrome.css' ng-if="isChrome")
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')      
     script(type='text/javascript' src='/javascripts//angular/angular.min.js')
     script(type='text/javascript' src='/javascripts//angular-route/angular-route.min.js')
@@ -16,15 +17,17 @@ html(ng-app='enodjiApp')
     script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')
     link(rel='image/png', type='image/png', href='/favicon.png')
 
-  body    
-    div.header
-        h1
-            a(href="./") 
-                | EM
-                span.emoji 😃
-                | JISOUP
-        p='Emoji definitions, by you and for you!'
-            span.emoji 👍
+  body  
+    
+
+    //- div.header
+    //-     h1
+    //-         a(href="./") 
+    //-             | EM
+    //-             span.emoji 😃
+    //-             | JISOUP
+    //-     p='Emoji definitions, by you and for you!'
+    //-         span.emoji 👍
 
     //- div#the-pot
     //-     div.emojis

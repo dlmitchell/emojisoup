@@ -2,9 +2,6 @@
 // DOCUMENT READY
 //------------------------------------------------------
 $( document ).ready(function() {
-
-  renderSavedCookie();
-
   // adds the url text to the search box
   if (window.location.pathname.indexOf('/tags/') >= 0)
     $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
@@ -42,24 +39,11 @@ $(document).on('click', '#the-pot > .emojis > .emoji', function(e) {
   $(e.currentTarget).fadeOut();
 }); 
 
-function renderSavedCookie() {
-  var text = decodeURI(getCookie("recipe"));
-
-  for (var c = 0; c < text.length; c++)
-  {
-    var val = text.charAt(c);
-    // console.log(val);
-    var meh = '<span data-clipboard-name="smiley" data-clipboard-value="' + val +'" class="emoji zeroclipboard-is-hover">' + val + ' </span>'
-    $('#the-pot .emojis').append(meh);
-  }  
-}
-
 function showPot(newValue) {
   // console.log("in ShowPot");
   // console.log(newValue);
   $('#copy-recipe').attr('data-clipboard-value', newValue); 
   $('#hidden-recipe').attr('value', newValue);
-  setCookie("recipe", newValue, 1);  
 }
 //------------------------------------------------------
 // COPY / PASTE EMOJIS
@@ -123,25 +107,3 @@ $('.tag_edit').hover(
       .removeClass('green')
       .removeClass('purple');            
 });
-
-//------------------------------------------------------
-// HELPERS
-//------------------------------------------------------
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-    }
-    return "";
-}

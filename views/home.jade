@@ -3,7 +3,7 @@ extends layout
 block content
 	div(ng-controller='EmojiController')		
 		form#formSearch(class="search" name="search",method="get", action="/")
-			input#inputSearch(class="textarea", type="text", placeholder="Search", name="q" ng-model="query" ng-keyup="searchEmojis(query)")
+			input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis, recipes and definitions" name="q" ng-model="query" ng-keyup="searchEmojis(query)")
 				
 		div(class='suggestions')
 			a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#")='#{{suggestion}}'
