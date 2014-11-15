@@ -23,6 +23,25 @@ router.route('/:emoji?')
 				renderEmojis(res, 'home', emojis, []);
 			});
 	})
+	.post(function(req, res, next) {
+		console.log("EMOJIS.POST - posting emoji");
+		console.log(req.body);
+		
+		// renderRecipeAdd(req, res);
+
+		var title = req.body.name;
+		var recipe = req.body.recipe;
+		var emjs = req.body.emojilist
+
+		// dao.recipes_add(req, title, recipe, emjs, function(e, recipe) {
+		// 	res.location("recipe");
+		// 	res.redirect("recipe");
+		// });
+	})
+	.put(function(req, res, next) {
+		console.log("put");
+		renderRecipeAdd(req, res);
+	})	
 
 //---------------------------------
 // TAGS

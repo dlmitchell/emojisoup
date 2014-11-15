@@ -19,7 +19,12 @@ makeRecipe = function() {
 //------------------------------------------------------
 $(document).on('click', '.emoji-blanket > .emoji', function(e) {    
   console.log("clicked");
-  $('#the-pot .emojis').append($(e.currentTarget.parentNode).clone())  
+  $('#the-pot .emojis').append(
+      $(e.currentTarget.parentNode)
+      .clone()
+      .addClass('pure-u-lg-1-12')
+  ) 
+
   $('#copy-recipe').show();
   $('#create-recipe').show();
 
@@ -45,32 +50,6 @@ function showPot(newValue) {
   $('#copy-recipe').attr('data-clipboard-value', newValue); 
   $('#hidden-recipe').attr('value', newValue);
 }
-//------------------------------------------------------
-// COPY / PASTE EMOJIS
-//------------------------------------------------------
-// var client = new ZeroClipboard( $('[data-clipboard-name]') );
-
-// client.on( "ready", function( readyEvent ) {
-//   console.log("clippy ready");
-//   client.on("copy", function(event) {  
-
-//     console.log("copying");
-    
-//     $('.emoji-wrapper-cover').remove();
-//     event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
-//   });
-
-//   client.on( "aftercopy", function( event ) {
-//     console.log("after copying");
-//     // add copied text to emoji
-//     $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-//     var height = $(event.target.parentNode.parentNode).height();
-//     $('.emoji-wrapper-cover')
-//       .height(height + 26)
-//       .css('margin-top', (-1 * height) -26)
-//       .delay(1500).fadeOut();
-//   });
-// });
 
 //------------------------------------------------------
 // EDIT TAGS

@@ -11,3 +11,7 @@
   font-size: 3.8em;
   font: 3.8em openSansEmoji;
 }
+
+.emoji {
+  font: 1em;
+}

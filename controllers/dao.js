@@ -131,21 +131,32 @@ DAO.prototype.all = function(req, callback) {
     });
 }
 
-DAO.prototype.recipes_find_one = function(req, recipe, callback) {
-    req.db.get('recipes').findOne({title: recipe},function(e, recipe){
-    	callback(e, recipe);
-    });
-}
+// DAO.prototype.recipes_add = function(req, title, recpie, emjs, callback) {
+//  req.db.get('recipes').insert({
+//      "title" : title,
+//      "recipe" : recipe,
+//      "translation" : "no translation",
+//      "unicode" : emjs
+//  }, function(e, doc) {
+//      callback(e, doc);
+//  });
+// }
 
-DAO.prototype.recipes_add = function(req, title, recpie, emjs, callback) {
-	req.db.get('recipes').insert({
-		"title" : title,
-		"recipe" : recipe,
-		"translation" : "no translation",
-		"unicode" : emjs
-	}, function(e, doc) {
-		callback(e, doc);
-	});
-}
+// DAO.prototype.recipes_find_one = function(req, recipe, callback) {
+//     req.db.get('recipes').findOne({title: recipe},function(e, recipe){
+//     	callback(e, recipe);
+//     });
+// }
+
+// DAO.prototype.recipes_add = function(req, title, recpie, emjs, callback) {
+// 	req.db.get('recipes').insert({
+// 		"title" : title,
+// 		"recipe" : recipe,
+// 		"translation" : "no translation",
+// 		"unicode" : emjs
+// 	}, function(e, doc) {
+// 		callback(e, doc);
+// 	});
+// }
 
 exports = module.exports = DAO;

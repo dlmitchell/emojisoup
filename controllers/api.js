@@ -13,12 +13,12 @@ router.get('/', function(req, res) {
 
 	if (req.query.q) {
 		dao.search(req, req.query.q, function(e, emojis, recipes) {
-			res.json({emojis: emojis, recipes: recipes});
+			res.json({emojis: emojis});
 		});
 	}
 	else  {
 		dao.emojis_all(req, function(e, emojis) { 
-			res.json({emojis: emojis, recipes: []});
+			res.json({emojis: emojis});
 		});
 	}	
 });
@@ -33,11 +33,11 @@ router.route('/emojis/:emoji?')
 		res.set({ 'content-type': 'application/json; charset=utf-8' });		
 		
 		if (req.params.emoji) {			
-			res.json({emojis: [req.emoji], recipes: []});
+			res.json({emojis: [req.emoji]});
 		}
 		else {
 			dao.emojis_all(req, function(e, emojis) { 
-				res.json({emojis: emojis, recipes: []});
+				res.json({emojis: emojis});
 			});
 		}
 	})

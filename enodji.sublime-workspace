@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"targ",
+				"targetName"
+			],
+			[
+				"data-clip",
+				"data-clipboard-value"
+			],
+			[
+				"target",
+				"targetNode"
+			],
+			[
+				"searc",
+				"searchSuggestions"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"java",
+				"javascript"
+			],
+			[
 				"env",
 				"envVariables"
 			],
@@ -32,10 +56,6 @@
 				"the-pot"
 			],
 			[
-				"targ",
-				"targetUnicode"
-			],
-			[
 				"curr",
 				"currentUnicode"
 			],
@@ -50,10 +70,6 @@
 			[
 				"sub",
 				"subtitle"
-			],
-			[
-				"data-clip",
-				"data-clipboard-name"
 			],
 			[
 				"bold",
@@ -106,10 +122,6 @@
 			[
 				"redner",
 				"renderEmojis"
-			],
-			[
-				"new",
-				"new_multiple"
 			],
 			[
 				"baclk",
@@ -392,10 +404,6 @@
 				"events_to_index"
 			],
 			[
-				"searc",
-				"searchTerm"
-			],
-			[
 				"tiem",
 				"timeStamp"
 			]
@@ -517,31 +525,71 @@
 	"expanded_folders":
 	[
 		"/Users/administrator/dev/enodeji/enodeji",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/angular",
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/partials"
+		"/Users/administrator/dev/enodeji/enodeji/controllers",
+		"/Users/administrator/dev/enodeji/enodeji/sitemap",
+		"/Users/administrator/dev/enodeji/enodeji/views"
 	],
 	"file_history":
 	[
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/app.js",
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/controllers.js",
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/partials/phone-list.html",
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/index.html",
-		"/Users/administrator/dev/enodeji/enodeji/config.json",
-		"/Users/administrator/dev/enodeji/enodeji/app.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/js/angular_app.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
+		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
 		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
 		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
+		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/chrome.css",
+		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
+		"/Users/administrator/dev/enodeji/enodeji/app.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/node_modules/cardinal/node_modules/redeyed/test/redeyed-script-level-return.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/scripts/private/update-gh-pages.sh",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/frameScrollPage.html",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/angular/angular.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/app.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/phones/samsung-transform.json",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/dao.js",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/emojis.js",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/recipes.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/karma/node_modules/log4js/test/fileAppender-test.js",
+		"/Volumes/C/dev/shopsavvy/Web.config",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/filters.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/http-server/node_modules/optimist/example/usage-options.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/templates/json/help-prune.json",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/karma/node_modules/http-proxy/test/core/simple/test-http-extra-response.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/deps/nodeunit/test/test-httputil.js",
+		"/Users/administrator/dev/enodeji/enodeji/tags.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/angular/angular.min.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/angular/angular.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/docs/class_webdriver_http_Request.html",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/node_modules/cardinal/test/cardinal-highlight-json.js",
+		"/Users/administrator/dev/enodeji/enodeji/config.json",
+		"/Users/administrator/dev/enodeji/enodeji/views/recipe_add.jade",
+		"/Users/administrator/dev/enodeji/enodeji/views/recipes.jade",
+		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
+		"/Users/administrator/dev/enodeji/enodeji/emojis.json",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/screen/screen_y_long.html",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/tags.js",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/api.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/js/app.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/services.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/controllers.js",
+		"/Users/administrator/dev/enodeji/enodeji/controllers/index.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/express/lib/middleware/query.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/js/controllers.js",
+		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/test/unit/servicesSpec.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/Settings.StyleCop",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/index.html",
+		"/Users/administrator/dev/enodeji/enodeji/js/controllers.js",
+		"/Users/administrator/dev/enodeji/enodeji/js/app.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/partials/phone-list.html",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/js-yaml/lib/js-yaml/loader.js",
 		"/Users/administrator/dev/enodeji/enodeji/package.json",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/monk/test/promises-A.js",
 		"/Volumes/C/dev/shopsavvy/Lib/Services/Search/production_mapping.json",
 		"/Users/administrator/Desktop/koolaid",
-		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/from/LICENSE.APACHE2",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/LICENSE",
 		"/Users/administrator/dev/enodeji/enodeji/views/emoji_modal.jade",
-		"/Users/administrator/dev/enodeji/enodeji/emojis.json",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/body-parser/.npmignore",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/zeroclipboard/dist/ZeroClipboard.Core.min.js",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/certificates/mycert.pem",
@@ -553,12 +601,10 @@
 		"/Users/administrator/Downloads/gunicorn-18.0/docs/site/sitemap.xml",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/sitemap.xml",
 		"/Users/administrator/dev/enodeji/enodeji/public/sitemap.xml",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
 		"/Users/administrator/dev/enodeji/enodeji/sitemap/package.json",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/users.js",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/examples/sticky-footer/sticky-footer.css",
 		"/Users/administrator/dev/enodeji/enodeji/sitemap_generator.js",
-		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js",
 		"/Users/administrator/dev/cassandra-scripts/generic_event_reader.py",
 		"/Users/administrator/dev/search/ab_web.results",
@@ -612,45 +658,7 @@
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetParser.java",
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParsingException.java",
 		"/Users/administrator/dev/elasticsearch/src/test/java/org/elasticsearch/search/rescore/QueryRescorerTests.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchRequest.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParserFactory.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryFilterBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/action/support/QuerySourceBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchResult.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryParseElement.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParseContext.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryFilterParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/support/QueryParsers.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacet.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/rescore/QueryRescorer.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryBuilders.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryPhase.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/percolator/QueryCollector.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ChildrenConstantScoreQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ParentConstantScoreQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queries/ExtendedCommonTermsQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/nested/IncludeNestedDocsQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MultiPhrasePrefixQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/function/FunctionScoreQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/XConstantScoreQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MoreLikeThisQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/MatchNoDocsQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/TopChildrenQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/search/vectorhighlight/CustomFieldQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queries/BlendedTermQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/MultiMatchQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/search/XFilteredQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/common/lucene/all/AllTermQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ChildrenQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/child/ParentQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/ParsedQuery.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/search/MatchQuery.java",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/test/replicaset/query_secondaries_test.js",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/lib/mongodb/commands/query_command.js",
-		"/Users/administrator/dev/elasticsearch/docs/reference/search/facets/query-facet.asciidoc",
-		"/Users/administrator/dev/elasticsearch/docs/reference/query-dsl/filters/query-filter.asciidoc"
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchRequest.java"
 	],
 	"find":
 	{
@@ -669,6 +677,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sans",
+			"open",
+			"l-box",
+			".emoji",
+			"pot",
+			"h1",
+			"recipe",
+			"pot",
+			"new",
+			"set",
+			"font",
+			"text",
+			"search",
+			"path",
+			"zero",
+			"copy",
+			"console",
 			"phonecatApp",
 			"PhoneListCtrl",
 			"}\n",
@@ -779,24 +804,7 @@
 			"logger",
 			"log",
 			"puts",
-			"body",
-			"emojis-tags",
-			"emoji-tags",
-			"edit_emoji",
-			"tag",
-			"tags",
-			"emoji-name",
-			"my_modal",
-			"console",
-			"recommend",
-			"tag",
-			"shopsavvy-web",
-			"tags",
-			"browser",
-			"recommend",
-			"=======",
-			"input-search",
-			"wrapper"
+			"body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -822,6 +830,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -841,11 +854,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.39887565842,
 			1.0
 		],
 		"rows":
@@ -871,6 +891,58 @@
 		"selected_items":
 		[
 			[
+				"chrome",
+				"enodeji/public/stylesheets/chrome.css"
+			],
+			[
+				"emjs.",
+				"enodeji/views/emjs.jade"
+			],
+			[
+				"angular_p",
+				"enodeji/public/javascripts/js/angular_app.js"
+			],
+			[
+				"chrom",
+				"enodeji/public/stylesheets/chrome.css"
+			],
+			[
+				"script",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"angular_ap",
+				"enodeji/public/javascripts/js/angular_app.js"
+			],
+			[
+				"styles",
+				"enodeji/public/stylesheets/style.css"
+			],
+			[
+				"fa",
+				"angular-phonecat/node_modules/karma/node_modules/log4js/test/fileAppender-test.js"
+			],
+			[
+				"layout",
+				"enodeji/views/layout.jade"
+			],
+			[
+				"emojis",
+				"enodeji/emojis.json"
+			],
+			[
+				"app",
+				"enodeji/app.js"
+			],
+			[
+				"emjs",
+				"enodeji/views/emjs.jade"
+			],
+			[
+				"scr",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
 				"laoyt",
 				"views/layout.jade"
 			],
@@ -879,24 +951,8 @@
 				"package.json"
 			],
 			[
-				"app",
-				"app.js"
-			],
-			[
-				"script",
-				"public/javascripts/scriptz.js"
-			],
-			[
-				"layout",
-				"views/layout.jade"
-			],
-			[
 				"stye",
 				"public/stylesheets/style.css"
-			],
-			[
-				"emjs.",
-				"views/emjs.jade"
 			],
 			[
 				"scripts",
@@ -931,10 +987,6 @@
 				"shopsavvy-web/app/views/layouts/_footer.html.erb"
 			],
 			[
-				"styles",
-				"enodeji/public/stylesheets/style.css"
-			],
-			[
 				"home",
 				"enodeji/views/home.jade"
 			],
@@ -955,16 +1007,8 @@
 				"enodeji/public/stylesheets/style.css"
 			],
 			[
-				"scr",
-				"enodeji/public/javascripts/scriptz.js"
-			],
-			[
 				"lay",
 				"enodeji/views/layout.jade"
-			],
-			[
-				"emjs",
-				"enodeji/views/emjs.jade"
 			],
 			[
 				"userf",
@@ -1089,10 +1133,6 @@
 			[
 				"emunj",
 				"enodeji/enodeji/emungi.js"
-			],
-			[
-				"emojis",
-				"emojisoup/soupme/static/emojis.json"
 			],
 			[
 				"emojis.js",
@@ -1257,7 +1297,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 192.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

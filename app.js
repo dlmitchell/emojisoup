@@ -60,7 +60,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/emojis', emojis);
 app.use('/recipes', recipes);
-app.use('/tags', tags);
+// app.use('/tags', tags);
 app.use('/api', api);
 
 /// catch 404 and forward to error handler
