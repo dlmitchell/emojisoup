@@ -3,7 +3,8 @@
 /* App Module */
 
 var enodjiApp = angular.module('enodjiApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate'
   ]);
 
 enodjiApp.run(function($rootScope) {

@@ -12,13 +12,15 @@ html(ng-app='enodjiApp')
     link(rel='stylesheet', href='/stylesheets/chrome.css' ng-if="isChrome")
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')      
     script(type='text/javascript' src='/javascripts//angular/angular.min.js')
+    script(type='text/javascript' src='/javascripts//angular-animate/angular-animate.min.js')
     script(type='text/javascript' src='/javascripts//angular-route/angular-route.min.js')
+    script(type='text/javascript' src='/javascripts/ScrollToFixed/jquery-scrolltofixed-min.js')    
     script(type='text/javascript' src='/javascripts/js/angular_app.js')
-    script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')
+    script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')    
     link(rel='image/png', type='image/png', href='/favicon.png')
 
   body  
-    div#the-pot(class='content is-center' ng-controller='PotController')            
+    div#the-pot(class='content is-center animate-show' ng-controller='PotController' ng-show='emojis.length > 0')
         div(class='clipboard' ng-repeat='emoji in emojis track by $index')
             span(class='emoji' ng-click="removeFromPot(emoji)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
 
@@ -26,22 +28,22 @@ html(ng-app='enodjiApp')
             a#clear-recipe(class='darkOrange' name='clear' ng-click='clearPot()' href='#')='CLEAR'
             a#copy-recipe(class='green' name='copy' ng-click='copyRecipe($event)' data-clipboard-name='copy-recipe' href='#' data-clipboard-value)='COPY'
 
-    //- a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
-            //- form(name="recipe_add")
-                //-     input(class='textarea' type='text', placeholder='Name', name='name')
-                //-     input(class='textarea' type='text' placeholder='Translation' name='definition')
-                //-     input(class='textarea' type='text', placeholder='Tags', name='tags')        
-                //-     input#hidden-recipe(type="hidden" name='recipe')            
-                //- input#copy-recipe(type="button" name='clear' data-clipboard-name='copy-recipe' value="CLEAR" data-clipboard-value)                
-                //- input#copy-recipe(type="button" name='copy' ng-click='clearPot()' data-clipboard-name='copy-recipe' value="COPY" data-clipboard-value)
-
-                //- input#create-recipe(type="submit" value="Create Recipe" formmethod="post")        
-
-    div.content-wrapper
+    div
         div(class='content is-center')
-            block content
+            div(ng-controller='EmojiController')        
+                form#formSearch(class="search" name="search",method="get", action="/")
+                    input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query" ng-keyup="searchEmojis(query)")
+                        
+                div(class='suggestions')
+                    a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
 
-    script(type='text/javascript' src='/javascripts/scriptz.js')      
+                div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 green' ng-repeat="emoji in emojis")
+                    div.emoji-blanket
+                        span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
+                    h3(class='left')='{{emoji.name}}'           
+
+
+    script(type='text/javascript' src='/javascripts/scriptz.js')
          
     if settings.environment.sendAnalytics == true
         script.

@@ -20,14 +20,23 @@ button {
   font-weight: bold;  
 }
 
-
-#the-pot button {
-  display: none;
+#the-pot {
+  background-color: rgb(43, 175, 255);
 }
 
-#the-pot input {
-  color: black;
-  font-weight: bold;  
+.animate-show {  
+  opacity:1;
+  height: 8em;
+}
+
+.animate-show.ng-hide {
+  height: 0px;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all ease 0.2s;
+  transition:all ease 0.2s;
 }
 
 .clipboard {
@@ -209,7 +218,7 @@ form {
 .search {  
   color: rgb(120, 204, 255);
   font-style: italic; 
-  margin-top: .5em;
+  margin-top: 1em;
   margin-bottom: .5em;}
 
   .suggestions {

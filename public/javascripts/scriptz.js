@@ -6,6 +6,8 @@ $( document ).ready(function() {
   if (window.location.pathname.indexOf('/tags/') >= 0)
     $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
 
+  $('#the-pot').scrollToFixed();
+  
   $('#inputSearch').focus()
 });
 
