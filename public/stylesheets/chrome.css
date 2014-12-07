@@ -5,13 +5,9 @@
 }
 
 .textarea {
-  text-align: left;
-  letter-spacing: .04em;
-  width: 85%;
-  font-size: 3.8em;
-  font: 3.8em openSansEmoji;
+	font-family: openSansEmoji;
 }
 
 .emoji {
-  font: 1em;
+  	font: 1em;
 }

@@ -33,34 +33,10 @@ enodjiApp.service("WorkingEmojiService", function() {
 	};
 });
 
-enodjiApp.controller('PotController', function ($scope, $http, WorkingEmojiService) {		
-	$scope.pot = "hello pot"
-	$scope.emojis = WorkingEmojiService.get();
-
-	$scope.clearPot = function() {	
-		$("#copy-recipe").attr("data-clipboard-value", "");
-		WorkingEmojiService.clear();		
-	}
-
-	$scope.copyRecipe = function($event) {
-		// $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-
-		// var height = $(event.target.parentNode.parentNode).height();
-
-		// $('.emoji-wrapper-cover')
-		// 	.height(height + 26)
-		//   	.css('margin-top', (-1 * height) -26)
-		//   	.delay(1500).fadeOut();	
-	}
-
-	$scope.$watch(WorkingEmojiService.get,function(v){
-		$scope.emojis = v;	
-	});
-});
-
 enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService) {	
 	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
+	$scope.emojis = WorkingEmojiService.get();	
 
 	// search emojis
 	$scope.searchEmojis = function(emojiname) { 
@@ -74,10 +50,8 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		$scope.emojis = data.emojis
 	});
 
-	$scope.getRandomColor = function(){
-		//one day this will do something
-	}
 
+	// the pot is the sentence
 	$scope.addToPot = function(emoji, $event) {
 		WorkingEmojiService.add(emoji);
 
@@ -89,6 +63,28 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		  	.css('margin-top', (-1 * height) -26)
 		  	.delay(1500).fadeOut();		
 	}
+
+	$scope.clearPot = function() {	
+		$("#copy-recipe").attr("data-clipboard-value", "");
+		WorkingEmojiService.clear();		
+	}
+
+	$scope.copyRecipe = function($event) {
+		// 	TODO: add animation for recipe copied
+
+		// $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
+
+		// var height = $(event.target.parentNode.parentNode).height();
+
+		// $('.emoji-wrapper-cover')
+		// 	.height(height + 26)
+		//   	.css('margin-top', (-1 * height) -26)
+		//   	.delay(1500).fadeOut();	
+	}
+
+	$scope.$watch(WorkingEmojiService.get,function(v){
+		$scope.sentence = v;	
+	});	
 
 	// clipboard nonsense. 
 	// listen for any changes to the emojis set, and re-apply the clipboard to each result set

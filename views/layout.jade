@@ -6,44 +6,50 @@ html(ng-app='enodjiApp')
     meta(property='title' content='EmojiSoup')        
     meta(property='og:description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')
     meta(property='description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')        
+    meta(property='fuck' content='💩😃😈😲😧😦🐮🐗🐻🐨🐯')
     title= EmojiSoup
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/pure-grids-responsive-min.css')  
     link(rel='stylesheet', href='/stylesheets/chrome.css' ng-if="isChrome")
+    link(rel='image/png', type='image/png', href='/favicon.png')
+
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')      
     script(type='text/javascript' src='/javascripts//angular/angular.min.js')
     script(type='text/javascript' src='/javascripts//angular-animate/angular-animate.min.js')
     script(type='text/javascript' src='/javascripts//angular-route/angular-route.min.js')
     script(type='text/javascript' src='/javascripts/ScrollToFixed/jquery-scrolltofixed-min.js')    
     script(type='text/javascript' src='/javascripts/js/angular_app.js')
-    script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')    
-    link(rel='image/png', type='image/png', href='/favicon.png')
-
-  body  
-    div#the-pot(class='content is-center animate-show' ng-controller='PotController' ng-show='emojis.length > 0')
-        div(class='clipboard' ng-repeat='emoji in emojis track by $index')
-            span(class='emoji' ng-click="removeFromPot(emoji)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
-
-        div(ng-class="emojis.length > 0 ? 'twohotdogs' : 'hidden'")
-            a#clear-recipe(class='darkOrange' name='clear' ng-click='clearPot()' href='#')='CLEAR'
-            a#copy-recipe(class='green' name='copy' ng-click='copyRecipe($event)' data-clipboard-name='copy-recipe' href='#' data-clipboard-value)='COPY'
-
-    div
-        div(class='content is-center')
-            div(ng-controller='EmojiController')        
+    script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')     
+    script(type='text/javascript' src='/javascripts/scriptz.js')
+  body 
+    div(ng-controller='EmojiController')
+        div(class='header') 
+            div(class='is-center')
                 form#formSearch(class="search" name="search",method="get", action="/")
                     input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query" ng-keyup="searchEmojis(query)")
-                        
-                div(class='suggestions')
-                    a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
 
-                div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 green' ng-repeat="emoji in emojis")
-                    div.emoji-blanket
-                        span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
-                    h3(class='left')='{{emoji.name}}'           
+        div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')     
+            div(class='sub-sub is-center')
+                div(class='clipboard' ng-repeat='emoji in sentence track by $index')
+                    span(class='emoji' ng-click="removeFromPot(emoji)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'                    
 
+            div(class='auto-center')
+                p
+                    | find emojis to make a sentence.
+                    a#copy-recipe(href='#' name='copy' ng-click='copyRecipe($event)' data-clipboard-name='copy-recipe' data-clipboard-value)='COPY'
+                    | the sentence or 
+                    a(href='#')='add'
+                    | it to the collection. or, 
+                    a(href='#' name='clear' ng-click='clearPot()')='start over'
 
-    script(type='text/javascript' src='/javascripts/scriptz.js')
+            //- div(class='suggestions')
+            //-     a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
+
+        div(class='content is-center')
+            div(class='emoji-wrapper l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 green' ng-repeat="emoji in emojis")
+                div.emoji-blanket
+                    span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
+                h3(class='left')='{{emoji.name}}'           
          
     if settings.environment.sendAnalytics == true
         script.

@@ -13,15 +13,81 @@ label {
     margin: 0px;
 }
 
-button {
-  border-style: none;
-  color: white;
-  height: 3em;
-  font-weight: bold;  
+.header {
+  background-color: rgb(0, 179, 88);
+  color: rgb(251, 251, 251);
+  margin: 0px;
+  box-shadow: 0.5px 0.866px 15px 0px rgba(0, 0, 0, 0.392);
+  z-index: 3;
 }
 
-#the-pot {
-  background-color: rgb(43, 175, 255);
+input[type="text"]  {  
+  background: rgb(77, 198, 137);     
+
+  +box-sizing(border-box);
+  +background-clip(padding-box);
+  +border-radius(0);
+  -webkit-appearance: none;
+  box-shadow: inset 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.09);  
+
+  border: 0;
+  outline: 0;
+  padding: 0;
+  padding: .1em .1em .1em .1em;  
+}
+
+.textarea {
+  text-align: left;
+  letter-spacing: .05em;
+  width: 85%;
+  font-size: 3em;  
+  color: #fff;
+  padding: .1em;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+.search {  
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+
+.sub-header {
+  background-color: rgb(255, 193, 23);
+  color: white;  
+
+  height: 100px;
+  z-index: 1;
+  padding: 1em;
+  
+  box-shadow: 0.5px 0.866px 15px 0px rgba(0, 0, 0, 0.392);     
+}
+
+.sub-header p {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.sub-header a {
+  font-size: 1.3em;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  padding: 0em .2em 0em .2em;
+}
+
+.sub-sub {
+   background-color: rgb(255, 215, 106); 
+   width: 85%;
+   margin: auto;
+   font-color: white;
 }
 
 .animate-show {  
@@ -39,65 +105,13 @@ button {
   transition:all ease 0.2s;
 }
 
-.clipboard {
-  font-size: 4em;
-  display: inline-block;
-}
-
-.twohotdogs {
-  margin: 1em;
-}
-
-.twohotdogs a {
-  margin: .5em;
-  padding: .45em;
-}
-
 a:link, a:visited, a:active {
   color: white;
   text-decoration: none;
 }
 
-.header {
-  background-color: rgb(43, 175, 255);
-  color: rgb(251, 251, 251);
-  padding-left: .8em;}
-  .header h1 {
-    letter-spacing: .1em;
-    font-size: 3em;
-    font-weight: bold;	
-    margin: 0em;
-    margin-left: -2px;
-  }
-  .header a:hover {
-    color: rgb(251, 251, 251);
-    text-decoration: none;
-  }
-  .header p {
-    letter-spacing: 1px;
-    padding-left: 0em;
-    margin-top: 0em;
-    padding-bottom: .4em;
-  }
-
 a:hover {
   text-decoration: underline;
-}
-
-.is-center {
-  text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  float: right;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .pure-g {
@@ -163,7 +177,6 @@ a:hover {
     letter-spacing: -.5px;
   }
 
-
 .emoji {
   font: 1em;
 }
@@ -199,55 +212,30 @@ a:hover {
   margin: 1em;
 }
 
-.textarea {
-  text-align: left;
-  letter-spacing: .05em;
-  width: 85%;
-  font-size: 4em;
+.clipboard {  
+  display: inline;  
+  font-size: 4em; 
 }
 
-input {    
-  border: 3px solid rgb(0, 179, 89);
-  font-style: italic;
+.suggestions {
+  margin-bottom: 1.5em;
 }
 
-form {
-  margin: 2em;
-}
-
-.search {  
+.suggestions a {
   color: rgb(120, 204, 255);
-  font-style: italic; 
-  margin-top: 1em;
-  margin-bottom: .5em;}
+  font-size: 2em;
+}
 
-  .suggestions {
-    margin-bottom: 1.5em;
-  }
+.suggestions.l-box {
+  margin: 0em;
+}
 
-  .suggestions a {
-    color: rgb(120, 204, 255);
-    font-size: 2em;
-  }
-
-  .suggestions.l-box {
-    margin: 0em;
-  }
-
-  .suggestions.pure-g {
-    margin: 0px;
-  }  
+.suggestions.pure-g {
+  margin: 0px;
+}  
 
 .emoji_edit {
   padding: 10px;  
-}
-
-::-webkit-input-placeholder {
-  color: rgb(120, 204, 255);
-  padding-left: .15em;
-  font-family: "Lato"
-  font-style: italic;
-  font-weight: lighter;
 }
 
 .orange {
@@ -264,4 +252,26 @@ form {
 
 .purple {
   background-color: rgb(119, 89, 255);
+}
+
+.is-center {
+  text-align: center;
+}
+
+.auto-center {
+  text-align: center;
+  margin: auto;
+  width: 85%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  visibility: hidden;
 }

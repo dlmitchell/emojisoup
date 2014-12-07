@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"paddin",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
 				"targ",
 				"targetName"
 			],
@@ -244,10 +252,6 @@
 				"get_keys"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"un",
 				"unicodeData"
 			],
@@ -411,13 +415,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 4813,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 4238,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 237.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"int",
 				"Indentation: Convert to Tabs"
@@ -471,23 +503,11 @@
 				"Indentation: Convert to Tabs"
 			],
 			[
-				"pack",
-				"Package Control: Install Package"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"packa",
 				"Package Control: Install Package"
 			],
 			[
 				"pakc",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -524,28 +544,38 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/administrator/dev/enodeji/enodeji",
-		"/Users/administrator/dev/enodeji/enodeji/controllers",
-		"/Users/administrator/dev/enodeji/enodeji/sitemap",
 		"/Users/administrator/dev/enodeji/enodeji/views"
 	],
 	"file_history":
 	[
-		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/js/angular_app.js",
-		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
-		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
-		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
-		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
+		"/Users/administrator/dev/Home/samples/HelloMvc/Startup.cs",
 		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/chrome.css",
-		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
+		"/Users/administrator/dev/enodeji/enodeji/config.json",
+		"/Users/administrator/dev/elasticsearch-newrelic-master/build.gradle",
+		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/administrator/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/administrator/dev/enodeji/enodeji/public/stylesheets/style.css",
 		"/Users/administrator/dev/enodeji/enodeji/app.js",
+		"/Users/administrator/dev/enodeji/enodeji/views/layout.jade",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/less/close.less",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/mongodb/dev/tools/doc-templates/class.ejs",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/js/angular_app.js",
+		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/scriptz.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/Users/administrator/dev/enodeji/enodeji/views/home.jade",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/lib/core/scripts.js",
+		"/Users/administrator/dev/searchity_index_search_slowlog.log",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jquery.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/assets/js/_vendor/less.min.js",
+		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/docs/assets/js/customize.min.js",
+		"/Users/administrator/dev/angular-demo/angular-phonecat/app/phones/samsung-transform.json",
+		"/Users/administrator/dev/enodeji/enodeji/views/emjs.jade",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/node_modules/cardinal/node_modules/redeyed/test/redeyed-script-level-return.js",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/scripts/private/update-gh-pages.sh",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/frameScrollPage.html",
-		"/Users/administrator/dev/enodeji/enodeji/node_modules/bootstrap/test-infra/S3Cachefile.json",
 		"/Users/administrator/dev/enodeji/enodeji/node_modules/angular/angular.js",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/app/js/app.js",
-		"/Users/administrator/dev/angular-demo/angular-phonecat/app/phones/samsung-transform.json",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/dao.js",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/emojis.js",
 		"/Users/administrator/dev/enodeji/enodeji/controllers/recipes.js",
@@ -561,7 +591,6 @@
 		"/Users/administrator/dev/enodeji/enodeji/public/javascripts/angular/angular.js",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/protractor/node_modules/selenium-webdriver/docs/class_webdriver_http_Request.html",
 		"/Users/administrator/dev/angular-demo/angular-phonecat/node_modules/bower/node_modules/cardinal/test/cardinal-highlight-json.js",
-		"/Users/administrator/dev/enodeji/enodeji/config.json",
 		"/Users/administrator/dev/enodeji/enodeji/views/recipe_add.jade",
 		"/Users/administrator/dev/enodeji/enodeji/views/recipes.jade",
 		"/Users/administrator/dev/enodeji/enodeji/emojis_unicode.json",
@@ -646,19 +675,7 @@
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/MatchQueryParser.java",
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/TermQueryParser.java",
 		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/BoolQueryParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryBinaryParseElement.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryStringQueryBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/fetch/QueryFetchSearchResult.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryStringQueryParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/IdsQueryBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/IdsQueryParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/apache/lucene/queryparser/classic/QueryParserSettings.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetExecutor.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetBuilder.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/facet/query/QueryFacetParser.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/index/query/QueryParsingException.java",
-		"/Users/administrator/dev/elasticsearch/src/test/java/org/elasticsearch/search/rescore/QueryRescorerTests.java",
-		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QuerySearchRequest.java"
+		"/Users/administrator/dev/elasticsearch/src/main/java/org/elasticsearch/search/query/QueryBinaryParseElement.java"
 	],
 	"find":
 	{
@@ -677,6 +694,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header",
+			"emoji",
+			"header",
+			"content",
+			"clipboard",
+			"the-pot",
+			"clipboard",
+			"pot",
+			"search",
+			"rgba",
+			"height",
+			"textarea",
+			"search",
+			"height",
+			"border",
+			"search",
+			"header",
+			"+=",
+			"JAVA_OPTS",
+			"textarea",
+			"text",
+			"text-area",
+			"search",
+			"content",
+			"wrapper",
+			"search",
+			".content",
+			"content",
+			".emoji",
+			"the-pot",
+			"green",
+			".li",
+			".ul",
+			"li",
+			"visib",
+			"copy-re",
+			".emoji",
+			".emojis",
 			"sans",
 			"open",
 			"l-box",
@@ -766,45 +821,7 @@
 			"que",
 			"view",
 			"query",
-			"-",
-			"css",
-			"user-lists-select",
-			"related_products_type",
-			"related",
-			"recommend",
-			"random",
-			"products_matching_tag",
-			"tags",
-			"	",
-			"app-card-wrapper",
-			"Comment",
-			"shopsavvy_production",
-			"sass",
-			"css",
-			"pageable",
-			"pageablepageable",
-			"pageable",
-			"tags",
-			"🏠",
-			"recipe_add",
-			"router",
-			"rendertags",
-			"delete",
-			"edit",
-			"url",
-			"edit",
-			"#edit",
-			"add_tag",
-			"emojis",
-			"delete_tag",
-			"card-border\n",
-			"card-border",
-			"title",
-			"get",
-			"logger",
-			"log",
-			"puts",
-			"body"
+			"-"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -827,19 +844,283 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
-			]
-		},
-		{
-			"sheets":
-			[
+				{
+					"buffer": 0,
+					"file": "public/stylesheets/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3810,
+								3810
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3518.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -854,18 +1135,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.39887565842,
 			1.0
 		],
 		"rows":
@@ -876,6 +1150,10 @@
 	},
 	"menu_visible": true,
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
 	{
 		"height": 0.0
 	},
@@ -892,7 +1170,39 @@
 		[
 			[
 				"chrome",
-				"enodeji/public/stylesheets/chrome.css"
+				"public/stylesheets/chrome.css"
+			],
+			[
+				"styles",
+				"public/stylesheets/style.css"
+			],
+			[
+				"",
+				"app.js"
+			],
+			[
+				"scrit",
+				"public/javascripts/scriptz.js"
+			],
+			[
+				"home",
+				"views/home.jade"
+			],
+			[
+				"scrip",
+				"enodeji/public/javascripts/scriptz.js"
+			],
+			[
+				"scripts",
+				"angular-phonecat/node_modules/bower/lib/core/scripts.js"
+			],
+			[
+				"home.",
+				"enodeji/views/home.jade"
+			],
+			[
+				"angular_ap",
+				"enodeji/public/javascripts/js/angular_app.js"
 			],
 			[
 				"emjs.",
@@ -909,14 +1219,6 @@
 			[
 				"script",
 				"enodeji/public/javascripts/scriptz.js"
-			],
-			[
-				"angular_ap",
-				"enodeji/public/javascripts/js/angular_app.js"
-			],
-			[
-				"styles",
-				"enodeji/public/stylesheets/style.css"
 			],
 			[
 				"fa",
@@ -955,10 +1257,6 @@
 				"public/stylesheets/style.css"
 			],
 			[
-				"scripts",
-				"public/javascripts/scriptz.js"
-			],
-			[
 				"site",
 				"sitemap/sitemap_generator.js"
 			],
@@ -985,10 +1283,6 @@
 			[
 				"footer",
 				"shopsavvy-web/app/views/layouts/_footer.html.erb"
-			],
-			[
-				"home",
-				"enodeji/views/home.jade"
 			],
 			[
 				"inde",
@@ -1083,16 +1377,8 @@
 				"views/home.jade"
 			],
 			[
-				"scrit",
-				"enodeji/enodeji/public/javascripts/scriptz.js"
-			],
-			[
 				"index",
 				"enodeji/enodeji/controllers/index.js"
-			],
-			[
-				"scrip",
-				"enodeji/enodeji/public/javascripts/scriptz.js"
 			],
 			[
 				"shopsavvy",
@@ -1227,10 +1513,6 @@
 				"emojisoup/soupme/models.py"
 			],
 			[
-				"",
-				"untitled"
-			],
-			[
 				"ind",
 				"emojisoup/soupme/templates/soupme/index.html"
 			],
@@ -1297,7 +1579,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_width": 161.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
