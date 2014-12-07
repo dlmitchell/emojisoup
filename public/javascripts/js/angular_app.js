@@ -33,6 +33,8 @@ enodjiApp.service("WorkingEmojiService", function() {
 	};
 });
 
+
+
 enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService) {	
 	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
@@ -49,6 +51,17 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	$http.get('/api/emojis').success(function(data) {
 		$scope.emojis = data.emojis
 	});
+
+	var _value;
+	$scope.query = {
+		value: function(newName) {		  
+		  if (angular.isDefined(newName)) {
+		    _value = newName;
+		    $scope.searchEmojis(newName);
+		  }
+		  return _value;
+		}
+	};	
 
 
 	// the pot is the sentence
