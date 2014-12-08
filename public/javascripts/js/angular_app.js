@@ -76,7 +76,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		$('.emoji-wrapper-cover')
 			.height(height)
 			.width(width)
-		  	.css('margin-top', (-1 * height));
+		  	.css('margin-top', (-1 * height))
 		  	.delay(1500).fadeOut();		
 	}
 
