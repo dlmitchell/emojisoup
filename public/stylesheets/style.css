@@ -23,7 +23,7 @@ label {
   color: rgb(251, 251, 251);
   margin: 0px;
   box-shadow: 0.5px 0.866px 15px 0px rgba(0, 0, 0, 0.392);
-  z-index: 3;
+  position: relative;  
 }
 
 input[type="text"]  {  
@@ -66,19 +66,16 @@ input[type="text"]  {
 }
 
 .sub-header {
-  background-color: rgb(255, 193, 23);
-  color: white;  
-
+  background-color: rgb(255, 193, 23);   
   height: 100px;
-  z-index: 1;
-  padding: 1em;
-  
-  box-shadow: 0.5px 0.866px 15px 0px rgba(0, 0, 0, 0.392);     
+  padding: 1em;  
+  box-shadow: 0.5px 0.866px 15px 0px rgba(0, 0, 0, 0.392);       
 }
 
 .sub-header p {
   font-size: 1.2em;
   text-align: left;
+  color: white;  
 }
 
 .sub-header a {
