@@ -58,6 +58,8 @@ html(ng-app='enodjiApp')
                 div.emoji-blanket
                     span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
                 h3(class='left')='{{emoji.name}}'
+                p(class='left emoji-tags')
+                    a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
          
     if settings.environment.sendAnalytics == true
         script.

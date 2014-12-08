@@ -127,47 +127,52 @@ a:hover {
 .emoji-wrapper {
   background-color: #848dff;
   max-width: 200px;
-  max-height: 200px; 
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
-  .emoji-wrapper h3 {
-    font-weight: normal;
-    padding-left: 15px;    
-    color: rgb(255, 255, 255);}
+.emoji-wrapper h3 {
+  font-weight: normal;
+  padding-left: 15px;    
+  color: rgb(255, 255, 255);
+  margin-bottom: .5em;
+}
   
-  .emoji-wrapper p {
-    font-size: 1em;
-    padding-left: 15px;
-    font-style: italic;
-    margin-top: 0px;
-    font-weight: light;
-    color: #2c3e50;}  
+.emoji-wrapper p {
+  font-size: .9em;
+  font-weight: light;
+  color: rgba(255, 255, 255, 0.8);
+}  
+
+.emoji-wrapper a {
+  color: rgba(255, 255, 255, 0.8);
+} 
 
 .emoji-wrapper-cover {
   background-color: rgb(237, 28, 36);
   max-width: 200px;  
   display: block;
-  position: absolute;}
+  position: absolute;
+}
 
-  .emoji-wrapper-cover h2 {
-    color: white;
-    padding: 0px;
-    font-style: normal;
-    font-size: 1.5em;    
-    font-weight: bolder;
-    text-align: center; }
+.emoji-wrapper-cover h2 {
+  color: white;
+  padding: 0px;
+  font-style: normal;
+  font-size: 1.5em;    
+  font-weight: bolder;
+  text-align: center; 
+}
 
-  .emoji-wrapper-cover p {
-    color: white;
-    padding: 0px;
-    margin-top: -20px;
-    font-size: 1.2em;
-    font-style: normal;
-    font-weight: light;
-    text-align: center;
-    letter-spacing: -.5px;
-  }
+.emoji-wrapper-cover p {
+  color: white;
+  padding: 0px;
+  margin-top: -20px;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: light;
+  text-align: center;
+  letter-spacing: -.5px;
+}
 
 .emoji {
   font: 1em;
