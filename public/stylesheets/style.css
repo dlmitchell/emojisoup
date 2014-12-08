@@ -13,6 +13,11 @@ label {
     margin: 0px;
 }
 
+.loading {
+  font-size: 3em;  
+  text-align: center;
+}
+
 .header {
   background-color: rgb(0, 179, 88);
   color: rgb(251, 251, 251);

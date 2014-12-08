@@ -10,22 +10,25 @@ html(ng-app='enodjiApp')
     title= EmojiSoup
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/pure-grids-responsive-min.css')  
+    link(rel='stylesheet', href='/stylesheets/font-awesome/css/font-awesome.min.css')    
     link(rel='stylesheet', href='/stylesheets/chrome.css' ng-if="isChrome")
+
     link(rel='image/png', type='image/png', href='/favicon.png')
 
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')      
-    script(type='text/javascript' src='/javascripts//angular/angular.min.js')
-    script(type='text/javascript' src='/javascripts//angular-animate/angular-animate.min.js')
-    script(type='text/javascript' src='/javascripts//angular-route/angular-route.min.js')
+    script(type='text/javascript' src='/javascripts/angular/angular.min.js')
+    script(type='text/javascript' src='/javascripts/angular-animate/angular-animate.min.js')
+    script(type='text/javascript' src='/javascripts/angular-route/angular-route.min.js')
     script(type='text/javascript' src='/javascripts/ScrollToFixed/jquery-scrolltofixed-min.js')    
     script(type='text/javascript' src='/javascripts/js/angular_app.js')
     script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')     
     script(type='text/javascript' src='/javascripts/scriptz.js')
+
   body 
     div(ng-controller='EmojiController')
         div(class='header') 
-            div(class='is-center')
-                form#formSearch(class="search" name="search",method="get", action="/")
+            div(class='is-center')                
+                form#formSearch(class="search" name="search")                                          
                     input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query.value" ng-model-options="{ debounce: 300, getterSetter: true }")
 
         div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')     
@@ -41,6 +44,9 @@ html(ng-app='enodjiApp')
                     a(href='#')='add'
                     | it to the collection. or, 
                     a(href='#' name='clear' ng-click='clearPot()')='start over'
+
+        div(class='loading' ng-show='spin')
+            i(class="fa fa-refresh fa-spin")    
 
             //- div(class='suggestions')
             //-     a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'

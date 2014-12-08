@@ -33,17 +33,18 @@ enodjiApp.service("WorkingEmojiService", function() {
 	};
 });
 
-
-
 enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService) {	
 	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
+	$scope.spin = false;
 
 	// search emojis
 	$scope.searchEmojis = function(emojiname) { 
+		$scope.spin = true;
 		$http.get('/api?q=' + emojiname).success(function(data) {
 			$scope.emojis = data.emojis
+			$scope.spin = false;
 		});
 	};
 
