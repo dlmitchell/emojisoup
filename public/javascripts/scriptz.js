@@ -43,7 +43,7 @@ $(document).on('click', '#the-pot > .emojis > .emoji', function(e) {
 
   showPot(currentUnicode.replace(targetUnicode, ''));  
 
-  $(e.currentTarget).fadeOut();
+  $(e.currentTarget);.fadeOut();
 }); 
 
 function showPot(newValue) {

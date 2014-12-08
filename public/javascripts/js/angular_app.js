@@ -72,10 +72,12 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		// apply the fade out animation that is so sweeetz!
 		$(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
 		var height = $(event.target.parentNode.parentNode).height();
+		var width = $(event.target.parentNode.parentNode).width();
 		$('.emoji-wrapper-cover')
-			.height(height + 26)
-		  	.css('margin-top', (-1 * height) -26)
-		  	.delay(1500).fadeOut();		
+			.height(height)
+			.width(width)
+		  	.css('margin-top', (-1 * height));
+		  	//.delay(1500).fadeOut();		
 	}
 
 	$scope.clearPot = function() {	

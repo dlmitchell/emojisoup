@@ -128,18 +128,14 @@ a:hover {
 
 .emoji-wrapper {
   background-color: #848dff;
-  padding-top: 25px;
-  max-width: 250px;
-  max-height: 250px; 
+  max-width: 200px;
+  max-height: 200px; 
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
   .emoji-wrapper h3 {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: normal;
     padding-left: 15px;    
-    margin-bottom: 0px;
-    letter-spacing: .1em;
     color: rgb(255, 255, 255);}
   
   .emoji-wrapper p {
@@ -152,8 +148,7 @@ a:hover {
 
 .emoji-wrapper-cover {
   background-color: rgb(237, 28, 36);
-  width: 250px;
-  height: 250px;   
+  max-width: 200px;  
   display: block;
   position: absolute;}
 
@@ -161,7 +156,7 @@ a:hover {
     color: white;
     padding: 0px;
     font-style: normal;
-    font-size: 2.5em;    
+    font-size: 1.5em;    
     font-weight: bolder;
     text-align: center; }
 
