@@ -77,7 +77,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 			.height(height)
 			.width(width)
 		  	.css('margin-top', (-1 * height));
-		  	//.delay(1500).fadeOut();		
+		  	.delay(1500).fadeOut();		
 	}
 
 	$scope.clearPot = function() {	
