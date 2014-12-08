@@ -31,6 +31,10 @@ html(ng-app='enodjiApp')
                 form#formSearch(class="search" name="search")
                     input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query.value" ng-model-options="{ debounce: 300, getterSetter: true }")
 
+            div(class='aut-center suggestions')
+                a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
+
+
         div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')
             div(class='sub-sub is-center')
                 div(class='clipboard' ng-repeat='emoji in sentence track by $index')
@@ -47,9 +51,6 @@ html(ng-app='enodjiApp')
 
         div(class='loading' ng-show='spin')
             i(class="fa fa-refresh fa-spin")
-
-            //- div(class='suggestions')
-            //-     a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
 
         //- div(class='content is-center pure-g')
         div(class='content is-center')
