@@ -12,6 +12,12 @@ DAO.prototype.search = function(req, searchTerm, callback) {
         $or: 
         [
             {
+                name: {
+                    $regex: searchTerm, 
+                    $options: 'i'
+                }
+            },
+            {
                 tags: {
                     $regex: searchTerm, 
                     $options: 'i'
@@ -25,32 +31,15 @@ DAO.prototype.search = function(req, searchTerm, callback) {
  
 	// search emojis
 	db.get('emojis').find(query, {}, function(e, emjDocs){
-		var recQuery = {
-            $or: 
-            [
-                {
-                    title: {
-            		    $regex: searchTerm,
-            		    $options: 'i' //i: ignore case, m: multiline, etc
-            		}
-                },
-                {
-                    unicode: searchTerm
-                }
-            ]
-		};
-
-    	// search recipes
-    	db.get('recipes').find(recQuery,{},function(e, recDocs){
-	    	callback(e, emjDocs, recDocs);
-    	});	
+        callback(e, emjDocs);
 	});		
 }
 
 DAO.prototype.emojis_all = function(req, callback) {
     var db = req.db;
     var collection = db.get('emojis');
-    collection.find({}, {}, function(e, docs) {
+
+    collection.find({}, {limit:25}, function(e, docs) {
 		callback(e, docs);
     });		
 }
@@ -131,32 +120,20 @@ DAO.prototype.all = function(req, callback) {
     });
 }
 
-// DAO.prototype.recipes_add = function(req, title, recpie, emjs, callback) {
-//  req.db.get('recipes').insert({
-//      "title" : title,
-//      "recipe" : recipe,
-//      "translation" : "no translation",
-//      "unicode" : emjs
-//  }, function(e, doc) {
-//      callback(e, doc);
-//  });
-// }
+DAO.prototype.recipes_add = function(req, name, description, tags, emjs, callback) {
 
-// DAO.prototype.recipes_find_one = function(req, recipe, callback) {
-//     req.db.get('recipes').findOne({title: recipe},function(e, recipe){
-//     	callback(e, recipe);
-//     });
-// }
+    var obj = {
+        "name" : name,
+        "description" : description,
+        "tags" : [tags],
+        "unicode" : emjs,
+        "type" : "recipe"
+    };
 
-// DAO.prototype.recipes_add = function(req, title, recpie, emjs, callback) {
-// 	req.db.get('recipes').insert({
-// 		"title" : title,
-// 		"recipe" : recipe,
-// 		"translation" : "no translation",
-// 		"unicode" : emjs
-// 	}, function(e, doc) {
-// 		callback(e, doc);
-// 	});
-// }
+    req.db.get('emojis').insert(obj, function(e, doc) {
+        console.log(e);
+        callback(e, doc);
+    });
+}
 
 exports = module.exports = DAO;

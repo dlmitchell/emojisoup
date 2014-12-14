@@ -34,8 +34,7 @@ html(ng-app='enodjiApp')
             div(class='aut-center suggestions')
                 a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
 
-
-        div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')
+        div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')        
             div(class='sub-sub is-center')
                 div(class='clipboard' ng-repeat='emoji in sentence track by $index')
                     span(class='emoji' ng-click="removeFromPot(emoji)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
@@ -45,9 +44,18 @@ html(ng-app='enodjiApp')
                     | find emojis to make a sentence.
                     a#copy-recipe(href='#' name='copy' ng-click='copyRecipe($event)' data-clipboard-name='copy-recipe' data-clipboard-value)='COPY'
                     | the sentence or 
-                    a(href='#')='add'
+                    a(href='#' ng-click="showAddForm=true")='add'
                     | it to the collection. or,
                     a(href='#' name='clear' ng-click='clearPot()')='start over'
+
+            div(class='auto-center' ng-show='showAddForm==true')
+                form(name="recipe_add", method="post", action="/recipe")
+                    input(class="textarea" type='text' placeholder='Name' name='name')
+                    input(class="textarea" type='text' placeholder='Description' name='description')
+                    input(class="textarea" type='text' placeholder='Tags' name='tags')
+                    input.hidden(type="text" placeholder="Recipe" name="recipe" value="{{unicodez}}")
+                    input#btnSubmit(type="submit")="save"    
+                    input(type="button" ng-click='showAddForm=false' value="cancel")="cancel"
 
         div(class='loading' ng-show='spin')
             i(class="fa fa-refresh fa-spin")
@@ -60,7 +68,7 @@ html(ng-app='enodjiApp')
                 h3(class='left')='{{emoji.name}}'
                 p(class='left emoji-tags')
                     a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
-         
+
     if settings.environment.sendAnalytics == true
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

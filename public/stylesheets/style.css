@@ -27,8 +27,6 @@ label {
 }
 
 input[type="text"]  {  
-  background: rgb(77, 198, 137);     
-
   +box-sizing(border-box);
   +background-clip(padding-box);
   +border-radius(0);
@@ -38,7 +36,11 @@ input[type="text"]  {
   border: 0;
   outline: 0;
   padding: 0;
-  padding: .1em .1em .1em .1em;  
+  padding: .1em .1em .1em .1em;
+}
+
+.header input[type="text"]  {  
+  background: rgb(77, 198, 137);
 }
 
 .textarea {
@@ -71,6 +73,11 @@ input[type="text"]  {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);      
 }
 
+.sub-header input[type="text"] {
+  background-color: rgb(255, 215, 106);
+  margin: .1em;
+}
+
 .sub-header p {
   font-size: 1.2em;
   text-align: left;
@@ -93,7 +100,6 @@ input[type="text"]  {
 
 .animate-show {  
   opacity:1;
-  height: 8em;
 }
 
 .animate-show.ng-hide {

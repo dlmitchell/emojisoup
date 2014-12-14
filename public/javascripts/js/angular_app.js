@@ -17,18 +17,24 @@ enodjiApp.run(function($rootScope) {
 
 enodjiApp.service("WorkingEmojiService", function() {
 	var emojis = [];
-
+	var unicodez = "";
 	return {
 		add: function(emoji) {
 			emojis.push(emoji);	
+			unicodez += emoji.unicode;
 		},
 
 		clear: function() {
 			emojis = [];
+			unicodez = "";
 		},
 
 		get: function() {
 			return emojis;
+		},
+
+		unicode: function() {
+			return unicodez;
 		}
 	};
 });
@@ -38,6 +44,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
 	$scope.spin = false;
+	$scope.showAddForm = false;
 
 	// search emojis
 	$scope.searchEmojis = function(emojiname) { 
@@ -53,6 +60,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		$scope.emojis = data.emojis
 	});
 
+	// model for debounced search
 	var _value;
 	$scope.query = {
 		value: function(newName) {		  
@@ -64,8 +72,8 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		}
 	};	
 
+	// model for adding new recipe/sentence
 
-	// the pot is the sentence
 	$scope.addToPot = function(emoji, $event) {
 		WorkingEmojiService.add(emoji);
 
@@ -77,30 +85,13 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 			.height(height)
 			.width(width)
 		  	.css('margin-top', (-1 * height))
-		  	.delay(1500).fadeOut();		
+		  	.delay(1500).fadeOut();
 	}
 
 	$scope.clearPot = function() {	
 		$("#copy-recipe").attr("data-clipboard-value", "");
 		WorkingEmojiService.clear();		
 	}
-
-	$scope.copyRecipe = function($event) {
-		// 	TODO: add animation for recipe copied
-
-		// $(event.target.parentNode.parentNode).append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-
-		// var height = $(event.target.parentNode.parentNode).height();
-
-		// $('.emoji-wrapper-cover')
-		// 	.height(height + 26)
-		//   	.css('margin-top', (-1 * height) -26)
-		//   	.delay(1500).fadeOut();	
-	}
-
-	$scope.$watch(WorkingEmojiService.get,function(v){
-		$scope.sentence = v;	
-	});	
 
 	// clipboard nonsense. 
 	// listen for any changes to the emojis set, and re-apply the clipboard to each result set
@@ -122,4 +113,12 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 			});
 		});						
 	});
+
+	$scope.$watch(WorkingEmojiService.get,function(v){
+		$scope.sentence = v;	
+	});	
+
+	$scope.$watch(WorkingEmojiService.unicode,function(v){
+		$scope.unicodez = v;
+	});		
 });
