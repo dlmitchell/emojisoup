@@ -6,7 +6,7 @@ $( document ).ready(function() {
   if (window.location.pathname.indexOf('/tags/') >= 0)
     $('#inputSearch').val(window.location.pathname.replace("/tags/", ""))  
 
-  $('#the-pot').scrollToFixed();
+  $('.header').scrollToFixed();
   
   $('#inputSearch').focus()
 });
@@ -43,7 +43,7 @@ $(document).on('click', '#the-pot > .emojis > .emoji', function(e) {
 
   showPot(currentUnicode.replace(targetUnicode, ''));  
 
-  $(e.currentTarget);.fadeOut();
+  $(e.currentTarget);//.fadeOut();
 }); 
 
 function showPot(newValue) {

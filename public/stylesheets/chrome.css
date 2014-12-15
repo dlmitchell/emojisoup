@@ -4,10 +4,16 @@
     src: url(../fonts/OpenSansEmoji.ttf);
 }
 
+@font-face {
+    font-family: symbola;
+    src: url(../fonts/Symbola/Symbola.ttf);
+}
+
 .textarea {
 	font-family: openSansEmoji;
 }
 
 .emoji {
   	font: 1em;
+	font-family: openSansEmoji;  	
 }

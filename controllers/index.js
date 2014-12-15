@@ -16,40 +16,6 @@ router.get('/', function(req, res) {
 	}	
 });
 
-router.route('/recipe')
-	.get(function(req, res, next) {	
-		if (req.params.recipe)
-		{
-			renderEmojis(res, 'home', [], [req.recipe]);
-		}
-		else 
-		{			
-			dao.all(req, function(e, emojis, recipes) {
-				renderEmojis(res,'home', [], recipes);
-			});	
-		}
-	})
-	.post(function(req, res, next) {		
-		console.log("post");
-		console.log(req.body);
-
-		var name = req.body.name;
-		var description = req.body.description;
-		var tags = req.body.tags;
-		var emjs = req.body.recipe;
-
-		//DAO.prototype.recipes_add = function(req, name, description, tags, emjs, callback) {		
-
-		dao.recipes_add(req, name, description, tags, emjs, function(e, recipe) {
-			res.json({recipe: recipe});
-		});
-	})
-	.put(function(req, res, next) {
-		console.log("put");
-		renderRecipeAdd(req, res);
-	})	
-
-
 // -------------------------
 /** RENDERING FUNCTIONS **/
 // -------------------------

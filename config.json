@@ -1,8 +1,10 @@
 {
   "production": {
-    "sendAnalytics": true
+    "sendAnalytics": true,
+    "environment" : "prod"
   },
   "development": {
-    "sendAnalytics": false
+    "sendAnalytics": false,
+    "environment" : "dev"
   }
 }

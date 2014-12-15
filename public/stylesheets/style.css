@@ -46,10 +46,9 @@ input[type="text"]  {
 .textarea {
   text-align: left;
   letter-spacing: .05em;
-  width: 85%;
+  width: 100%;
   font-size: 3em;  
   color: #fff;
-  padding: .1em;
 }
 
 ::-webkit-input-placeholder {
@@ -96,6 +95,26 @@ input[type="text"]  {
    width: 85%;
    margin: auto;
    font-color: white;
+}
+
+.buttonz {
+  border-style: none;
+  height: 3em;  
+  padding: 1em 2em 1em 2em;
+  text-transform: uppercase;
+}
+
+.buttonz.cancel {
+  background: #FF4F17;
+  color: #FFE7DF;
+  box-shadow: 0 1px 2px 0 rgba(120, 205, 255, 0.1);
+  margin-right: 1em;
+}
+
+.buttonz.submit {
+  background: #23ABFC;
+  color: #E1F4FF;
+  box-shadow: 0 1px 2px 0 rgba(255, 146, 112, 0.1);
 }
 
 .animate-show {  
@@ -273,7 +292,7 @@ a:hover {
 }
 
 .right {
-  float: right;
+  text-align: right;
 }
 
 .hidden {

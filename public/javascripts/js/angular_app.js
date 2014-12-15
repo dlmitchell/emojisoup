@@ -46,15 +46,6 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	$scope.spin = false;
 	$scope.showAddForm = false;
 
-	// search emojis
-	$scope.searchEmojis = function(emojiname) { 
-		$scope.spin = true;
-		$http.get('/api?q=' + emojiname).success(function(data) {
-			$scope.emojis = data.emojis
-			$scope.spin = false;
-		});
-	};
-
 	// fetch the initial set of emojis
 	$http.get('/api/emojis').success(function(data) {
 		$scope.emojis = data.emojis
@@ -72,7 +63,22 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		}
 	};	
 
-	// model for adding new recipe/sentence
+	// search emojis
+	$scope.searchEmojis = function(emojiname) { 
+		$scope.spin = true;
+		$http.get('/api?q=' + emojiname).success(function(data) {
+			$scope.emojis = data.emojis
+			$scope.spin = false;
+		});
+	};
+
+	$scope.getEmoji = function(emojiId) { 
+		$scope.spin = true;
+		$http.get('/api/emojis/' + emojiId).success(function(data) {
+			$scope.emojis = data.emojis
+			$scope.spin = false;
+		});
+	};	
 
 	$scope.addToPot = function(emoji, $event) {
 		WorkingEmojiService.add(emoji);
@@ -93,10 +99,39 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		WorkingEmojiService.clear();		
 	}
 
+	// model for adding new recipe/sentence
+	$scope.addRecipe = function(recipe) {
+		var data = {
+			metadata: recipe,
+			emojis: $scope.sentence
+		};
+
+		$scope.spin = true;
+		$http.post('/api/emojis', data).
+			success(function(data, status, headers, config) {
+				$scope.getEmoji(data.recipe._id);
+				$scope.recipe = {};
+				$scope.spin = false;
+			}).
+			error(function(data, status, headers, config) {
+				$scope.spin = false;
+			});	
+	}	
+
+	$scope.removeEmoji = function(emoji) {
+		$http.delete('/api/emojis/' + emoji).
+			success(function(data, status, headers, config) {
+				console.log(data);
+				$scope.spin = false;
+			}).
+			error(function(data, status, headers, config) {
+				$scope.spin = false;
+			});			
+	}
+
 	// clipboard nonsense. 
 	// listen for any changes to the emojis set, and re-apply the clipboard to each result set
-	$scope.$watch('emojis', function(newValue, oldValue){		
-
+	$scope.$watch('emojis', function(newValue, oldValue){
 		// creating a new clipboard, otherwise, we get tons of duplicated events
 		var client = new ZeroClipboard();
 

@@ -30,27 +30,41 @@ DAO.prototype.search = function(req, searchTerm, callback) {
     }
  
 	// search emojis
-	db.get('emojis').find(query, {}, function(e, emjDocs){
+	// db.get('emojis').find(query, { limit: 25, sort : [['type', 'desc']] }, function(e, emjDocs){
+ //        callback(e, emjDocs);
+	// });
+
+    db.get('emojis').find(query, { sort : [['type', 'desc']] }, function(e, emjDocs){
         callback(e, emjDocs);
-	});		
+    });
 }
 
 DAO.prototype.emojis_all = function(req, callback) {
     var db = req.db;
     var collection = db.get('emojis');
 
-    collection.find({}, {limit:25}, function(e, docs) {
+    collection.find({}, { limit: 25, sort : [['type', 'desc']] }, function(e, docs) {
 		callback(e, docs);
     });		
 }
 
-DAO.prototype.emojis_find_one = function(req, searchTerm, callback) {
+DAO.prototype.emojis_find_one = function(req, id, callback) {
     var db = req.db;
     var collection = db.get('emojis');
 
-    collection.findOne({name: searchTerm},function(e, emoji){
+    collection.findOne({_id: id},function(e, emoji){
     	callback(e, emoji);
     });	
+}
+
+DAO.prototype.emojis_remove = function(req, emoji, callback) {
+    console.log("removing emoji");
+    console.log(emoji);
+
+    req.db.get('emojis').remove({_id : emoji}, function(e) {
+        console.log(e);
+        callback(e);            
+    });                
 }
 
 DAO.prototype.emojis_add_tag = function(req, emoji, tag, callback) {
@@ -111,29 +125,35 @@ DAO.prototype.tags_all = function(req, callback) {
     });			
 }
 
-DAO.prototype.all = function(req, callback) {
-    var db = req.db;
-    db.get('emojis').find({}, {}, function(e, emjDocs) {
-    	db.get('recipes').find({}, {}, function(e, recDocs) {
-    		callback(e, emjDocs, recDocs);
-    	});		
-    });
-}
+DAO.prototype.recipes_add = function(req, callback) {
 
-DAO.prototype.recipes_add = function(req, name, description, tags, emjs, callback) {
+    var payload = req.body;
 
-    var obj = {
-        "name" : name,
-        "description" : description,
-        "tags" : [tags],
-        "unicode" : emjs,
-        "type" : "recipe"
-    };
+    try
+    {
+        var obj = {
+            "name" : payload.metadata.name,
+            "description" : payload.metadata.description,
+            "tags" : payload.metadata.tags.split(','),
+            "unicode" : payload.emojis.map(function(e) { return e.unicode }).join(''),
+            "emojis_ids" : payload.emojis.map(function(e) { return e._id }),
+            "type" : "recipe"
+        };
 
-    req.db.get('emojis').insert(obj, function(e, doc) {
+        req.db.get('emojis').insert(obj, function(e, doc) {
+            callback(e, doc);
+        });
+    }   
+    catch(e)
+    {
+        console.log("error occurred");
         console.log(e);
         callback(e, doc);
-    });
+    } 
+    finally
+    {
+
+    }
 }
 
 exports = module.exports = DAO;

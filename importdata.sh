@@ -1,0 +1,1 @@
+ mongoimport -d enodji -c emojis --file emojis.json  --jsonArray

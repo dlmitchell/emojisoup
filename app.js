@@ -26,7 +26,8 @@ var fs   = require('fs');
 //------------------------------------------------
 
 var config = JSON.parse(fs.readFileSync('config.json', 'utf8'))
-var envVariables = process.env.NODE_ENV == 'dev' ? config.development : config.production;
+
+var envVariables = process.env.NODE_ENV == null || process.env.NODE_ENV == 'dev' ? config.development : config.production;
 app.set('environment', envVariables);
 
 //------------------------------------------------
