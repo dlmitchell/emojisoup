@@ -43,7 +43,7 @@ DAO.prototype.emojis_all = function(req, callback) {
     var db = req.db;
     var collection = db.get('emojis');
 
-    collection.find({}, { limit: 25, sort : [['type', 'desc']] }, function(e, docs) {
+    collection.find({}, { sort : [['type', 'desc']] }, function(e, docs) {
 		callback(e, docs);
     });		
 }
