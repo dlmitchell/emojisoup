@@ -71,8 +71,8 @@ html(ng-app='enodjiApp')
         //- div(class='content is-center pure-g')
         div(class='content is-center')
             div(class='emoji-wrapper l-box pure-u-1 pure-u-1-8 pure-u-md-1-6 pure-u-lg-1-4' ng-repeat="emoji in emojis")
-                if settings.environment.environment == "dev"
-                    a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
+                //- if settings.environment.environment == "dev"
+                //-     a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
     
                 div.emoji-blanket
                     span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
