@@ -39,6 +39,7 @@ router.route('/emojis/:emoji?')
 			});			
 		}
 		else {
+			console.log(req.query);
 			dao.emojis_all(req, function(e, emojis) { 
 				console.log("all emojis done");
 				res.json({emojis: emojis});

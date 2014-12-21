@@ -39,16 +39,47 @@ enodjiApp.service("WorkingEmojiService", function() {
 	};
 });
 
-enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService) {	
+// Reddit constructor function to encapsulate HTTP and pagination logic
+enodjiApp.factory('Scrollgi', function($http) {
+  var Scrollgi = function() {
+    this.items = [];
+    this.busy = false;
+    this.after = '';
+  };
+
+  Scrollgi.prototype.nextPage = function() {
+  	console.log("uasdfsd")
+    if (this.busy) return;
+    this.busy = true;
+
+    console.log(this);
+
+    var url = "api/emojis/" + this.after + "&jsonp=JSON_CALLBACK";
+    $http.jsonp(url).success(function(data) {
+      var items = data.data.children;
+      for (var i = 0; i < items.length; i++) {
+        this.items.push(items[i].data);
+      }
+      this.after = "t3_" + this.items[this.items.length - 1].id;
+      this.busy = false;
+    }.bind(this));
+  };
+
+  return Scrollgi;
+});
+
+enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService, Scrollgi) {	
 	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
-	$scope.spin = false;
+	$scope.spin = true;
 	$scope.showAddForm = false;
+	$scope.scrollgis = new Scrollgi();
 
 	// fetch the initial set of emojis
 	$http.get('/api/emojis').success(function(data) {
-		$scope.emojis = data.emojis
+		$scope.emojis = data.emojis;
+		$scope.spin = false;
 	});
 
 	// model for debounced search

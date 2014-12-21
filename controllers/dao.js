@@ -42,8 +42,10 @@ DAO.prototype.search = function(req, searchTerm, callback) {
 DAO.prototype.emojis_all = function(req, callback) {
     var db = req.db;
     var collection = db.get('emojis');
+    var take = req.query != null && req.query.take != null ? req.query.take : 25;
+    var skip = req.query != null && req.query.skip != null ? req.query.skip : 0;
 
-    collection.find({}, { sort : [['type', 'desc']] }, function(e, docs) {
+    collection.find({}, { limit: take, skip: skip, sort : [['type', 'desc']] }, function(e, docs) {
 		callback(e, docs);
     });		
 }
