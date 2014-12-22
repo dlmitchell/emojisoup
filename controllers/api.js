@@ -11,8 +11,9 @@ router.get('/', function(req, res) {
 
 	res.set({ 'content-type': 'application/json; charset=utf-8' });
 
+
 	if (req.query.q) {
-		dao.search(req, req.query.q, function(e, emojis, recipes) {
+		dao.search(req, function(e, emojis, recipes) {
 			res.json({emojis: emojis});
 		});
 	}
@@ -38,6 +39,11 @@ router.route('/emojis/:emoji?')
 				res.json({emojis: [emojis]});
 			});			
 		}
+		else if (req.query.q) {
+			dao.search(req, function(e, emojis, recipes) {
+				res.json({emojis: emojis});
+			});
+		}		
 		else {
 			console.log(req.query);
 			dao.emojis_all(req, function(e, emojis) { 

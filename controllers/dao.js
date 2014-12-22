@@ -4,8 +4,9 @@ var DAO = function() {}
  * @function
  * Searches emojis and recipes
  */
-DAO.prototype.search = function(req, searchTerm, callback) {
-	console.log(searchTerm)
+DAO.prototype.search = function(req, callback) {
+    var searchTerm = req.query.q;
+    console.log(searchTerm)
 	var db = req.db;
 
     var query = {
@@ -28,13 +29,11 @@ DAO.prototype.search = function(req, searchTerm, callback) {
             } 
         ]    
     }
- 
-	// search emojis
-	// db.get('emojis').find(query, { limit: 25, sort : [['type', 'desc']] }, function(e, emjDocs){
- //        callback(e, emjDocs);
-	// });
 
-    db.get('emojis').find(query, { sort : [['type', 'desc']] }, function(e, emjDocs){
+    var take = req.query != null && req.query.take != null ? req.query.take : 25;
+    var skip = req.query != null && req.query.skip != null ? req.query.skip : 0;
+
+    db.get('emojis').find(query, { limit: take, skip: skip, sort : [['type', 'desc']] }, function(e, emjDocs){
         callback(e, emjDocs);
     });
 }

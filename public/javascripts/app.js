@@ -1,0 +1,204 @@
+'use strict';
+
+var enodjiApp = angular.module('enodjiApp', [
+    'ngRoute',
+    'ngAnimate',
+    'infinite-scroll'
+  ]);
+
+enodjiApp.run(function($rootScope) {
+	$rootScope.isChrome = !!window.chrome;
+
+	$rootScope.hasChromoji = function() {
+		// TODO: look to determine if user has chromoji or similar extensions installed
+	};
+});
+
+enodjiApp.service("WorkingEmojiService", function() {
+	var emojis = [];
+	var unicodez = "";
+	return {
+		add: function(emoji) {
+			emojis.push(emoji);	
+			unicodez += emoji.unicode;
+		},
+
+		clear: function() {
+			emojis = [];
+			unicodez = "";
+		},
+
+		get: function() {
+			return emojis;
+		},
+
+		unicode: function() {
+			return unicodez;
+		}
+	};
+});
+
+// Reddit constructor function to encapsulate HTTP and pagination logic
+enodjiApp.factory('Scrollgi', function($http) {
+  var Scrollgi = function() {
+    this.items = [];
+    this.busy = false;
+    this.after = 0;
+    this.query = null;
+    this.done = false;
+  };
+
+  Scrollgi.prototype.search = function(q) {
+  	this.items = [];
+  	this.after = 0;
+  	this.query = q;  	  	
+  	this.nextPage();
+  }
+
+  Scrollgi.prototype.nextPage = function() {
+    if (this.busy) return;
+    this.busy = true;
+
+    var url = "/api/emojis?take=25&skip=" + this.after;
+   
+    if (this.query)
+    	url = url + "&q=" + this.query;
+
+	console.log(url);
+
+    $http.get(url).success(function(data) {
+
+		var items = data.emojis;
+		for (var i = 0; i < items.length; i++) {
+			this.items.push(items[i]);
+		}
+
+		this.after = this.items.length;
+		this.busy = false;
+
+    }.bind(this));
+  };
+
+  return Scrollgi;
+});
+
+
+enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService, Scrollgi) {	
+	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
+	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
+	$scope.emojis = WorkingEmojiService.get();	
+	$scope.spin = true;
+	$scope.showAddForm = false;
+	$scope.scrollgis = new Scrollgi();
+
+	// model for debounced search
+	var _value;
+	$scope.query = {
+		value: function(newName) {		  
+		  if (angular.isDefined(newName)) {
+		    _value = newName;
+		    $scope.searchEmojis(newName);
+		  }
+		  return _value;
+		}
+	};	
+
+	// search emojis
+	$scope.searchEmojis = function(emojiname) { 
+
+		$scope.scrollgis.search(emojiname);
+
+		// $scope.spin = true;
+		// $http.get('/api?q=' + emojiname).success(function(data) {
+		// 	$scope.emojis = data.emojis
+		// 	$scope.spin = false;
+		// });
+	};
+
+	$scope.getEmoji = function(emojiId) { 
+		$scope.spin = true;
+		$http.get('/api/emojis/' + emojiId).success(function(data) {
+			$scope.emojis = data.emojis
+			$scope.spin = false;
+		});
+	};	
+
+	$scope.addToPot = function(emoji, $event) {
+		WorkingEmojiService.add(emoji);
+
+		var parent = $(event.target).parents( ".emoji-wrapper" );
+
+		// apply the fade out animation that is so sweeetz!
+		parent.append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
+		var height = parent.height();
+		var width = parent.width();
+		$('.emoji-wrapper-cover')
+			.height(height)
+			.width(width)
+		  	.css('margin-top', (-1 * height))
+		  	.delay(1500).fadeOut();
+	}
+
+	$scope.clearPot = function() {	
+		$("#copy-recipe").attr("data-clipboard-value", "");
+		WorkingEmojiService.clear();		
+	}
+
+	// model for adding new recipe/sentence
+	$scope.addRecipe = function(recipe) {
+		var data = {
+			metadata: recipe,
+			emojis: $scope.sentence
+		};
+
+		$scope.spin = true;
+		$http.post('/api/emojis', data).
+			success(function(data, status, headers, config) {
+				$scope.getEmoji(data.recipe._id);
+				$scope.recipe = {};
+				$scope.spin = false;
+			}).
+			error(function(data, status, headers, config) {
+				$scope.spin = false;
+			});	
+	}	
+
+	$scope.removeEmoji = function(emoji) {
+		$http.delete('/api/emojis/' + emoji).
+			success(function(data, status, headers, config) {
+				console.log(data);
+				$scope.spin = false;
+			}).
+			error(function(data, status, headers, config) {
+				$scope.spin = false;
+			});			
+	}
+
+	// clipboard nonsense. 
+	// listen for any changes to the emojis set, and re-apply the clipboard to each result set
+	$scope.$watch('scrollgis.items', function(newValue, oldValue){
+		// creating a new clipboard, otherwise, we get tons of duplicated events
+		var client = new ZeroClipboard();
+
+		client.on( "ready", function( readyEvent ) {	 
+			client.clip($('[data-clipboard-name]'));
+
+			client.on("copy", function(event) {  
+				$('.emoji-wrapper-cover').remove();
+				event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
+			});
+
+			client.on( "aftercopy", function( event ) {
+				var targetName = $(event.target).attr('data-clipboard-name');			
+			});
+		});						
+	});
+
+	$scope.$watch(WorkingEmojiService.get,function(v){
+		$scope.sentence = v;	
+	});	
+
+	$scope.$watch(WorkingEmojiService.unicode,function(v){
+		$scope.unicodez = v;
+	});		
+});
