@@ -24,7 +24,6 @@ $(document).on('click', '.emoji-blanket > .emoji', function(e) {
   $('#the-pot .emojis').append(
       $(e.currentTarget.parentNode)
       .clone()
-      .addClass('pure-u-lg-1-12')
   ) 
 
   $('#copy-recipe').show();
@@ -47,8 +46,6 @@ $(document).on('click', '#the-pot > .emojis > .emoji', function(e) {
 }); 
 
 function showPot(newValue) {
-  // console.log("in ShowPot");
-  // console.log(newValue);
   $('#copy-recipe').attr('data-clipboard-value', newValue); 
   $('#hidden-recipe').attr('value', newValue);
 }

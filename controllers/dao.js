@@ -33,7 +33,7 @@ DAO.prototype.search = function(req, callback) {
     var take = req.query != null && req.query.take != null ? req.query.take : 25;
     var skip = req.query != null && req.query.skip != null ? req.query.skip : 0;
 
-    db.get('emojis').find(query, { limit: take, skip: skip, sort : [['type', 'desc']] }, function(e, emjDocs){
+    db.get('emojis').find(query, { limit: take, skip: skip, sort : [['type', 'desc'], ['_id', 'desc']] }, function(e, emjDocs){
         callback(e, emjDocs);
     });
 }
@@ -44,7 +44,7 @@ DAO.prototype.emojis_all = function(req, callback) {
     var take = req.query != null && req.query.take != null ? req.query.take : 25;
     var skip = req.query != null && req.query.skip != null ? req.query.skip : 0;
 
-    collection.find({}, { limit: take, skip: skip, sort : [['type', 'desc']] }, function(e, docs) {
+    collection.find({}, { limit: take, skip: skip, sort : [['type', 'desc'], ['_id', 'desc']] }, function(e, docs) {
 		callback(e, docs);
     });		
 }

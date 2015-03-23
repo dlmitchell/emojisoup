@@ -8,17 +8,18 @@ html(ng-app='enodjiApp')
     meta(property='description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')
     meta(property='fuck' content='💩😃😈😲😧😦🐮🐗🐻🐨🐯')
     title= EmojiSoup
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/pure-grids-responsive-min.css')  
-    link(rel='stylesheet', href='/stylesheets/font-awesome/css/font-awesome.min.css')
-    link(rel='stylesheet', href='/stylesheets/chrome.css' ng-if="isChrome")
 
+    link(rel='stylesheet', href='/stylesheets/style.css') 
+    link(rel='stylesheet', href='/stylesheets/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/angular-material/angular-material.min.css')        
     link(rel='image/png', type='image/png', href='/favicon.png')
 
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')
     script(type='text/javascript' src='/javascripts/angular-1.3.8/angular.min.js')
     script(type='text/javascript' src='/javascripts/angular-1.3.8/angular-animate.min.js')
     script(type='text/javascript' src='/javascripts/angular-1.3.8/angular-route.min.js')
+    script(type='text/javascript' src='/angular-aria/angular-aria.min.js')
+    script(type='text/javascript' src='/angular-material/angular-material.min.js')        
     script(type='text/javascript' src='/javascripts/ScrollToFixed/jquery-scrolltofixed-min.js')
     script(type='text/javascript' src='/javascripts/ngInfiniteScroll-master/build/ng-infinite-scroll.min.js')        
     script(type='text/javascript' src='/javascripts/app.js')
@@ -26,32 +27,36 @@ html(ng-app='enodjiApp')
     script(type='text/javascript' src='/javascripts/scriptz.js')
 
   body 
-    div(ng-controller='EmojiController')
+    div(class='da-body' ng-controller='EmojiController')
         //- header and search
-        div(class='header') 
+        div(class='header row') 
             div(class='is-center')
                 form#formSearch(class="search" name="search")
                     input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query.value" ng-model-options="{ debounce: 300, getterSetter: true }")
+                //- md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')                        
 
-            div(class='auto-center suggestions')
-                a(class='pure-u-1 pure-u-md-1-8' ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='#{{suggestion}}'
+
+            //- div(class='auto-center suggestions' layout="row" layout-align="space-around center")
+            //-     a(flex ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='{{suggestion}}'
 
         //- the pot and sentence for partying
-        div#the-pot(class='sub-header is-center animate-show' ng-show='sentence.length > 0')        
+        div#the-pot(class='sub-header is-center' ng-show='sentence.length > 0')     
+            div(class='command' layout="row")
+                h3='Your Emoji Sentence'   
+                p='Keep searching for more emojis and copy/paste when you are done'
+
             div(class='sub-sub is-center')
                 div(class='clipboard' ng-repeat='emoji in sentence track by $index')
                     span(class='emoji' ng-click="removeFromPot(emoji)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
 
             //- command center
-            div(class='auto-center')
-                p
-                    | find emojis to make a sentence.
-                    a#copy-recipe(href='#' name='copy' ng-click='copyRecipe($event)' data-clipboard-name='copy-recipe' data-clipboard-value)='COPY'
-                    | the sentence or 
-                    a(href='#' ng-click="showAddForm=true")='add'
-                    | it to the collection. or,
-                    a(href='#' name='clear' ng-click='clearPot()')='start over'
-
+            div(class='command' layout='row' layout-align='space-between end')
+                div
+                    a#copy-recipe(href='#' name='copy' data-clipboard-name='copy-recipe' data-clipboard-value)='COPY'
+                div(layout='row' layout-align='space-around end')
+                    a(href='#' name='clear' ng-click='clearPot()')='clear'
+                    a(href='#' ng-click="showAddForm=true")='save'
+                                
             //- save a sentence
             div(class='auto-center' ng-show='showAddForm==true')
                 form(novalidate)
@@ -63,26 +68,32 @@ html(ng-app='enodjiApp')
                     div(class='right')
                         input(class="buttonz cancel" type="button"     ng-click='showAddForm=false' value="cancel")="cancel"
                         input(class="buttonz submit" type="submit"     ng-click="addRecipe(recipe)")="save" 
-                    
-        //- spinner thing. so cool. 
-        div(class='loading' ng-show='scrollgis.busy')
-            i(class="fa fa-refresh fa-spin")
 
+        div(class='loading' layout='row' layout-align='center center' ng-show='scrollgis.busy')
+            md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')               
 
-        div(class='auto-center')
+        md-content(class='content')
             div(infinite-scroll='scrollgis.nextPage()' infinite-scroll-disabled='scrollgis.busy' infinite-scroll-distance='1')
-                div(class='emoji-wrapper l-box pure-u-1 pure-u-1-8 pure-u-md-1-6 pure-u-lg-1-4' ng-repeat="emoji in scrollgis.items")
+                md-grid-list(class='grid-list' md-cols-sm="1" md-cols-md="4" md-cols-gt-md="6" md-gutter="16px" md-row-height-gt-md="1:1.5" md-row-height="1:1")
+                        md-grid-tile(class="emoji-wrapper" md-colspan="{{emoji.cols}}" ng-repeat="emoji in scrollgis.items")                    
+                            //- a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
+                            div()
+                                md-grid-tile-header(class='wrapper-header')
+                                    div
+                                        h2='{{emoji.name}}'
+                                        p(class='left emoji-tags')
+                                            a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
 
-                    //- if settings.environment.environment == "dev"
-                    //-     a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
+                                div(class='emoji-blanket' layout="row" layout-align="center end")
+                                    span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
+
+                                md-grid-tile-footer(class='wrapper-footer' layout='row' layout-align='center center')
+                                    input(class="buttonz copy" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}' type='button' value='copy')="Copy"                                                
+
+        md-toast
+            span(flex)='Custom toast!'
+            md-button(ng-click="closeToast()")= Close
         
-                    div.emoji-blanket
-                        span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
-                    h3(class='left')='{{emoji.name}}'
-                    p(class='left emoji-tags')
-                        a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
-
-
     if settings.environment.environment == "prod"
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

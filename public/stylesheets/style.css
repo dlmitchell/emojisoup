@@ -1,5 +1,7 @@
 body {
   font: 1em Lato, Helvetica, Arial, sans-serif;
+
+    background-color: #FFF;
 }
 
 h1,
@@ -13,16 +15,25 @@ label {
     margin: 0px;
 }
 
+.da-body,
+.grid-list {
+  background-color: #FFF;
+}
+
+.grid-list {
+  margin: 10px;
+}
+
 .loading {
   font-size: 3em;  
   text-align: center;
 }
 
 .header {
-  background-color: rgb(0, 179, 88);
+  background-color: #1976D2;
   color: rgb(251, 251, 251);
   margin: 0px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);  
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;  
 }
 
@@ -40,7 +51,8 @@ input[type="text"]  {
 }
 
 .header input[type="text"]  {  
-  background: rgb(77, 198, 137);
+  background: #2196F3;
+  color: #BBDEFB;
 }
 
 .textarea {
@@ -52,11 +64,11 @@ input[type="text"]  {
 }
 
 ::-webkit-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, .87);
 }
 
 ::-moz-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, .87);
 }
 
 .search {  
@@ -67,13 +79,13 @@ input[type="text"]  {
 }
 
 .sub-header {
-  background-color: rgb(255, 193, 23);   
+  background-color: #7E57C2;
   padding: 1em;  
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);      
 }
 
 .sub-header input[type="text"] {
-  background-color: rgb(255, 215, 106);
+  background-color: #FFE57F;
   margin: .1em;
 }
 
@@ -90,11 +102,41 @@ input[type="text"]  {
   padding: 0em .2em 0em .2em;
 }
 
+#the-pot {
+  -webkit-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+
+  box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+
+  margin: .51em;
+  margin-top: 1em;
+}
+
+#the-pot .command {
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+#the-pot h3 {
+  color: #FFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#the-pot p {
+  padding-left: .5em;
+  color: rgba(255, 255,  255, .87);
+}
+
 .sub-sub {
-   background-color: rgb(255, 215, 106); 
+   background-color: #B39DDB;
    width: 85%;
    margin: auto;
    font-color: white;
+}
+
+.content {
+  /*margin: 16px;*/
 }
 
 .buttonz {
@@ -105,30 +147,22 @@ input[type="text"]  {
 }
 
 .buttonz.cancel {
-  background: #FF4F17;
-  color: #FFE7DF;
-  box-shadow: 0 1px 2px 0 rgba(120, 205, 255, 0.1);
+  background: #EF5350;
+  color: rgba(255, 255, 255, .87);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, .2);
   margin-right: 1em;
 }
 
 .buttonz.submit {
-  background: #23ABFC;
-  color: #E1F4FF;
-  box-shadow: 0 1px 2px 0 rgba(255, 146, 112, 0.1);
+  background: #42A5F5;
+  color: rgba(255, 255, 255, .87);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, .2);
 }
 
-.animate-show {  
-  opacity:1;
-}
-
-.animate-show.ng-hide {
-  height: 0px;
-}
-
-.animate-show.ng-hide-add.ng-hide-add-active,
-.animate-show.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition:all ease 0.2s;
-  transition:all ease 0.2s;
+.buttonz.copy {
+  background: #448AFF;
+  color: rgba(255, 255, 255, .8);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, .2);
 }
 
 a:link, a:visited, a:active {
@@ -140,36 +174,49 @@ a:hover {
   text-decoration: underline;
 }
 
-.pure-g {
-  box-sizing: border-box;
-  margin: 15px;
-}
-
-.l-box {
-  margin: 1em;
-}
 
 .emoji-wrapper {
-  background-color: #848dff;
-  max-width: 200px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+
+  box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
+
+/*  box-shadow: 1px -10px 1.2px 10px rgba(244, 0, 0, 0.2);*/
+  background: #FFF;
+  /*background: rgba(100, 181, 246, .5)*/
 }
 
-.emoji-wrapper h3 {
-  font-weight: normal;
-  padding-left: 15px;    
-  color: rgb(255, 255, 255);
-  margin-bottom: .5em;
+.emoji-wrapper h2 {
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-left: .3em;
+  margin-bottom: 0px;
+  color: #1976D2;
+}
+
+.emoji-wrapper .wrapper-header  {
+  background: rgba(0,0,0,0);
+  overflow: inherit;
+  height: auto;
+  /*resize: both;*/
+}
+
+.emoji-wrapper .wrapper-footer  {
+  background: rgba(0,0,0,0);
+  overflow: inherit;
+  height: auto;
+  margin: 2em;
 }
   
 .emoji-wrapper p {
+  padding: 0px;
+  margin-left: .6em;
+  margin-top: 0px;
   font-size: .9em;
-  font-weight: light;
-  color: rgba(255, 255, 255, 0.8);
 }  
 
 .emoji-wrapper a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, .54);
 } 
 
 .emoji-wrapper-cover {
@@ -205,6 +252,7 @@ a:hover {
 
 .emoji-blanket {
   font-size: 5em;
+  margin-top: .3em;
   cursor: pointer;
 }
 
@@ -248,15 +296,6 @@ a:hover {
   color: rgba(255, 255, 255, 0.80);
   font-size: 1.8em;
 }
-
-.suggestions.l-box {
-  margin: 0em;
-}
-
-.suggestions.pure-g {
-  margin: 0px;
-}  
-
 .emoji_edit {
   padding: 10px;  
 }

@@ -3,7 +3,8 @@
 var enodjiApp = angular.module('enodjiApp', [
     'ngRoute',
     'ngAnimate',
-    'infinite-scroll'
+    'infinite-scroll',
+    'ngMaterial'
   ]);
 
 enodjiApp.run(function($rootScope) {
@@ -38,7 +39,6 @@ enodjiApp.service("WorkingEmojiService", function() {
 	};
 });
 
-// Reddit constructor function to encapsulate HTTP and pagination logic
 enodjiApp.factory('Scrollgi', function($http) {
   var Scrollgi = function() {
     this.items = [];
@@ -64,13 +64,20 @@ enodjiApp.factory('Scrollgi', function($http) {
     if (this.query)
     	url = url + "&q=" + this.query;
 
-	console.log(url);
+	// console.log(url);
 
     $http.get(url).success(function(data) {
+		for (var i = 0; i < data.emojis.length; i++) {
 
-		var items = data.emojis;
-		for (var i = 0; i < items.length; i++) {
-			this.items.push(items[i]);
+			// figure out column span
+			var emojiSize = 1;
+			if (data.emojis[i].emojis_ids != null && data.emojis[i].emojis_ids != undefined)
+				emojiSize = data.emojis[i].emojis_ids.length;
+
+			// let's say 2 emojis = 1 column
+			data.emojis[i].cols = Math.floor(emojiSize / 2);
+			// console.log(data.emojis[i]);
+			this.items.push(data.emojis[i]);
 		}
 
 		this.after = this.items.length;
@@ -84,12 +91,14 @@ enodjiApp.factory('Scrollgi', function($http) {
 
 
 enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService, Scrollgi) {	
-	$scope.searchSuggestions = ['People', 'Nature', 'Objects',  'Places', 'Symbols'];	
+	$scope.searchSuggestions = ['😃 People', '👑 Objects', '🌸 Nature', '🚘 Places', '🔼 Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
 	$scope.spin = true;
 	$scope.showAddForm = false;
-	$scope.scrollgis = new Scrollgi();
+	$scope.scrollgis = new Scrollgi();	
+
+	$scope.scrollgis.nextPage();
 
 	// model for debounced search
 	var _value;
@@ -103,16 +112,26 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 		}
 	};	
 
+	  $scope.toastPosition = {
+	    bottom: false,
+	    top: true,
+	    left: false,
+	    right: true
+	  };
+
+	  $scope.showToast = function() {
+	    $mdToast.show({
+	      controller: 'ToastCtrl',
+	      templateUrl: 'toast-template.html',
+	      hideDelay: 6000,
+	      position: $scope.getToastPosition()
+	    });
+	  };
+
+
 	// search emojis
 	$scope.searchEmojis = function(emojiname) { 
-
 		$scope.scrollgis.search(emojiname);
-
-		// $scope.spin = true;
-		// $http.get('/api?q=' + emojiname).success(function(data) {
-		// 	$scope.emojis = data.emojis
-		// 	$scope.spin = false;
-		// });
 	};
 
 	$scope.getEmoji = function(emojiId) { 
@@ -125,18 +144,6 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 
 	$scope.addToPot = function(emoji, $event) {
 		WorkingEmojiService.add(emoji);
-
-		var parent = $(event.target).parents( ".emoji-wrapper" );
-
-		// apply the fade out animation that is so sweeetz!
-		parent.append("<div class='emoji-wrapper-cover'><h2>COPIED TO CLIPBOARD</h2><p>now go paste somewhere!</p></div>");
-		var height = parent.height();
-		var width = parent.width();
-		$('.emoji-wrapper-cover')
-			.height(height)
-			.width(width)
-		  	.css('margin-top', (-1 * height))
-		  	.delay(1500).fadeOut();
 	}
 
 	$scope.clearPot = function() {	
@@ -166,7 +173,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	$scope.removeEmoji = function(emoji) {
 		$http.delete('/api/emojis/' + emoji).
 			success(function(data, status, headers, config) {
-				console.log(data);
+				// console.log(data);
 				$scope.spin = false;
 			}).
 			error(function(data, status, headers, config) {
@@ -177,6 +184,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	// clipboard nonsense. 
 	// listen for any changes to the emojis set, and re-apply the clipboard to each result set
 	$scope.$watch('scrollgis.items', function(newValue, oldValue){
+		
 		// creating a new clipboard, otherwise, we get tons of duplicated events
 		var client = new ZeroClipboard();
 
@@ -184,7 +192,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 			client.clip($('[data-clipboard-name]'));
 
 			client.on("copy", function(event) {  
-				$('.emoji-wrapper-cover').remove();
+				// $('.emoji-wrapper-cover').remove();
 				event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
 			});
 
