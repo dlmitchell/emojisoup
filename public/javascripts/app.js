@@ -90,7 +90,7 @@ enodjiApp.factory('Scrollgi', function($http) {
 });
 
 
-enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiService, Scrollgi) {	
+enodjiApp.controller('EmojiController', function ($scope, $http, $mdToast, WorkingEmojiService, Scrollgi) {	
 	$scope.searchSuggestions = ['😃 People', '👑 Objects', '🌸 Nature', '🚘 Places', '🔼 Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
@@ -119,10 +119,16 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	    right: true
 	  };
 
+	  $scope.getToastPosition = function() {
+	    return Object.keys($scope.toastPosition)
+	      .filter(function(pos) { return $scope.toastPosition[pos]; })
+	      .join(' ');
+	  };	  
+
 	  $scope.showToast = function() {
 	    $mdToast.show({
 	      controller: 'ToastCtrl',
-	      templateUrl: 'toast-template.html',
+	      templateUrl: 'toast.html',
 	      hideDelay: 6000,
 	      position: $scope.getToastPosition()
 	    });
@@ -209,4 +215,10 @@ enodjiApp.controller('EmojiController', function ($scope, $http, WorkingEmojiSer
 	$scope.$watch(WorkingEmojiService.unicode,function(v){
 		$scope.unicodez = v;
 	});		
+});
+
+enodjiApp.controller('ToastCtrl', function($scope, $mdToast) {
+  $scope.closeToast = function() {
+    $mdToast.hide();
+  };
 });

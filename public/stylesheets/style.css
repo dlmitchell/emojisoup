@@ -33,7 +33,6 @@ label {
   background-color: #1976D2;
   color: rgb(251, 251, 251);
   margin: 0px;
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;  
 }
 
@@ -117,7 +116,7 @@ input[type="text"]  {
   margin-right: 7em;
 }
 
-#the-pot h3 {
+#the-pot h2 {
   color: #FFF;
   font-weight: bolder;
   text-transform: uppercase;
@@ -140,7 +139,7 @@ input[type="text"]  {
 }
 
 .buttonz {
-  border-style: none;
+  /*border-style: none;*/
   height: 3em;  
   padding: 1em 2em 1em 2em;
   text-transform: uppercase;
@@ -176,14 +175,7 @@ a:hover {
 
 
 .emoji-wrapper {
-  -webkit-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
-  -moz-box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
-
-  box-shadow: -1px 1px 1.2px 1px rgba(0,0,0,0.2);
-
-/*  box-shadow: 1px -10px 1.2px 10px rgba(244, 0, 0, 0.2);*/
   background: #FFF;
-  /*background: rgba(100, 181, 246, .5)*/
 }
 
 .emoji-wrapper h2 {
