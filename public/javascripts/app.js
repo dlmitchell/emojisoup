@@ -75,7 +75,7 @@ enodjiApp.factory('Scrollgi', function($http) {
 				emojiSize = data.emojis[i].emojis_ids.length;
 
 			// let's say 2 emojis = 1 column
-			data.emojis[i].cols = Math.floor(emojiSize / 2);
+			data.emojis[i].cols =   emojiSize % 2 == 0 ? Math.floor(emojiSize / 2) : Math.ceil(emojiSize / 2);
 			// console.log(data.emojis[i]);
 			this.items.push(data.emojis[i]);
 		}

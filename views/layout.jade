@@ -90,9 +90,9 @@ html(ng-app='enodjiApp')
                                 md-grid-tile-footer(class='wrapper-footer' layout='row' layout-align='center center')
                                     input(class="buttonz copy" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}' type='button' value='copy')="Copy"                                                
 
-        md-toast
-            span(flex)='Custom toast!'
-            md-button(ng-click="closeToast()")= Close
+        //- md-toast
+        //-     span(flex)='Custom toast!'
+        //-     md-button(ng-click="closeToast()")= Close
         
     if settings.environment.environment == "prod"
         script.
