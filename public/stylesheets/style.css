@@ -30,7 +30,7 @@ label {
 }
 
 .header {
-  background-color: #1976D2;
+  background-color: #388E3C;
   color: rgb(251, 251, 251);
   margin: 0px;
   position: relative;  
@@ -50,8 +50,8 @@ input[type="text"]  {
 }
 
 .header input[type="text"]  {  
-  background: #2196F3;
-  color: #BBDEFB;
+  background: #66BB6A;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .textarea {
@@ -139,7 +139,7 @@ input[type="text"]  {
 }
 
 .buttonz {
-  /*border-style: none;*/
+  border-style: none;
   height: 3em;  
   padding: 1em 2em 1em 2em;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ input[type="text"]  {
 }
 
 .buttonz.copy {
-  background: #448AFF;
+  background: #B388FF;
   color: rgba(255, 255, 255, .8);
   box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, .2);
 }

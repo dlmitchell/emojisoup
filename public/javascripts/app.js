@@ -90,7 +90,19 @@ enodjiApp.factory('Scrollgi', function($http) {
 });
 
 
-enodjiApp.controller('EmojiController', function ($scope, $http, $mdToast, WorkingEmojiService, Scrollgi) {	
+enodjiApp.controller('DialogController', function($scope, $mdDialog) {
+  $scope.hide = function() {
+    $mdDialog.hide();
+  };
+  $scope.cancel = function() {
+    $mdDialog.cancel();
+  };
+  $scope.answer = function(answer) {
+    $mdDialog.hide(answer);
+  };
+});
+
+enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, WorkingEmojiService, Scrollgi) {	
 	$scope.searchSuggestions = ['😃 People', '👑 Objects', '🌸 Nature', '🚘 Places', '🔼 Symbols'];	
 	$scope.secondarySearchSuggestions = ['happy', 'food', 'face',  'nature', 'animal', 'fashion', 'cats'];
 	$scope.emojis = WorkingEmojiService.get();	
@@ -112,30 +124,19 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdToast, Worki
 		}
 	};	
 
-	  $scope.toastPosition = {
-	    bottom: false,
-	    top: true,
-	    left: false,
-	    right: true
-	  };
+	$scope.showAdvanced = function(ev) {
+		$mdDialog.show({
+		  controller: 'DialogController',
+		  templateUrl: 'dialog.html',
+		  targetEvent: ev,
+		})
+		.then(function(answer) {
+		  $scope.alert = 'You said the information was "' + answer + '".';
+		}, function() {
+		  $scope.alert = 'You cancelled the dialog.';
+		});
+	};
 
-	  $scope.getToastPosition = function() {
-	    return Object.keys($scope.toastPosition)
-	      .filter(function(pos) { return $scope.toastPosition[pos]; })
-	      .join(' ');
-	  };	  
-
-	  $scope.showToast = function() {
-	    $mdToast.show({
-	      controller: 'ToastCtrl',
-	      templateUrl: 'toast.html',
-	      hideDelay: 6000,
-	      position: $scope.getToastPosition()
-	    });
-	  };
-
-
-	// search emojis
 	$scope.searchEmojis = function(emojiname) { 
 		$scope.scrollgis.search(emojiname);
 	};
@@ -197,7 +198,7 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdToast, Worki
 		client.on( "ready", function( readyEvent ) {	 
 			client.clip($('[data-clipboard-name]'));
 
-			client.on("copy", function(event) {  
+			client.on("copy", function(event) {
 				// $('.emoji-wrapper-cover').remove();
 				event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
 			});
@@ -215,10 +216,4 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdToast, Worki
 	$scope.$watch(WorkingEmojiService.unicode,function(v){
 		$scope.unicodez = v;
 	});		
-});
-
-enodjiApp.controller('ToastCtrl', function($scope, $mdToast) {
-  $scope.closeToast = function() {
-    $mdToast.hide();
-  };
 });
