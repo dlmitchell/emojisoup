@@ -90,16 +90,34 @@ enodjiApp.factory('Scrollgi', function($http) {
 });
 
 
-enodjiApp.controller('DialogController', function($scope, $mdDialog) {
-  $scope.hide = function() {
-    $mdDialog.hide();
-  };
-  $scope.cancel = function() {
-    $mdDialog.cancel();
-  };
-  $scope.answer = function(answer) {
-    $mdDialog.hide(answer);
-  };
+enodjiApp.controller('DialogController', function($scope, $http, $mdDialog, emoji, Scrollgi) {
+	$scope.emoji = angular.copy(emoji);
+	// $scope.user = angular.copy($scope.emoji);
+
+	$scope.hide = function() {
+		$mdDialog.hide();
+	};
+
+	$scope.cancel = function() {
+		$mdDialog.cancel();
+	};
+
+	$scope.answer = function(answer) {
+		$mdDialog.hide(answer);
+	};	
+
+	$scope.saveChanges = function(emoji) {
+		$scope.spin = true;
+		console.log($scope.emoji)
+		$http.put('/api/emojis', $scope.emoji).
+			success(function(data, status, headers, config) {
+				// gotta refresh scrollgis
+				$mdDialog.hide();
+			}).
+			error(function(data, status, headers, config) {
+				// $scope.spin = false;
+			});	
+	}		
 });
 
 enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, WorkingEmojiService, Scrollgi) {	
@@ -124,14 +142,21 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, Work
 		}
 	};	
 
-	$scope.showAdvanced = function(ev) {
+	$scope.showAdvanced = function(emoji, ev) {
+
+		var parentEl = angular.element('.content');
+		console.log(parentEl);
 		$mdDialog.show({
 		  controller: 'DialogController',
 		  templateUrl: 'dialog.html',
 		  targetEvent: ev,
+		  locals: {emoji : emoji},
+		  parent: parentEl
 		})
 		.then(function(answer) {
-		  $scope.alert = 'You said the information was "' + answer + '".';
+			console.log("you asasdfsd: " + answer);
+			$scope.scrollgis.search('');
+		  	$scope.alert = 'You said the information was "' + answer + '".';
 		}, function() {
 		  $scope.alert = 'You cancelled the dialog.';
 		});

@@ -89,29 +89,39 @@ DAO.prototype.emojis_delete_tag = function(req, emoji, tag, callback) {
     console.log(emoji.tags);
 
     db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags}}, function(e) {
-        callback(e, emoji);            
+        callback(e, emoji);    
     });        
 }
 
-DAO.prototype.emojis_edit = function(req, name, tags, callback) {
+DAO.prototype.emojis_edit = function(req, callback) {    
+    var emj = req.body;
 	var db = req.db;
-	var tagsArr = tags.split(',');
 
-    db.get('emojis').findOne({name: name},function(e, emoji){
-    	console.log(emoji.tags);
-    	console.log(tagsArr);
+    // javascript is cool
+    // sometimes tags is a string, sometimes it's an object
+    console.log(typeof(emj.tags));
+    var tags = typeof(emj.tags) == 'string' ? emj.tags.split(',') : Array.prototype.slice.call(emj.tags);
 
-    	// only edit if there was a difference
-    	if (emoji.tags != tagsArr) {
-    		emoji.tags = tagsArr;
-            
-    		db.get('emojis').update(emoji, function(e) {
-                console.log(e)
+    try {
+        db.get('emojis').findOne({_id: emj._id},function(e, emoji){
+
+    		emoji.tags = tags;
+            emoji.name = emj.name;
+            emoji.description = emj.description;
+
+            callback(e, emoji); 
+
+            db.get('emojis').update(emoji._id, {$set: {tags: emoji.tags, name:emoji.name, description:emoji.description}}, function(e) {
+                callback(e, emoji);            
             });
-    	}    		
 
-    	callback(emoji);
-    });			
+        });	
+    }
+    catch(err) {
+        console.log(err);
+        console.log(err.message);
+        callback(e, null);
+    }		
 }
 
 function set(a, b) {

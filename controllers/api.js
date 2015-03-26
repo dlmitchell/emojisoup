@@ -60,8 +60,9 @@ router.route('/emojis/:emoji?')
 	})
 	// edit a recipe/emoji combo
 	.put(function(req, res, next) {
-		console.log("put");
-		renderRecipeAdd(req, res);
+		dao.emojis_edit(req, function(e, recipe) {
+			res.json({recipe: recipe});
+		});
 	})	
 	.delete(function(req, res, next) {
 		if (req.params.emoji) {		

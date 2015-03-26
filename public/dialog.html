@@ -1,0 +1,20 @@
+<md-dialog style='background:#7E57C2;'>
+  <md-content style='background: #7E57C2;'>
+      <div>
+        <h2 style='color: rgba(255, 255, 255, .87);'> {{emoji.name}} </h2>
+        <div class="emoji-blanket"><span class='emoji'>{{emoji.unicode}}</span></div>
+      </div>
+
+      <div class='sub-header'>      
+        <form novalidate>
+          <input class='textarea' type='text' placeholder='Name' name='name' ng-model='emoji.name'/>
+          <input class='textarea' type='text' placeholder='Description' name='description' ng-model='emoji.description'/>
+          <input class='textarea' type='text' placeholder='Tags' name='tags' ng-model='emoji.tags'/>
+        </form>
+      </div>
+  </md-content>
+  <div class="md-actions" layout="row">
+    <md-button ng-click="answer('not useful')">Cancel</md-button>
+    <md-button ng-click="saveChanges()" class="md-primary"> Save </md-button>
+  </div>
+</md-dialog>

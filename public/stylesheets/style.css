@@ -63,11 +63,11 @@ input[type="text"]  {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, .87);
+  color: rgba(255, 255, 255, .54);
 }
 
 ::-moz-placeholder {
-  color: rgba(255, 255, 255, .87);
+  color: rgba(255, 255, 255, .54);
 }
 
 .search {  
@@ -81,6 +81,10 @@ input[type="text"]  {
   background-color: #7E57C2;
   padding: 1em;  
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);      
+}
+
+.purps {
+  background: #7E57C2;
 }
 
 .sub-header input[type="text"] {
@@ -132,10 +136,6 @@ input[type="text"]  {
    width: 85%;
    margin: auto;
    font-color: white;
-}
-
-.content {
-  /*margin: 16px;*/
 }
 
 .buttonz {

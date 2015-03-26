@@ -72,7 +72,7 @@ html(ng-app='enodjiApp')
         div(class='loading' layout='row' layout-align='center center' ng-show='scrollgis.busy')
             md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')               
 
-        md-content(class='content')
+        div(class='content')
             div(infinite-scroll='scrollgis.nextPage()' infinite-scroll-disabled='scrollgis.busy' infinite-scroll-distance='1')
                 md-grid-list(class='grid-list' md-cols-sm="1" md-cols-md="4" md-cols-lg="5" md-cols-gt-lg="6" md-gutter="16px" md-row-height-gt-md="1:1.5" md-row-height="1:1")
                         md-grid-tile(class="emoji-wrapper md-whiteframe-z1" md-colspan="{{emoji.cols}}" ng-repeat="emoji in scrollgis.items")                    
@@ -82,7 +82,7 @@ html(ng-app='enodjiApp')
                                     div
                                         h2='{{emoji.name}}'
                                         p(class='left emoji-tags')
-                                            //- a(class='tag' ng-click='showAdvanced()' href='#')='edit'
+                                            a(class='tag' ng-click='showAdvanced(emoji, $event)' href='#')='edit'
                                             a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
 
                                 div(class='emoji-blanket' layout="row" layout-align="center end")
