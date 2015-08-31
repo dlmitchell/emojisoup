@@ -8,10 +8,8 @@ var dao = new DAO();
 //---------------------------------
 
 router.get('/', function(req, res) {
-
 	res.set({ 'content-type': 'application/json; charset=utf-8' });
-
-
+		
 	if (req.query.q) {
 		dao.search(req, function(e, emojis, recipes) {
 			res.json({emojis: emojis});

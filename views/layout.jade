@@ -74,7 +74,8 @@ html(ng-app='enodjiApp')
 
         div(class='content')
             div(infinite-scroll='scrollgis.nextPage()' infinite-scroll-disabled='scrollgis.busy' infinite-scroll-distance='1')
-                md-grid-list(class='grid-list' md-cols-sm="1" md-cols-md="4" md-cols-lg="5" md-cols-gt-lg="6" md-gutter="16px" md-row-height-gt-md="1:1.5" md-row-height="1:1")
+                //- md-cols-sm="1" md-cols-md="3" md-cols-lg="4" md-cols-gt-lg="6" md-row-height="1:1" md-row-height-sm="1:1" md-row-height-md="1.5:2" md-row-height-lg="1.5:2" md-row-height-gt-lg="1.75:2"
+                md-grid-list(class='grid-list' md-gutter='12px' md-cols-sm="1" md-cols-md="3" md-cols-lg="4" md-cols-gt-lg="6" md-row-height="1:1" md-row-height-sm="1:1" md-row-height-md="1.5:2" md-row-height-lg="1.5:2" md-row-height-gt-lg="1.5:2")
                         md-grid-tile(class="emoji-wrapper md-whiteframe-z1" md-colspan="{{emoji.cols}}" ng-repeat="emoji in scrollgis.items")                    
                             //- a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
                             div()

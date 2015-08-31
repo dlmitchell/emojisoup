@@ -1,3 +1,5 @@
+/// <reference path="../../typings/angularjs/angular.d.ts"/>
+
 'use strict';
 
 var enodjiApp = angular.module('enodjiApp', [
@@ -5,7 +7,7 @@ var enodjiApp = angular.module('enodjiApp', [
     'ngAnimate',
     'infinite-scroll',
     'ngMaterial'
-  ]);
+  ]);  
 
 enodjiApp.run(function($rootScope) {
 	$rootScope.isChrome = !!window.chrome;
@@ -64,8 +66,7 @@ enodjiApp.factory('Scrollgi', function($http) {
     if (this.query)
     	url = url + "&q=" + this.query;
 
-	// console.log(url);
-
+	// console.log(url);	
     $http.get(url).success(function(data) {
 		for (var i = 0; i < data.emojis.length; i++) {
 

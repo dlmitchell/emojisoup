@@ -1,3 +1,4 @@
+/// <reference path="typings/node/node.d.ts"/>
 var express = require('express');
 var router = express.Router();
 var path = require('path');
@@ -19,6 +20,7 @@ var emojis = require('./controllers/emojis');
 var recipes = require('./controllers/recipes');
 var tags = require('./controllers/tags');
 var api = require('./controllers/api');
+
 var fs   = require('fs');
 
 //------------------------------------------------
