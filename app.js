@@ -42,9 +42,11 @@ app.set('view engine', 'jade');
 //------------------------------------------------
 // MIDDLEWARE
 //------------------------------------------------
-var mongoUri = process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL ||
-  'localhost:27017/enodji';
+// var mongoUri = process.env.MONGOLAB_URI ||
+//   process.env.MONGOHQ_URL ||
+//   'localhost:27017/enodji';
+
+var mongoUri = "mongodb://heroku_app28970936:ms2e85fl7oj0vceff303tfruvc@ds051378.mongolab.com:51378/heroku_app28970936"
 
 var db = monk(mongoUri)
 

@@ -31,21 +31,25 @@ router.route('/emojis/:emoji?')
 
 		res.set({ 'content-type': 'application/json; charset=utf-8' });
 
-		if (req.params.emoji) {		
-			console.log("finde one: " + req.params.emoji);
+		if (req.params.emoji) {
+			console.log("find one: " + req.params.emoji);
 			dao.emojis_find_one(req, req.params.emoji, function(e, emojis) {
+				console.log(e);
 				res.json({emojis: [emojis]});
 			});			
 		}
 		else if (req.query.q) {
+			console.log("find many: " + req.query.q);
 			dao.search(req, function(e, emojis, recipes) {
+				console.log(e);
 				res.json({emojis: emojis});
 			});
 		}		
 		else {
-			console.log(req.query);
+			console.log("find all: " + req.params);
 			dao.emojis_all(req, function(e, emojis) { 
 				console.log("all emojis done");
+				console.log(e);
 				res.json({emojis: emojis});
 			});
 		}

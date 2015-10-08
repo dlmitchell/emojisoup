@@ -178,6 +178,10 @@ a:hover {
   background: #FFF;
 }
 
+.emoji-contents {
+  height: 100%;
+}
+
 .emoji-wrapper h2 {
   font-weight: bolder;
   text-transform: capitalize;
@@ -238,8 +242,12 @@ a:hover {
   letter-spacing: -.5px;
 }
 
-.emoji {
+.stupidClass {
   font: 1em;
+}
+
+.emoji {
+  font-size: 3em;
 }
 
 .emoji-blanket {

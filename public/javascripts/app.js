@@ -68,6 +68,8 @@ enodjiApp.factory('Scrollgi', function($http) {
 
 	// console.log(url);	
     $http.get(url).success(function(data) {
+    	console.log(data)
+    	
 		for (var i = 0; i < data.emojis.length; i++) {
 
 			// figure out column span
