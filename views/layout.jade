@@ -4,14 +4,14 @@ html(ng-app='enodjiApp')
     meta(name='keywords' content='emoji,emojis,soup,emojisoup, emoji meaning, emoji defintions, emoji dictionary, dictionary, user generated, make emoji, create emoji')
     meta(property='og:title' content='EmojiSoup')
     meta(property='title' content='EmojiSoup')        
-    meta(property='og:description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')
+    meta(property='og:description' content='The worlds consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')
     meta(property='description' content='The world\'s consortium of emoji definitions, as defined by you! Search and discover emoji meanings, and even add your own.')
     meta(property='fuck' content='💩😃😈😲😧😦🐮🐗🐻🐨🐯')
     title= EmojiSoup
 
     link(rel='stylesheet', href='/stylesheets/style.css') 
-    link(rel='stylesheet', href='/stylesheets/font-awesome/css/font-awesome.min.css')
-    link(rel='stylesheet', href='/angular-material/angular-material.min.css')        
+    //- link(rel='stylesheet', href='/stylesheets/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/angular-material/angular-material.min.css')
     link(rel='image/png', type='image/png', href='/favicon.png')
 
     script(type='text/javascript' src='/javascripts/jquery-2.1.1.js')
@@ -20,7 +20,6 @@ html(ng-app='enodjiApp')
     script(type='text/javascript' src='/javascripts/angular-1.3.8/angular-route.min.js')
     script(type='text/javascript' src='/angular-aria/angular-aria.min.js')
     script(type='text/javascript' src='/angular-material/angular-material.min.js')        
-    script(type='text/javascript' src='/javascripts/ScrollToFixed/jquery-scrolltofixed-min.js')
     script(type='text/javascript' src='/javascripts/ngInfiniteScroll-master/build/ng-infinite-scroll.min.js')        
     script(type='text/javascript' src='/javascripts/app.js')
     script(type='text/javascript' src='/javascripts/zero/ZeroClipboard.js')
@@ -34,7 +33,6 @@ html(ng-app='enodjiApp')
                 form#formSearch(class="search" name="search")
                     input#inputSearch(class="textarea" autocomplete="off" type="text" placeholder="🔍 emojis and recipes" name="q" ng-model="query.value" ng-model-options="{ debounce: 300, getterSetter: true }")
                 //- md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')                        
-
 
             //- div(class='auto-center suggestions' layout="row" layout-align="space-around center")
             //-     a(flex ng-repeat="suggestion in searchSuggestions" ng-click='searchEmojis(suggestion)' href="#" )='{{suggestion}}'
@@ -56,7 +54,7 @@ html(ng-app='enodjiApp')
                 div(layout='row' layout-align='space-around end')
                     a(href='#' name='clear' ng-click='clearPot()')='clear'
                     a(href='#' ng-click="showAddForm=true")='save'
-                                
+
             //- save a sentence
             div(class='auto-center' ng-show='showAddForm==true')
                 form(novalidate)
@@ -70,31 +68,21 @@ html(ng-app='enodjiApp')
                         input(class="buttonz submit" type="submit"     ng-click="addRecipe(recipe)")="save" 
 
         div(class='loading' layout='row' layout-align='center center' ng-show='scrollgis.busy')
-            md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')               
-
-        div(class='content')
-            div(infinite-scroll='scrollgis.nextPage()' infinite-scroll-disabled='scrollgis.busy' infinite-scroll-distance='1')
-                //- md-cols-sm="1" md-cols-md="3" md-cols-lg="4" md-cols-gt-lg="6" md-row-height="1:1" md-row-height-sm="1:1" md-row-height-md="1.5:2" md-row-height-lg="1.5:2" md-row-height-gt-lg="1.75:2"
-                md-grid-list(class='grid-list' md-gutter='12px' md-cols-sm="1" md-cols-md="3" md-cols-lg="4" md-cols-gt-lg="6" md-row-height="1:1" md-row-height-sm="1:1" md-row-height-md="1.5:2" md-row-height-lg="1.5:2" md-row-height-gt-lg="1.5:2")
-                        md-grid-tile(class="emoji-wrapper md-whiteframe-z1" md-colspan="{{emoji.cols}}" ng-repeat="emoji in scrollgis.items")                    
-                            //- a(class='tag' ng-click='removeEmoji(emoji._id)' href='#')='delete'
-                            div()
-                                md-grid-tile-header(class='wrapper-header')
-                                    div
-                                        h2='{{emoji.name}}'
-                                        p(class='left emoji-tags')
-                                            a(class='tag' ng-click='showAdvanced(emoji, $event)' href='#')='edit'
-                                            a(class='tag' ng-repeat="tag in emoji.tags track by $index" ng-click='searchEmojis(tag)' href='#')='{{tag}}'
-
-                                div(class='emoji-blanket' layout="row" layout-align="center end")
-                                    span(class='emoji' ng-click="addToPot(emoji, $event)" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
-
-                                md-grid-tile-footer(class='wrapper-footer' layout='row' layout-align='center center')
-                                    //- md-button(class="md-raised buttonz copy" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='COPY'
-                                    //- md-button(class='md-raised' ng-click='showToast()')='ADD'
-                                    input(class="buttonz copy" data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}' type='button' value='copy')="Copy"                                                
-
+            md-progress-circular(class="md-warn md-hue-3" md-mode="indeterminate" ng-show='scrollgis.busy')        
         
+        md-content
+            md-grid-list(class='grid-list' md-gutter='12px' md-cols-sm="2" md-cols-md="3" md-cols-lg="4" md-cols-gt-lg="6" md-row-height="1:1" md-row-height-sm="1:1" md-row-height-md="1.5:2" md-row-height-lg="1.5:2" md-row-height-gt-lg="1.75:2")
+                md-grid-tile(flex  layout-align='start' class='emoji-wrapper' style='border: 1px solid blue' ng-repeat="emoji in scrollgis.items")
+                    div(class='emoji-contents' style='border: 1px solid black;' flex)
+                        span(class='emoji' data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}')='{{emoji.unicode}}'
+                        h4='{{emoji.name}}'
+                        div
+                            a(ng-click='showAdvanced(emoji, $event)' href='#')='edit'
+                        div
+                            md-button(class='md-raised' data-clipboard-name='{{emoji.name}}' data-clipboard-value='{{emoji.unicode}}' type='button' value='copy')="Copy"
+                            md-button(class='md-raised' type='button' ng-click="addToPot(emoji, $event)" value='add')="Add"
+
+    
     if settings.environment.environment == "prod"
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -104,3 +92,4 @@ html(ng-app='enodjiApp')
 
             ga('create', 'UA-54259648-1', 'auto');
             ga('send', 'pageview');
+           
