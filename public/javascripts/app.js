@@ -1,3 +1,4 @@
+/* global ZeroClipboard */
 /// <reference path="../../typings/angularjs/angular.d.ts"/>
 
 'use strict';
@@ -56,7 +57,19 @@ enodjiApp.factory('Scrollgi', function($http) {
   	this.query = q;  	  	
   	this.nextPage();
   }
+  
+  Scrollgi.prototype.bindClipboard = function() {
+	var client = new ZeroClipboard();	
+	
+	client.on( "ready", function( readyEvent ) {
+		client.clip($('[data-clipboard-name]'));
 
+		client.on("copy", function(event) {
+			event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
+		});
+	});	  
+  }
+ 
   Scrollgi.prototype.nextPage = function() {
     if (this.busy) return;
     this.busy = true;
@@ -68,8 +81,7 @@ enodjiApp.factory('Scrollgi', function($http) {
 
 	// console.log(url);	
     $http.get(url).success(function(data) {
-    	console.log(data)
-    	
+    	console.log("fetching scrollgis: " + Date.now())
 		for (var i = 0; i < data.emojis.length; i++) {
 
 			// figure out column span
@@ -84,8 +96,9 @@ enodjiApp.factory('Scrollgi', function($http) {
 		}
 
 		this.after = this.items.length;
-		this.busy = false;
-
+		this.busy = false;	
+		this.bindClipboard();
+			
     }.bind(this));
   };
 
@@ -129,8 +142,8 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, Work
 	$scope.emojis = WorkingEmojiService.get();	
 	$scope.spin = true;
 	$scope.showAddForm = false;
-	$scope.scrollgis = new Scrollgi();	
-
+	$scope.scrollgis = new Scrollgi();
+	
 	$scope.scrollgis.nextPage();
 
 	// model for debounced search
@@ -215,27 +228,18 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, Work
 				$scope.spin = false;
 			});			
 	}
-
-	// clipboard nonsense. 
-	// listen for any changes to the emojis set, and re-apply the clipboard to each result set
-	$scope.$watch('scrollgis.items', function(newValue, oldValue){
 		
-		// creating a new clipboard, otherwise, we get tons of duplicated events
-		var client = new ZeroClipboard();
-
-		client.on( "ready", function( readyEvent ) {	 
-			client.clip($('[data-clipboard-name]'));
-
-			client.on("copy", function(event) {
-				// $('.emoji-wrapper-cover').remove();
-				event.clipboardData.setData( "text/plain", event.target.getAttribute("data-clipboard-value"));
-			});
-
-			client.on( "aftercopy", function( event ) {
-				var targetName = $(event.target).attr('data-clipboard-name');			
-			});
-		});						
-	});
+	///
+	/// Adjusts the font of the emojis based on how many exist in a sentence
+	/// 
+	$scope.getEmojiClass = function(numEmojis) {		
+		if (!numEmojis || numEmojis <= 2)
+			return "emoji-big";			
+		else if (numEmojis > 2 && numEmojis <= 3)
+			return "emoji-med";			
+		else
+			return "emoji-small"; 			
+	}
 
 	$scope.$watch(WorkingEmojiService.get,function(v){
 		$scope.sentence = v;	

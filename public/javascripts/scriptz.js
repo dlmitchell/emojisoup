@@ -21,8 +21,9 @@ makeRecipe = function() {
 //------------------------------------------------------
 // MAKING RECIPES
 //------------------------------------------------------
+// $(document).on('click', '.emoji-blanket > .emoji', function(e) {
 $(document).on('click', '.emoji-blanket > .emoji', function(e) {    
-  console.log("clicked");
+  console.log("clicked dat shit");
   $('#the-pot .emojis').append(
       $(e.currentTarget.parentNode)
       .clone()

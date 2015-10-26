@@ -165,7 +165,7 @@ input[type="text"]  {
 }
 
 a:link, a:visited, a:active {
-  color: white;
+  /*color: white;*/
   text-decoration: none;
 }
 
@@ -173,46 +173,33 @@ a:hover {
   text-decoration: underline;
 }
 
+.emoji-wrapper {  
+}
 
-.emoji-wrapper {
-  background: #FFF;
+.emoji-card {
+  width: 100%;
+  height: 100%;
+  margin: 0px;  
 }
 
 .emoji-contents {
   height: 100%;
 }
 
-.emoji-wrapper h2 {
+.emoji-wrapper h4 {
   font-weight: bolder;
   text-transform: capitalize;
-  margin-left: .3em;
-  margin-bottom: 0px;
+  margin: 0px;
   color: #1976D2;
-}
-
-.emoji-wrapper .wrapper-header  {
-  background: rgba(0,0,0,0);
-  overflow: inherit;
-  height: auto;
-  /*resize: both;*/
-}
-
-.emoji-wrapper .wrapper-footer  {
-  background: rgba(0,0,0,0);
-  overflow: inherit;
-  height: auto;
-  margin: 2em;
 }
   
 .emoji-wrapper p {
   padding: 0px;
-  margin-left: .6em;
-  margin-top: 0px;
   font-size: .9em;
 }  
 
 .emoji-wrapper a {
-  color: rgba(0, 0, 0, .54);
+  color: rgba(0, 0, 0, .7);
 } 
 
 .emoji-wrapper-cover {
@@ -250,15 +237,19 @@ a:hover {
   font-size: 3em;
 }
 
-.emoji-blanket {
-  font-size: 5em;
-  margin-top: .3em;
+.emoji-med {
+  font-size: 3em;
   cursor: pointer;
 }
 
-.tag {
-  padding-right: 4px;
-  display: inline-block;
+.emoji-big {
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.emoji-small {
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .tag a:hover {
@@ -278,9 +269,6 @@ a:hover {
     content:"DELETE"; 
     color:white;}
 
-.emoji-tags {
-  margin: 1em;
-}
 
 .clipboard {  
   display: inline;  
@@ -337,3 +325,17 @@ a:hover {
 .hidden {
   visibility: hidden;
 }
+
+/* do the following if you want to figure out how to get the material design button to do the shimmer effect */
+
+/*.clip_button {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgba(255, 222, 121, 0.96);
+  margin: 10px;
+  padding: 10px;
+}*/
+
+/*.clip_button.zeroclipboard-is-hover { background-color: #eee; }
+.clip_button.zeroclipboard-is-active { background-color: #aaa; }*/
