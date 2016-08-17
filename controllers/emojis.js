@@ -50,7 +50,7 @@ router.route('/:emoji/tags/:tag?')
 	.post(function(req, res, next) {
 		var tag = req.body.tag;
 
-		dao.emojis_add_tag(req, req.emoji, tag, function(e, emoji) {		
+		dao.emojis_add_tag(req, req.emoji, tag, function(e, emoji) {
 			res.json({e: false})
 		});
 	})
@@ -61,8 +61,8 @@ router.route('/:emoji/tags/:tag?')
 				if (e == null)
 					res.json({e: false});
 				else
-					res.json({e: true});		
-			});			
+					res.json({e: true});
+			});
 		}
 	});
 

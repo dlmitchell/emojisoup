@@ -16,6 +16,19 @@ router.get('/', function(req, res) {
 	}	
 });
 
+router.get('/admin', function(req, res) {
+	if (req.query.q) {
+		dao.search(req, req.query.q, function(e, emojis, recipes) {
+			renderEmojis(res, 'admin', emojis, recipes)
+		});
+	}
+	else  {
+		dao.emojis_all(req, function(e, emojis) {
+			renderEmojis(res, 'admin', emojis, []);
+		});	
+	}	
+});
+
 // -------------------------
 /** RENDERING FUNCTIONS **/
 // -------------------------

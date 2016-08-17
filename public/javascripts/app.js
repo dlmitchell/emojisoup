@@ -228,6 +228,20 @@ enodjiApp.controller('EmojiController', function ($scope, $http, $mdDialog, Work
 				$scope.spin = false;
 			});			
 	}
+	
+	$scope.saveEmoji = function(emoji) {
+		console.log(emoji);
+		$http.put('/api/emojis', emoji).
+			success(function(data, status, headers, config) {
+				$scope.getEmoji(data.recipe._id);
+				$scope.recipe = {};
+				$scope.spin = false;
+			}).
+			error(function(data, status, headers, config) {
+				$scope.spin = false;
+			});			 
+
+	}
 		
 	///
 	/// Adjusts the font of the emojis based on how many exist in a sentence
